@@ -39,12 +39,11 @@ description: >-
 # ---------------------------------------------------------------------------
 #  DEPLOYMENT
 # ---------------------------------------------------------------------------
-#  This repo is served as a PROJECT page under the
-#  epistemic-intelligence-in-ml organisation, so the site lives at the
-#  /eiml.github.io/ subpath. baseurl must match that subpath so that CSS,
-#  images and links resolve correctly.
+#  This repo is a user/organisation Pages site
+#  (epistemic-intelligence-in-ml.github.io), so it is served from the domain
+#  root. Leave baseurl empty and url as below.
 url: "https://epistemic-intelligence-in-ml.github.io"
-baseurl: "/eiml.github.io"
+baseurl: ""
 
 # ---------------------------------------------------------------------------
 #  NAVIGATION  (order = order shown in the menu)
