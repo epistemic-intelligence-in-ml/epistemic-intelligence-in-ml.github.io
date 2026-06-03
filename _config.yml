@@ -1,0 +1,72 @@
+# ============================================================================
+#  EIML WORKSHOP SITE — MAIN CONFIG
+# ============================================================================
+#  To roll the site over to a new year, in most cases you only need to edit
+#  the "EDIT EACH YEAR" block below and the files in the _data/ folder.
+#  Templates, layouts and styling should not need to change.
+# ============================================================================
+
+# ---------------------------------------------------------------------------
+#  >>> EDIT EACH YEAR <<<
+# ---------------------------------------------------------------------------
+workshop:
+  edition: "3rd"                      # "1st", "2nd", "3rd", ...
+  year: 2026
+  short_name: "EIML3@NeurIPS 2026"        # used in the nav bar / browser title
+  full_name: "The 3rd Workshop on Epistemic Intelligence in Machine Learning"
+  subtitle: "The Roots of Intelligence"   # tagline shown under the title
+  conference: "NeurIPS 2026"
+  date: "12 December 2026"                # workshop day, human-readable
+  location: "Paris, France"
+  contact_email: "pc.eiml.workshop@gmail.com"
+
+  # Logos — put image files in assets/img/logo/ and reference the filename here.
+  # Leave a value blank ("") to hide that logo slot.
+  logo: "EIML3.png"                            # main workshop logo (header + hero)
+  conference_logo: "neurips.png"                 # e.g. the ICML logo, shown in the hero
+  # Partner / sponsor logos (optional) — add as many as you like.
+  partner_logos: []
+    # - file: "ellis.png"
+    #   alt: "ELLIS"
+    #   url: "https://ellis.eu"
+
+# Site-wide (rarely changes)
+title: "EIML3@NeurIPS 2026"
+description: >-
+  The 3rd Workshop on Epistemic Intelligence in Machine Learning,
+  held at NeurIPS 2026 in Paris, France.
+
+# ---------------------------------------------------------------------------
+#  DEPLOYMENT
+# ---------------------------------------------------------------------------
+#  This repo is a user/organisation Pages site (eiml.github.io), so it is
+#  served from the domain root. Leave baseurl empty and url as below.
+url: "https://eiml.github.io"
+baseurl: ""
+
+# ---------------------------------------------------------------------------
+#  NAVIGATION  (order = order shown in the menu)
+# ---------------------------------------------------------------------------
+nav:
+  - title: "Home"
+    url: "/"
+#  - title: "Invited Talks"
+#    url: "/invited-talks/"
+  - title: "Calls for Papers"
+    url: "/calls-for-papers/"
+#  - title: "Important Dates"
+#    url: "/important-dates/"
+  - title: "Schedule"
+    url: "/schedule/"
+
+# ---------------------------------------------------------------------------
+#  BUILD SETTINGS  (do not normally need to touch)
+# ---------------------------------------------------------------------------
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

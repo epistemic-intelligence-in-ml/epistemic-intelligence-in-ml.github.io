@@ -1,0 +1,36 @@
+# Topics of interest, shown on Home and Calls for Papers.
+# Each topic has a title and either:
+#   description - a paragraph (rendered as prose), and/or
+#   points      - a list of sub-bullets (rendered as a bullet list)
+
+- title: "Conceptual foundations"
+  points:
+    - "What is epistemic intelligence, and how does it differ from uncertainty quantification, calibration, robustness, Bayesian inference, conformal prediction, and decision theory?"
+    - "What does it mean for a learning system to know, not know, or act responsibly under ignorance?"
+
+- title: "Representations of ignorance"
+  points:
+    - "Which mathematical objects should represent epistemic uncertainty — sets of probability distributions, lower/upper probabilities, second-order distributions, belief functions, possibility measures, logical or modal structures, category-theoretic objects, or hybrids?"
+    - "What are their semantics and failure modes?"
+
+- title: "Statistical foundations"
+  points:
+    - "How should epistemic and aleatoric uncertainty be separated, measured, and validated?"
+    - "What guarantees remain meaningful under misspecification, partial identification, weak prior information, or distribution shift?"
+
+- title: "Learning theory and computation"
+  points:
+    - "What are the computational limits of epistemic reasoning in modern ML?"
+    - "Which representations are tractable at deep learning scale?"
+    - "Can epistemic uncertainty guide abstention, querying, exploration, safe adaptation, model revision, or fallback behaviour?"
+
+- title: "Engineering and communication"
+  points:
+    - "How should epistemic signals be embedded in AI-enabled systems, communication networks, robotics, cyber-physical systems, and human-facing interfaces?"
+    - "How do engineering constraints reshape the theory?"
+
+- title: "Evaluation and negative results"
+  points:
+    - "What would constitute evidence that an EIML method succeeds?"
+    - "Can we benchmark ignorance, blind spots, and unknown unknowns?"
+    - "Which existing approaches fail under carefully designed stress tests?"

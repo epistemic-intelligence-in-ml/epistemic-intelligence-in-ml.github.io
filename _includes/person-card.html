@@ -1,0 +1,23 @@
+{%- comment -%}
+  Reusable person card.
+  Params:
+    person  - an entry from a _data file (needs name; optional affiliation, role, expertise, photo, url)
+    folder  - subfolder under assets/img/ where the photo lives (e.g. "organisers")
+{%- endcomment -%}
+<div class="person">
+  {% if include.person.photo and include.person.photo != "" %}
+    <img class="person-photo" src="{{ '/assets/img/' | append: include.folder | append: '/' | append: include.person.photo | relative_url }}" alt="{{ include.person.name }}">
+  {% else %}
+    <div class="person-photo placeholder" aria-hidden="true"></div>
+  {% endif %}
+  <div class="person-name">
+    {% if include.person.url and include.person.url != "" %}
+      <a href="{{ include.person.url }}">{{ include.person.name }}</a>
+    {% else %}
+      {{ include.person.name }}
+    {% endif %}
+  </div>
+  {% if include.person.role and include.person.role != "" %}<div class="person-role">{{ include.person.role }}</div>{% endif %}
+  {% if include.person.affiliation and include.person.affiliation != "" %}<div class="person-affil">{{ include.person.affiliation }}</div>{% endif %}
+  {% if include.person.expertise and include.person.expertise != "" %}<div class="person-expertise">{{ include.person.expertise }}</div>{% endif %}
+</div>

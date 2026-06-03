@@ -1,0 +1,309 @@
+/* ==========================================================================
+   EIML workshop site styles
+   Theme colours live in the :root block below — change them once here.
+   ========================================================================== */
+:root {
+  /* France-inspired palette (tricolore: bleu-blanc-rouge) */
+  --accent:        #0a3580;   /* French blue  */
+  --accent-dark:   #07235a;
+  --accent-red:    #c8102e;   /* French red   */
+  --text:          #1b1b1b;
+  --muted:         #5c6670;
+  --bg:            #ffffff;
+  --bg-alt:        #f3f5f9;
+  --border:        #e2e6ea;
+  --max-width:     960px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---- Header / nav ---- */
+.site-header {
+  background: var(--accent);
+  /* Tricolore stripe under the header */
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right,
+    var(--accent) 0 33.333%,
+    #ffffff 33.333% 66.666%,
+    var(--accent-red) 66.666% 100%) 1;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: .2px;
+}
+.brand:hover { text-decoration: none; opacity: .9; }
+.brand-logo {
+  height: 34px; width: auto; display: block;
+  background: #fff;
+  padding: 4px 7px;
+  border-radius: 6px;
+}
+.site-nav { display: flex; gap: 1.25rem; }
+.site-nav a { color: #d8e3f0; font-size: .95rem; }
+.site-nav a:hover { color: #fff; text-decoration: none; }
+.site-nav a.active { color: #fff; font-weight: 600; border-bottom: 2px solid var(--accent-red); }
+.nav-toggle {
+  display: none;
+  background: none; border: none; color: #fff;
+  font-size: 1.4rem; cursor: pointer;
+}
+
+/* ---- Main / pages ---- */
+main.container { padding-top: 2.5rem; padding-bottom: 3rem; }
+.page-title {
+  font-size: 1.9rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: .5rem;
+  border-bottom: 3px solid var(--accent-red);
+}
+.page h2 { font-size: 1.35rem; margin-top: 2rem; color: var(--accent-dark); }
+.page h3 { font-size: 1.1rem; margin-top: 1.5rem; }
+.page p, .page li { font-size: 1rem; }
+.page p { text-align: justify; -webkit-hyphens: auto; hyphens: auto; }
+/* Keep centered blocks centered (justify only applies to body prose) */
+.hero p { text-align: center; -webkit-hyphens: none; hyphens: none; }
+
+/* ---- Hero (home) ---- */
+.hero {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.hero .eyebrow { color: var(--muted); font-weight: 600; letter-spacing: .5px; text-transform: uppercase; font-size: .8rem; }
+.hero h1 { font-size: 1.6rem; margin: .5rem 0 .25rem; }
+.hero .subtitle {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--accent-dark);
+  letter-spacing: .2px;
+  margin: .35rem 0 0;
+}
+.hero-logo { max-height: 150px; width: auto; margin: 0 auto 1rem; display: block; }
+.hero-conf-logo { max-height: 56px; width: auto; margin: 1.25rem auto 0; display: block; opacity: .9; }
+
+/* ---- Partner / sponsor logos in footer ---- */
+.partner-logos {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: 1.75rem; margin-bottom: 1.5rem;
+}
+.partner-logos img { max-height: 46px; width: auto; filter: grayscale(100%); opacity: .8; }
+.partner-logos a:hover img { filter: none; opacity: 1; }
+
+/* ---- Tables (dates, schedule) ---- */
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0 2rem;
+}
+table.data th, table.data td {
+  text-align: left;
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+table.data th { background: var(--bg-alt); font-size: .85rem; text-transform: uppercase; letter-spacing: .4px; color: var(--muted); }
+table.data td.when { white-space: nowrap; font-weight: 600; width: 36%; }
+
+/* ---- Topic blocks (Calls for Papers, prose style) ---- */
+.topic { margin-bottom: 1.25rem; }
+.topic h3 { margin-bottom: .35rem; color: var(--accent-dark); }
+
+/* ---- Topic accordion (Home, dropdown style) ---- */
+.topic-hint { color: var(--muted); font-size: .9rem; margin: 0 0 1rem; }
+.topic-accordion { margin: 0 0 2rem; }
+.topic-item {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent-red);
+  border-radius: 8px;
+  margin-bottom: .6rem;
+  overflow: hidden;
+}
+.topic-item > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .9rem 1.15rem;
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: var(--accent-dark);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.topic-item > summary:hover { color: var(--accent); }
+.topic-item > summary::-webkit-details-marker { display: none; }
+.topic-item > summary::after {
+  content: "+";
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--accent-red);
+  flex: 0 0 auto;
+}
+.topic-item[open] > summary::after { content: "\2013"; }
+.topic-content { padding: 0 1.15rem 1rem; }
+.topic-content p { margin: 0 0 .5rem; font-size: .95rem; }
+.topic-content ul { margin: .3rem 0 0; padding-left: 1.15rem; font-size: .93rem; }
+.topic-content li { margin: .35rem 0; }
+
+/* ---- People grids ---- */
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem 2rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.person { text-align: center; width: 160px; }
+.person-photo {
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto .6rem;
+  display: block;
+  border: 2px solid var(--border);
+}
+.person-photo.placeholder {
+  background: linear-gradient(135deg, var(--bg-alt), #e7ecf1);
+}
+.person-name { font-weight: 600; line-height: 1.3; }
+.person-role { font-size: .85rem; color: var(--muted); }
+.person-affil { font-size: .85rem; color: var(--muted); }
+.person-expertise { font-size: .8rem; color: var(--muted); font-style: italic; }
+
+/* ---- Speaker showcase ---- */
+.speakers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.speaker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.75rem 1.5rem;
+  transition: box-shadow .2s ease, transform .2s ease;
+}
+.speaker:hover {
+  box-shadow: 0 8px 24px rgba(10, 53, 128, .10);
+  transform: translateY(-3px);
+}
+.speaker-photo {
+  width: 144px; height: 144px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.1rem;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 3px var(--accent);
+}
+.speaker-photo.placeholder {
+  background: linear-gradient(135deg, #e7ecf1, #d4dde6);
+}
+.speaker-body { width: 100%; }
+.speaker-name { font-weight: 700; font-size: 1.2rem; line-height: 1.25; }
+.speaker-name a { color: var(--text); }
+.speaker-name a:hover { color: var(--accent); text-decoration: none; }
+.speaker-role { font-size: .9rem; color: var(--muted); margin-top: .15rem; }
+.speaker-affil { font-size: .88rem; color: var(--muted); }
+.speaker-talk { font-size: .95rem; margin-top: .55rem; color: var(--accent-dark); font-style: italic; }
+.speaker-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .4rem;
+  margin-top: .9rem;
+}
+.speaker-tag {
+  font-size: .78rem;
+  font-weight: 500;
+  background: #eef2fb;
+  color: var(--accent);
+  border: 1px solid #d8e1f4;
+  border-radius: 999px;
+  padding: .22rem .72rem;
+}
+
+/* ---- Compact, photo-free people list (programme committee) ---- */
+.person-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: .5rem 1.5rem;
+}
+.person-list li {
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.pl-name { font-weight: 600; display: block; }
+.pl-affil { font-size: .85rem; color: var(--muted); display: block; }
+
+/* ---- Footer ---- */
+.site-footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding: 1.75rem 0;
+  text-align: center;
+  font-size: .9rem;
+  color: var(--muted);
+}
+.site-footer p { margin: .25rem 0; }
+
+/* ---- Responsive ---- */
+@media (max-width: 640px) {
+  .nav-toggle { display: block; }
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: .5rem;
+    padding-top: .75rem;
+  }
+  .site-nav.open { display: flex; }
+  .site-nav a.active { border-bottom: none; text-decoration: underline; }
+}

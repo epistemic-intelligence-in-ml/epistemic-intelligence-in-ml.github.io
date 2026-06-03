@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      {% if site.workshop.logo and site.workshop.logo != "" %}
+        <img class="brand-logo" src="{{ '/assets/img/logo/' | append: site.workshop.logo | relative_url }}" alt="{{ site.workshop.short_name }} logo">
+      {% endif %}
+      <span class="brand-text">{{ site.workshop.short_name }}</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
+    <nav class="site-nav">
+      {% for item in site.nav %}
+        {%- assign item_url = item.url | relative_url -%}
+        {%- assign current = page.url | relative_url -%}
+        <a href="{{ item_url }}"{% if current == item_url %} class="active"{% endif %}>{{ item.title }}</a>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

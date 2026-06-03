@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EIML3@NeurIPS 2026</title>
+  <meta name="description" content="The 3rd Workshop on Epistemic Intelligence in Machine Learning, held at NeurIPS 2026 in Paris, France.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+      
+        <img class="brand-logo" src="/assets/img/logo/EIML3.png" alt="EIML3@NeurIPS 2026 logo">
+      
+      <span class="brand-text">EIML3@NeurIPS 2026</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
+    <nav class="site-nav">
+      <a href="/" class="active">Home</a>
+      <a href="/calls-for-papers/">Calls for Papers</a>
+      <a href="/schedule/">Schedule</a>
+      
+    </nav>
+  </div>
+</header>
+
+  <main class="container">
+    <article class="page">
+  
+  <div class="hero">
+  
+  <img class="hero-logo" src="/assets/img/logo/EIML3.png" alt="EIML3@NeurIPS 2026 logo" />
+  
+  <p class="eyebrow">12 December 2026 · Paris, France</p>
+  <p class="eyebrow">EIML3@NeurIPS 2026</p>
+  <h1>The 3rd Workshop on Epistemic Intelligence in Machine Learning</h1>
+  <p class="subtitle">The Roots of Intelligence</p>
+  
+  <img class="hero-conf-logo" src="/assets/img/logo/neurips.png" alt="NeurIPS 2026 logo" />
+  
+</div>
+
+<p>EIML@EurIPS 2025 and EIML2@ICML2026 marked the beginning of a growing community that cares about Epistemic Intelligence
+in Machine Learning.
+The conversation continues at EIML3@NeurIPS2026.</p>
+
+<h2 id="why-are-we-doing-this">Why are we doing this?</h2>
+
+<p>Epistemic Intelligence in Machine Learning (EIML) studies how learning systems recognise, represent, reason about, and
+act under the limits of their knowledge. Modern ML systems—including foundation models, generative models, autonomous
+agents, and AI-enabled engineering systems—are increasingly deployed in open-ended environments where failures are
+often epistemic: hallucination, unsafe extrapolation, brittle behaviour under distribution shift, catastrophic
+forgetting, overconfident decisions, and poor communication of uncertainty all arise when a system cannot distinguish
+what is known from what is unknown.</p>
+
+<p>The first EIML workshop, held at EurIPS 2025, established the theme of epistemic intelligence around epistemic
+uncertainty in machine learning. The second edition, accepted at ICML 2026, broadened the agenda toward unknown
+unknowns, robustness, safety, alignment, foundation models, and real-world impact. The proposed NeurIPS 2026 workshop is
+the natural third step in the series: after establishing the community and broadening its application scope, this
+edition asks what must be in place for EIML to become a principled field. By foundations, we mean five coupled layers:
+conceptual foundations that define knowledge, ignorance, epistemic uncertainty, and epistemic agency; representational
+foundations that specify mathematical objects for partial knowledge; inferential foundations that determine which
+guarantees survive misspecification, weak prior information, partial identification, and distribution shift;
+computational foundations that characterise the tractability of epistemic reasoning at ML scale; and engineering
+foundations that govern how epistemic signals are communicated and acted upon in deployed systems.</p>
+
+<p>Why now? There is growing momentum around uncertainty-aware, reliable, and safe ML, but the relevant communities remain
+fragmented. Statistics studies Bayesian, frequentist, conformal, second-order, and imprecise probabilistic accounts of
+uncertainty. Mathematics and computer science provide formalisms for learning theory, optimisation, representation,
+computation, and complexity. Engineering studies how epistemic signals behave under communication, networking, robotics,
+and deployment constraints. Philosophy analyses knowledge, ignorance, rational belief, explanation, agency, and
+responsibility. These fields address overlapping problems but often use incompatible languages. Without a dedicated
+foundational forum, EIML risks becoming a collection of parallel literatures rather than a coherent research programme.
+NeurIPS is the ideal venue to crystallise shared problems, explicitly contrast frameworks, and coordinate the next phase
+of the field.</p>
+
+<h2 id="topics">Topics</h2>
+
+<p class="topic-hint">Click a topic to see the key questions it raises.</p>
+
+<div class="topic-accordion">
+  
+  <details class="topic-item">
+    <summary>Conceptual foundations</summary>
+    <div class="topic-content">
+      
+      
+      <ul><li>What is epistemic intelligence, and how does it differ from uncertainty quantification, calibration, robustness, Bayesian inference, conformal prediction, and decision theory?</li><li>What does it mean for a learning system to know, not know, or act responsibly under ignorance?</li></ul>
+      
+    </div>
+  </details>
+  
+  <details class="topic-item">
+    <summary>Representations of ignorance</summary>
+    <div class="topic-content">
+      
+      
+      <ul><li>Which mathematical objects should represent epistemic uncertainty — sets of probability distributions, lower/upper probabilities, second-order distributions, belief functions, possibility measures, logical or modal structures, category-theoretic objects, or hybrids?</li><li>What are their semantics and failure modes?</li></ul>
+      
+    </div>
+  </details>
+  
+  <details class="topic-item">
+    <summary>Statistical foundations</summary>
+    <div class="topic-content">
+      
+      
+      <ul><li>How should epistemic and aleatoric uncertainty be separated, measured, and validated?</li><li>What guarantees remain meaningful under misspecification, partial identification, weak prior information, or distribution shift?</li></ul>
+      
+    </div>
+  </details>
+  
+  <details class="topic-item">
+    <summary>Learning theory and computation</summary>
+    <div class="topic-content">
+      
+      
+      <ul><li>What are the computational limits of epistemic reasoning in modern ML?</li><li>Which representations are tractable at deep learning scale?</li><li>Can epistemic uncertainty guide abstention, querying, exploration, safe adaptation, model revision, or fallback behaviour?</li></ul>
+      
+    </div>
+  </details>
+  
+  <details class="topic-item">
+    <summary>Engineering and communication</summary>
+    <div class="topic-content">
+      
+      
+      <ul><li>How should epistemic signals be embedded in AI-enabled systems, communication networks, robotics, cyber-physical systems, and human-facing interfaces?</li><li>How do engineering constraints reshape the theory?</li></ul>
+      
+    </div>
+  </details>
+  
+  <details class="topic-item">
+    <summary>Evaluation and negative results</summary>
+    <div class="topic-content">
+      
+      
+      <ul><li>What would constitute evidence that an EIML method succeeds?</li><li>Can we benchmark ignorance, blind spots, and unknown unknowns?</li><li>Which existing approaches fail under carefully designed stress tests?</li></ul>
+      
+    </div>
+  </details>
+  
+</div>
+
+<h2 id="important-dates">Important Dates</h2>
+
+<table class="data">
+  <tbody>
+  
+    <tr>
+      <td class="when">29 July 2026</td>
+      <td>Submission opens</td>
+    </tr>
+  
+    <tr>
+      <td class="when">29 August 2026</td>
+      <td>Paper submission deadline</td>
+    </tr>
+  
+    <tr>
+      <td class="when">1 – 27 September 2026</td>
+      <td>Review period</td>
+    </tr>
+  
+    <tr>
+      <td class="when">29 September 2026</td>
+      <td>Author notification</td>
+    </tr>
+  
+    <tr>
+      <td class="when">18 October 2026</td>
+      <td>Camera-ready submission deadline</td>
+    </tr>
+  
+    <tr>
+      <td class="when">12 / 13 December 2026</td>
+      <td>Main workshop</td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<h2 id="confirmed-speakers">Confirmed Speakers</h2>
+
+<div class="speakers">
+  
+    <div class="speaker">
+  
+    <img class="speaker-photo" src="/assets/img/speakers/judith.png" alt="Judith Rousseau" />
+  
+  <div class="speaker-body">
+    <div class="speaker-name">
+      
+        <a href="https://dauphine.psl.eu/recherche/cvtheque/profil/rousseau-judith">Judith Rousseau</a>
+      
+    </div>
+    <div class="speaker-role">Professor</div>
+    <div class="speaker-affil">Université Paris Dauphine-PSL, France</div>
+    
+    
+      <div class="speaker-tags">
+        
+        <span class="speaker-tag">Bayesian Statistics</span>
+      </div>
+    
+  </div>
+</div>
+
+  
+    <div class="speaker">
+  
+    <img class="speaker-photo" src="/assets/img/speakers/gitta.png" alt="Gitta Kutyniok" />
+  
+  <div class="speaker-body">
+    <div class="speaker-name">
+      
+        <a href="https://mcml.ai/research/groups/kutyniok/">Gitta Kutyniok</a>
+      
+    </div>
+    <div class="speaker-role">Professor</div>
+    <div class="speaker-affil">Chair of Mathematical Foundations of Artificial Intelligence, LMU Munich, Germany</div>
+    
+    
+      <div class="speaker-tags">
+        
+        <span class="speaker-tag">Mathematical Foundations of AI</span>
+      </div>
+    
+  </div>
+</div>
+
+  
+    <div class="speaker">
+  
+    <img class="speaker-photo" src="/assets/img/speakers/francesco.png" alt="Francesco Restuccia" />
+  
+  <div class="speaker-body">
+    <div class="speaker-name">
+      
+        <a href="https://coe.northeastern.edu/people/restuccia-francesco/">Francesco Restuccia</a>
+      
+    </div>
+    <div class="speaker-role">Assistant Professor</div>
+    <div class="speaker-affil">Northeastern University, United States</div>
+    
+    
+      <div class="speaker-tags">
+        
+        <span class="speaker-tag">Computer networks</span>
+      </div>
+    
+  </div>
+</div>
+
+  
+    <div class="speaker">
+  
+    <img class="speaker-photo" src="/assets/img/speakers/carlo.png" alt="Carlo Cordasco" />
+  
+  <div class="speaker-body">
+    <div class="speaker-name">
+      
+        <a href="https://sites.google.com/view/carloludovicocordasco/home">Carlo Cordasco</a>
+      
+    </div>
+    <div class="speaker-role">Assistant Professor</div>
+    <div class="speaker-affil">University of Manchester, United Kingdom</div>
+    
+    
+      <div class="speaker-tags">
+        
+        <span class="speaker-tag">Moral Epistemology</span><span class="speaker-tag">Foundations of Uncertainty</span>
+      </div>
+    
+  </div>
+</div>
+
+  
+</div>
+
+<h2 id="organising-committee">Organising Committee</h2>
+
+<div class="people">
+  
+    <div class="person">
+  
+    <img class="person-photo" src="/assets/img/organisers/sahar_headshot.png" alt="Sahar Abdelnabi" />
+  
+  <div class="person-name">
+    
+      Sahar Abdelnabi
+    
+  </div>
+  
+  <div class="person-affil">ELLIS Institute Tübingen &amp; MPI-IS, Germany</div>
+  
+</div>
+
+  
+    <div class="person">
+  
+    <img class="person-photo" src="/assets/img/organisers/michele_headshot.png" alt="Michele Caprio" />
+  
+  <div class="person-name">
+    
+      Michele Caprio
+    
+  </div>
+  
+  <div class="person-affil">University of Manchester, United Kingdom</div>
+  
+</div>
+
+  
+    <div class="person">
+  
+    <img class="person-photo" src="/assets/img/organisers/siulun_headshot.png" alt="Siu Lun Chau" />
+  
+  <div class="person-name">
+    
+      Siu Lun Chau
+    
+  </div>
+  
+  <div class="person-affil">Nanyang Technological University, Singapore</div>
+  
+</div>
+
+  
+    <div class="person">
+  
+    <img class="person-photo" src="/assets/img/organisers/julian_headshot.png" alt="Julian Rodemann" />
+  
+  <div class="person-name">
+    
+      Julian Rodemann
+    
+  </div>
+  
+  <div class="person-affil">CISPA Helmholtz Center for Information Security, Germany</div>
+  
+</div>
+
+  
+    <div class="person">
+  
+    <img class="person-photo" src="/assets/img/organisers/shireen_headshot.png" alt="Shireen Kudukkil Manchingal" />
+  
+  <div class="person-name">
+    
+      Shireen Kudukkil Manchingal
+    
+  </div>
+  
+  <div class="person-affil">Oxford Dynamics, United Kingdom</div>
+  
+</div>
+
+  
+    <div class="person">
+  
+    <img class="person-photo" src="/assets/img/organisers/krikamol_headshot.png" alt="Krikamol Muandet" />
+  
+  <div class="person-name">
+    
+      Krikamol Muandet
+    
+  </div>
+  
+  <div class="person-affil">CISPA Helmholtz Center for Information Security, Germany</div>
+  
+</div>
+
+  
+</div>
+
+<h2 id="programme-committee">Programme Committee</h2>
+
+<ul class="person-list">
+  
+  <li>
+    <span class="pl-name">
+      Rejev Verma
+    </span>
+    <span class="pl-affil">PhD, University of Amsterdam</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Alessandro Zito
+    </span>
+    <span class="pl-affil">Postdoctoral Researcher, Harvard University</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Claudio Battiloro
+    </span>
+    <span class="pl-affil">Postdoctoral Researcher, Harvard University</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Christopher Bülte
+    </span>
+    <span class="pl-affil">PhD, LMU Munich, Germany</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Rabanus Derr
+    </span>
+    <span class="pl-affil">PhD, University of Tübingen</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Soroush H. Zargarbashi
+    </span>
+    <span class="pl-affil">CISPA, Germany</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Sabina Sloman
+    </span>
+    <span class="pl-affil">Postdoctoral Researcher, University of Manchester</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Paul Hofman
+    </span>
+    <span class="pl-affil">PhD, LMU Munich, Germany</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Jérémie Houssineau
+    </span>
+    <span class="pl-affil">Asst. Professor, Nanyang Technological University</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Nong Minh Hieu
+    </span>
+    <span class="pl-affil">PhD, SMU Singapore</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Maryam Sultana
+    </span>
+    <span class="pl-affil">Research Fellow, Oxford Brookes University</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Mira Jürgens
+    </span>
+    <span class="pl-affil">PhD, University of Ghent</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Jack Liell-Cock
+    </span>
+    <span class="pl-affil">PhD, Oxford University</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Kaizheng Wang
+    </span>
+    <span class="pl-affil">PhD, KU Leuven</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Julian Rodeman
+    </span>
+    <span class="pl-affil">PhD, LMU Munich, Germany</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Yusuf Sale
+    </span>
+    <span class="pl-affil">PhD, LMU Munich, Germany</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Fanyi Wu
+    </span>
+    <span class="pl-affil">PhD, University of Manchester</span>
+  </li>
+  
+  <li>
+    <span class="pl-name">
+      Anurag Singh
+    </span>
+    <span class="pl-affil">PhD, CISPA Helmholtz Center for Information Security</span>
+  </li>
+  
+</ul>
+
+<p>If you have any queries, feel free to write to
+<a href="mailto:pc.eiml.workshop@gmail.com">pc.eiml.workshop@gmail.com</a>.</p>
+
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+    
+    <p>The 3rd Workshop on Epistemic Intelligence in Machine Learning</p>
+    <p>12 December 2026 · Paris, France</p>
+    <p>Questions? <a href="mailto:pc.eiml.workshop@gmail.com">pc.eiml.workshop@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

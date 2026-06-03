@@ -1,0 +1,32 @@
+# Organising committee.
+# Drop a headshot into assets/img/organisers/ and set "photo" to the filename.
+
+- name: "Sahar Abdelnabi"
+  affiliation: "ELLIS Institute Tübingen & MPI-IS, Germany"
+  photo: "sahar_headshot.png"
+  url: ""
+
+- name: "Michele Caprio"
+  affiliation: "University of Manchester, United Kingdom"
+  photo: "michele_headshot.png"
+  url: ""
+
+- name: "Siu Lun Chau"
+  affiliation: "Nanyang Technological University, Singapore"
+  photo: "siulun_headshot.png"
+  url: ""
+
+- name: "Julian Rodemann"
+  affiliation: "CISPA Helmholtz Center for Information Security, Germany"
+  photo: "julian_headshot.png"
+  url: ""
+
+- name: "Shireen Kudukkil Manchingal"
+  affiliation: "Oxford Dynamics, United Kingdom"
+  photo: "shireen_headshot.png"
+  url: ""
+
+- name: "Krikamol Muandet"
+  affiliation: "CISPA Helmholtz Center for Information Security, Germany"
+  photo: "krikamol_headshot.png"
+  url: ""

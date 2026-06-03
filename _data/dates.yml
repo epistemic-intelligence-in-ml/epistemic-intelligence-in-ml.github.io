@@ -1,0 +1,15 @@
+# Important dates. Order = order shown in the table.
+# Keep "date" human-readable; it is printed verbatim.
+
+- date: "29 July 2026"
+  milestone: "Submission opens"
+- date: "29 August 2026"
+  milestone: "Paper submission deadline"
+- date: "1 – 27 September 2026"
+  milestone: "Review period"
+- date: "29 September 2026"
+  milestone: "Author notification"
+- date: "18 October 2026"
+  milestone: "Camera-ready submission deadline"
+- date: "12 / 13 December 2026"
+  milestone: "Main workshop"

@@ -1,0 +1,27 @@
+{%- comment -%}
+  Speaker card: large photo on top, details below.
+  Param: speaker - an entry from _data/speakers.yml
+{%- endcomment -%}
+<div class="speaker">
+  {% if include.speaker.photo and include.speaker.photo != "" %}
+    <img class="speaker-photo" src="{{ '/assets/img/speakers/' | append: include.speaker.photo | relative_url }}" alt="{{ include.speaker.name }}">
+  {% else %}
+    <div class="speaker-photo placeholder" aria-hidden="true"></div>
+  {% endif %}
+  <div class="speaker-body">
+    <div class="speaker-name">
+      {% if include.speaker.url and include.speaker.url != "" %}
+        <a href="{{ include.speaker.url }}">{{ include.speaker.name }}</a>
+      {% else %}{{ include.speaker.name }}{% endif %}
+    </div>
+    {% if include.speaker.role and include.speaker.role != "" %}<div class="speaker-role">{{ include.speaker.role }}</div>{% endif %}
+    {% if include.speaker.affiliation and include.speaker.affiliation != "" %}<div class="speaker-affil">{{ include.speaker.affiliation }}</div>{% endif %}
+    {% if include.speaker.talk_title and include.speaker.talk_title != "" %}<div class="speaker-talk">“{{ include.speaker.talk_title }}”</div>{% endif %}
+    {% if include.speaker.bio and include.speaker.bio != "" %}
+      <div class="speaker-tags">
+        {% assign areas = include.speaker.bio | split: "," %}
+        {% for area in areas %}<span class="speaker-tag">{{ area | strip }}</span>{% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</div>

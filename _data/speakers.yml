@@ -1,0 +1,45 @@
+# Invited speakers & panelists — shown as a showcase on the Invited Talks page
+# and previewed on the Home page.
+#
+# For each speaker:
+#   name        - full name
+#   role        - e.g. "Professor", "Research Scientist"  (optional)
+#   affiliation - institution / company                   (optional)
+#   photo       - filename in assets/img/speakers/ (leave "" for a placeholder)
+#   url         - link to their homepage                  (optional)
+#   talk_title  - title of their talk, if known           (optional)
+#   bio         - one or two sentences                    (optional)
+#
+# Add or remove entries freely — the page lays them out automatically.
+
+- name: "Judith Rousseau"
+  role: "Professor"
+  affiliation: "Université Paris Dauphine-PSL, France"
+  photo: "judith.png"
+  url: "https://dauphine.psl.eu/recherche/cvtheque/profil/rousseau-judith"
+  talk_title: ""
+  bio: "Bayesian Statistics"
+
+- name: "Gitta Kutyniok"
+  role: "Professor"
+  affiliation: "Chair of Mathematical Foundations of Artificial Intelligence, LMU Munich, Germany"
+  photo: "gitta.png"
+  url: "https://mcml.ai/research/groups/kutyniok/"
+  talk_title: ""
+  bio: "Mathematical Foundations of AI"
+
+- name: "Francesco Restuccia"
+  role: "Assistant Professor"
+  affiliation: "Northeastern University, United States"
+  photo: "francesco.png"
+  url: "https://coe.northeastern.edu/people/restuccia-francesco/"
+  talk_title: ""
+  bio: "Computer networks"
+
+- name: "Carlo Cordasco"
+  role: "Assistant Professor"
+  affiliation: "University of Manchester, United Kingdom"
+  photo: "carlo.png"
+  url: "https://sites.google.com/view/carloludovicocordasco/home"
+  talk_title: ""
+  bio: "Moral Epistemology, Foundations of Uncertainty"

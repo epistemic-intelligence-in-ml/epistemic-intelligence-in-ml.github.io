@@ -1,0 +1,16 @@
+<footer class="site-footer">
+  <div class="container">
+    {% if site.workshop.partner_logos and site.workshop.partner_logos.size > 0 %}
+    <div class="partner-logos">
+      {% for p in site.workshop.partner_logos %}
+        {% if p.url and p.url != "" %}<a href="{{ p.url }}">{% endif %}
+        <img src="{{ '/assets/img/logo/' | append: p.file | relative_url }}" alt="{{ p.alt }}">
+        {% if p.url and p.url != "" %}</a>{% endif %}
+      {% endfor %}
+    </div>
+    {% endif %}
+    <p>{{ site.workshop.full_name }}</p>
+    <p>{{ site.workshop.date }} · {{ site.workshop.location }}</p>
+    <p>Questions? <a href="mailto:{{ site.workshop.contact_email }}">{{ site.workshop.contact_email }}</a></p>
+  </div>
+</footer>
