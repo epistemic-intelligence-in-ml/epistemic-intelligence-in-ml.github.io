@@ -41,7 +41,9 @@ guarantees survive misspecification, weak prior information, partial identificat
 computational foundations that characterise the tractability of epistemic reasoning at ML scale; and engineering
 foundations that govern how epistemic signals are communicated and acted upon in deployed systems.
 
-Why now? There is growing momentum around uncertainty-aware, reliable, and safe ML, but the relevant communities remain
+### Why now? 
+
+There is growing momentum around uncertainty-aware, reliable, and safe ML, but the relevant communities remain
 fragmented. Statistics studies Bayesian, frequentist, conformal, second-order, and imprecise probabilistic accounts of
 uncertainty. Mathematics and computer science provide formalisms for learning theory, optimisation, representation,
 computation, and complexity. Engineering studies how epistemic signals behave under communication, networking, robotics,
