@@ -17,7 +17,9 @@ permalink: /
   {% endif %}
 </div>
 
-EIML@EurIPS 2025 and EIML2@ICML2026 marked the beginning of a growing community that cares about Epistemic Intelligence
+[EIML@EurIPS 2025](https://sites.google.com/view/eiml-eurips2025/home)
+and [EIML2@ICML2026](https://sites.google.com/view/eimlicml2026/home) marked the beginning of a growing community that
+cares about Epistemic Intelligence
 in Machine Learning.
 The conversation continues at EIML3@NeurIPS2026.
 
@@ -41,7 +43,7 @@ guarantees survive misspecification, weak prior information, partial identificat
 computational foundations that characterise the tractability of epistemic reasoning at ML scale; and engineering
 foundations that govern how epistemic signals are communicated and acted upon in deployed systems.
 
-### Why now? 
+### Why now?
 
 There is growing momentum around uncertainty-aware, reliable, and safe ML, but the relevant communities remain
 fragmented. Statistics studies Bayesian, frequentist, conformal, second-order, and imprecise probabilistic accounts of
