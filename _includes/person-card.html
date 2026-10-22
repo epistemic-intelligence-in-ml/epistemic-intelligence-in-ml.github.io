@@ -5,19 +5,19 @@
     folder  - subfolder under assets/img/ where the photo lives (e.g. "organisers")
 {%- endcomment -%}
 <div class="person">
-  {% if include.person.photo and include.person.photo != "" %}
-    <img class="person-photo" src="{{ '/assets/img/' | append: include.folder | append: '/' | append: include.person.photo | relative_url }}" alt="{{ include.person.name }}">
-  {% else %}
-    <div class="person-photo placeholder" aria-hidden="true"></div>
-  {% endif %}
+{% if include.person.photo and include.person.photo != "" %}
+    <img class="person-photo" src="{{ '/assets/img/' | append: include.folder | append: '/' | append: include.person.photo | relative_url }}" alt="{{ include.person.name }}" loading="lazy" width="110" height="110">
+{% else %}
+    <div class="person-photo person-initials" aria-hidden="true">{% assign name_parts = include.person.name | split: ' ' %}{% for part in name_parts %}{{ part | slice: 0 }}{% endfor %}</div>
+{% endif %}
   <div class="person-name">
-    {% if include.person.url and include.person.url != "" %}
+{% if include.person.url and include.person.url != "" %}
       <a href="{{ include.person.url }}">{{ include.person.name }}</a>
-    {% else %}
+{% else %}
       {{ include.person.name }}
-    {% endif %}
+{% endif %}
   </div>
-  {% if include.person.role and include.person.role != "" %}<div class="person-role">{{ include.person.role }}</div>{% endif %}
-  {% if include.person.affiliation and include.person.affiliation != "" %}<div class="person-affil">{{ include.person.affiliation }}</div>{% endif %}
-  {% if include.person.expertise and include.person.expertise != "" %}<div class="person-expertise">{{ include.person.expertise }}</div>{% endif %}
+{% if include.person.role and include.person.role != "" %}<div class="person-role">{{ include.person.role }}</div>{% endif %}
+{% if include.person.affiliation and include.person.affiliation != "" %}<div class="person-affil">{{ include.person.affiliation }}</div>{% endif %}
+{% if include.person.expertise and include.person.expertise != "" %}<div class="person-expertise">{{ include.person.expertise }}</div>{% endif %}
 </div>

@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EIML 2 at ICML 2026 · EIML Workshop Series</title>
+  <meta name="description" content="Historical archive of the second EIML workshop at ICML 2026, preserving its published themes, speakers, committees, and programme information.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/">
+
+      <span class="brand-text">EIML · Workshop series</span>
+
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.getElementById('site-navigation').classList.toggle('open'))">☰</button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation" onclick="if(event.target.closest('a')){this.classList.remove('open');document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');}">
+
+        <a href="/">Current edition</a>
+        <a href="/archive/">Past events</a>
+
+
+
+
+          <a href="/archive/eiml1/">EIML 1</a>
+
+          <a href="/archive/eiml2/" class="active" aria-current="page">EIML 2</a>
+
+
+    </nav>
+  </div>
+</header>
+
+  <main class="container" id="main-content">
+
+<article class="page archive-page">
+  <p class="archive-back"><a href="/archive/">← Past events</a></p>
+  <div class="hero archive-hero">
+    <p class="eyebrow">2nd edition · Historical archive</p>
+    <h1>EIML 2 · ICML 2026</h1>
+    <p class="subtitle">Epistemic Intelligence in Machine Learning</p>
+    <p>10 July 2026 · Seoul, South Korea</p>
+  </div>
+
+  <aside class="archive-notice" aria-label="About this archive">
+    <p>This page preserves the published record of EIML 2 · ICML 2026. Dates, affiliations, and submission information refer to that edition.</p>
+    <p><a href="https://sites.google.com/view/eimlicml2026/home">Original workshop website</a> · <a href="/">Current edition</a></p>
+  </aside>
+
+  <nav class="archive-sections" aria-label="On this page">
+    <a href="#overview">Overview</a>
+<a href="#topics">Topics</a>
+<a href="#speakers">Speakers</a>
+<a href="#programme">Programme</a>
+<a href="#papers">Papers</a>
+<a href="#dates">Dates</a>
+<a href="#people">Committees</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <h2 id="overview">About this edition</h2>
+<p>Reliable learning systems need to recognise when their knowledge is insufficient. The second workshop explored this ability, called epistemic intelligence, across problems such as distribution shift, hallucination, safety, and alignment.</p><p>Building on the first EIML workshop at EurIPS 2025, the programme connected foundational work on uncertainty with practical questions about how models can identify gaps in their knowledge, seek information, revise beliefs, and decide when to abstain.</p>
+
+
+  <h2 id="topics">Topics</h2>
+  <div class="topic-accordion">
+
+    <details class="topic-item">
+      <summary>Foundations of uncertainty</summary>
+      <div class="topic-content">
+
+        <ul><li>Representing incomplete knowledge through extensions of probability, including sets of distributions and higher-order models.</li><li>Distinguishing randomness, ambiguity, and ignorance, and studying rational learning and decisions under incomplete information.</li><li>Understanding the consequences for generalisation, model comparison, and robustness.</li></ul>
+      </div>
+    </details>
+
+    <details class="topic-item">
+      <summary>Uncertainty-aware generative AI and foundation models</summary>
+      <div class="topic-content">
+
+        <ul><li>Recognising uncertainty and mitigating hallucination in generative models.</li><li>Using uncertainty in decoding, prompting, inference, and reward modelling.</li></ul>
+      </div>
+    </details>
+
+    <details class="topic-item">
+      <summary>AI safety as an epistemic problem</summary>
+      <div class="topic-content">
+
+        <ul><li>Reasoning about failures that were not anticipated during development.</li><li>Identifying gaps in knowledge and supporting abstention, refusal, or safe fallback behaviour.</li></ul>
+      </div>
+    </details>
+
+    <details class="topic-item">
+      <summary>AI alignment under objective uncertainty</summary>
+      <div class="topic-content">
+
+        <ul><li>Learning when human objectives and preferences are incomplete, changing, or manipulated.</li><li>Representing uncertainty about values and examining the limits of preference learning.</li></ul>
+      </div>
+    </details>
+
+    <details class="topic-item">
+      <summary>Lifelong and continual learning in open worlds</summary>
+      <div class="topic-content">
+
+        <ul><li>Revising beliefs as conditions change and new concepts emerge.</li><li>Accumulating knowledge while retaining appropriate uncertainty and reducing catastrophic forgetting.</li></ul>
+      </div>
+    </details>
+
+  </div>
+
+
+
+  <h2 id="speakers">Speakers and panelists</h2>
+  <div class="archive-people">
+<div class="person archive-person">
+
+    <img class="person-photo" src="/assets/img/archive/eiml2/jeremie-houssineau.png" alt="Jeremie Houssineau" width="110" height="110" loading="lazy">
+
+  <div class="person-name">
+Jeremie Houssineau
+  </div>
+<div class="person-role">Assistant Professor</div>
+<div class="person-affil">Nanyang Technological University, Singapore</div>
+<div class="person-expertise">Foundations of uncertainty modelling</div>
+<div class="speaker-talk">Computing with Ignorance: a possibilistic view of uncertainty in machine learning</div>
+</div>
+<div class="person archive-person">
+
+    <img class="person-photo" src="/assets/img/archive/eiml2/belinda-zou-li.jpg" alt="Belinda Zou Li" width="110" height="110" loading="lazy">
+
+  <div class="person-name">
+Belinda Zou Li
+  </div>
+<div class="person-role">Researcher; incoming Assistant Professor</div>
+<div class="person-affil">Anthropic; University of Chicago</div>
+<div class="person-expertise">Trustworthy language models</div>
+<div class="speaker-talk">Solving the Specification Problem through Interaction</div>
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">DH</div>
+
+  <div class="person-name">
+Dylan Hadfield-Menell
+  </div>
+<div class="person-role">Associate Professor</div>
+<div class="person-affil">Massachusetts Institute of Technology, US</div>
+<div class="person-expertise">AI alignment</div>
+<div class="speaker-talk">Open-Universe Goal Tracking</div>
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">FB</div>
+
+  <div class="person-name">
+Fazl Barez
+  </div>
+<div class="person-role">Senior Researcher</div>
+<div class="person-affil">University of Oxford</div>
+<div class="person-expertise">AI safety and mechanistic interpretability</div>
+<div class="speaker-talk">Understanding model behaviour in the age of AGI</div>
+</div>
+
+  </div>
+
+
+
+
+
+  <h2 id="programme">Programme</h2>
+<p class="archive-notice">Transcribed from the programme image published on the original Schedule page. The programme lists three oral presentations and ten spotlights; the accepted-paper list retains four oral and thirteen spotlight selections. These source records are preserved separately.</p>
+  <div class="table-scroll" role="region" aria-label="Workshop programme" tabindex="0">
+    <table class="data archive-schedule">
+      <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="when">09:00–09:15</td>
+          <td><strong>Opening remarks</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">09:15–09:20</td>
+          <td><strong>Spotlight: What Does Disagreement Mean? A Semantic Identifiability Frontier for Pairwise Preference Learning</strong><p class="session-details">Manoj Saravanan, Rohit Kumar Salla, Shrikar Reddy Kota</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">09:20–09:28</td>
+          <td><strong>Oral: On the Epistemic Uncertainty of Overparametrized Neural Networks</strong><p class="session-details">David Rügamer</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">09:28–10:00</td>
+          <td><strong>Coffee break and poster hanging</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">10:00–10:30</td>
+          <td><strong>Invited talk: Jeremie Houssineau</strong><p class="session-details">Computing with Ignorance: a possibilistic view of uncertainty in machine learning</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">10:30–10:35</td>
+          <td><strong>Spotlight: Decomposing Epistemic Uncertainty for Causal Decision Making</strong><p class="session-details">Md Musfiqur Rahman, Ziwei Jiang, Hilaf Hasson, Murat Kocaoglu</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">10:35–10:40</td>
+          <td><strong>Spotlight: Robust Learning to Rank from Incomplete Rankings under Positional Censoring</strong><p class="session-details">Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli, Marco Mussi</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">10:40–10:45</td>
+          <td><strong>Spotlight: Task-Aware Calibration: Provably Optimal Decoding in LLMs</strong><p class="session-details">Tim Tomov, Dominik Fuchsgruber, Rajeev Verma, Stephan Günnemann</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">10:45–10:50</td>
+          <td><strong>Buffer</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">10:50–11:20</td>
+          <td><strong>Invited talk: Fazl Barez</strong><p class="session-details">Understanding model behaviour in the age of AGI</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">11:20–11:28</td>
+          <td><strong>Oral: MMD-Balls as Credal Sets: A PAC-Bayesian Framework for Epistemic Uncertainty in Test-Time Adaptation</strong><p class="session-details">Ahanaf Hasan Ariq</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">11:28–11:36</td>
+          <td><strong>Oral: Diffusion as Prior Construction: A Bayesian View of Communication in Multi-Agent POMDPs</strong><p class="session-details">Muhyun Byun, Eunae Lee, Jahun Oh, Seok Joo Doo</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">11:36–11:45</td>
+          <td><strong>Group photo</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">11:45–13:00</td>
+          <td><strong>Lunch break</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">13:00–13:30</td>
+          <td><strong>Invited talk: Dylan Hadfield-Menell</strong><p class="session-details">Open-Universe Goal Tracking</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">13:30–13:35</td>
+          <td><strong>Spotlight: Leveraging Class Similarity for Enhanced Conformal Prediction</strong><p class="session-details">Ariel Fargion, Lahav Dabah, Tom Tirer</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">13:35–13:40</td>
+          <td><strong>Spotlight: What Shapes Emergent Misalignment?</strong><p class="session-details">Yuchen Zhang, Anietta Weckauff, Diego Garcia-Olano, Maksym Andriushchenko</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">13:40–13:45</td>
+          <td><strong>Spotlight: The Posterior-Prior Epistemic Gap: When World Model Imagination Fails to Carry Task-Relevant Signals</strong><p class="session-details">Jaerock Kwon, Elahe Delavari, Donghyun Kim, Haewoon Nam</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">13:45–14:05</td>
+          <td><strong>Buffer</strong><p class="session-details">The published programme notes ten minutes reallocated from two removed spotlights, alongside the existing ten-minute buffer.</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">14:05–14:35</td>
+          <td><strong>Invited talk: Belinda Zou Li</strong><p class="session-details">Solving the Specification Problem through Interaction</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">14:35–14:40</td>
+          <td><strong>Spotlight: A Tale of Two Uncertainties: Global–Local Attribution for Conformal Prediction</strong><p class="session-details">Sangyeon Cho, Minyoung Cho, Jungsoo Kim, Sujeong Oh, Sanghack Lee</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">14:40–14:45</td>
+          <td><strong>Spotlight: Epistemic Gatekeeper: Training-Free One-Shot Gating for Open-World Industrial Anomaly Detection</strong><p class="session-details">Geonwoo Kim, Hyeonjun Kim, Chaein Oh, Suk-Ju Kang</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">14:45–14:50</td>
+          <td><strong>Spotlight: Rethinking Uncertainty Evaluation in Large Language Models</strong><p class="session-details">Krish Matta, Atharv Naphade, Andy Zou</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">14:50–15:00</td>
+          <td><strong>Buffer</strong><p class="session-details">The published programme notes eight minutes reallocated from a removed oral presentation, plus a two-minute transition.</p></td>
+        </tr>
+
+        <tr>
+          <td class="when">15:00–15:30</td>
+          <td><strong>Coffee break</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">15:30–16:30</td>
+          <td><strong>Panel discussion</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">16:30–16:45</td>
+          <td><strong>Closing remarks</strong></td>
+        </tr>
+
+        <tr>
+          <td class="when">16:45–17:30</td>
+          <td><strong>Poster session</strong></td>
+        </tr>
+</tbody>
+    </table>
+  </div>
+
+
+
+  <h2 id="papers">Accepted papers</h2>
+  <div class="topic-accordion archive-papers">
+
+
+
+    <details class="topic-item">
+      <summary>Oral</summary>
+      <div class="topic-content">
+        <ul><li><strong>Diffusion as Prior Construction: A Bayesian View of Communication in Multi-Agent POMDPs</strong><br><span class="paper-authors">Muhyun Byun, Eunae Lee, Jahun Oh, Seok Joo Doo</span><br><span class="paper-authors">Poster: 2906A</span></li><li><strong>When Thinking Hurts: Epistemic Signals in the Reasoning Chains of Visual Language Models</strong><br><span class="paper-authors">Mayank Singal</span><br><span class="paper-authors">Poster: 2906B</span></li><li><strong>On the Epistemic Uncertainty of Overparametrized Neural Networks</strong><br><span class="paper-authors">David Rügamer</span><br><span class="paper-authors">Poster: 2907A</span></li><li><strong>MMD-Balls as Credal Sets: A PAC-Bayesian Framework for Epistemic Uncertainty in Test-Time Adaptation</strong><br><span class="paper-authors">Ahanaf Hasan Ariq</span><br><span class="paper-authors">Poster: 2907B</span></li></ul>
+      </div>
+    </details>
+
+    <details class="topic-item">
+      <summary>Spotlight</summary>
+      <div class="topic-content">
+        <ul><li><strong>What Does Disagreement Mean? A Semantic Identifiability Frontier for Pairwise Preference Learning</strong><br><span class="paper-authors">Manoj Saravanan, Rohit Kumar Salla, Shrikar Reddy Kota</span><br><span class="paper-authors">Poster: 2908A</span></li><li><strong>Geometry-Aware Uncertainty Quantification via Conformal Prediction on Manifolds</strong><br><span class="paper-authors">Marzieh Amiri Shahbazi, Ali Baheri</span><br><span class="paper-authors">Poster: 2908B</span></li><li><strong>What Shapes Emergent Misalignment?</strong><br><span class="paper-authors">Yuchen Zhang, Anietta Weckauff, Diego Garcia-Olano, Maksym Andriushchenko</span><br><span class="paper-authors">Poster: 2909A</span></li><li><strong>Decomposing Epistemic Uncertainty for Causal Decision Making</strong><br><span class="paper-authors">Md Musfiqur Rahman, Ziwei Jiang, Hilaf Hasson, Murat Kocaoglu</span><br><span class="paper-authors">Poster: 2909B</span></li><li><strong>Task-Aware Calibration: Provably Optimal Decoding in LLMs</strong><br><span class="paper-authors">Tim Tomov, Dominik Fuchsgruber, Rajeev Verma, Stephan Günnemann</span><br><span class="paper-authors">Poster: 2910A</span></li><li><strong>Playing Devil's Advocate: Off-the-Shelf Persona Vectors Rival Targeted Steering for Sycophancy</strong><br><span class="paper-authors">Ishaan Kelkar, Nebras Alam, Vikram Kakaria, Kevin Zhu, Maheep Chaudhary</span><br><span class="paper-authors">Poster: 2910B</span></li><li><strong>Leveraging Class Similarity for Enhanced Conformal Prediction</strong><br><span class="paper-authors">Ariel Fargion, Lahav Dabah, Tom Tirer</span><br><span class="paper-authors">Poster: 2911A</span></li><li><strong>A Tale of Two Uncertainties: Global–Local Attribution for Conformal Prediction</strong><br><span class="paper-authors">Sangyeon Cho, Minyoung Cho, Jungsoo Kim, Sujeong Oh, Sanghack Lee</span><br><span class="paper-authors">Poster: 2911B</span></li><li><strong>Same Target, Different Basins: Hard vs. Soft Labels for Annotator Distributions</strong><br><span class="paper-authors">Mirerfan Gheibi, Gashin Ghazizadeh</span><br><span class="paper-authors">Poster: 2912A</span></li><li><strong>The Posterior-Prior Epistemic Gap: When World Model Imagination Fails to Carry Task-Relevant Signals</strong><br><span class="paper-authors">Jaerock Kwon, Elahe Delavari, Donghyun Kim, Haewoon Nam</span><br><span class="paper-authors">Poster: 2912B</span></li><li><strong>Robust Learning to Rank from Incomplete Rankings under Positional Censoring</strong><br><span class="paper-authors">Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli, Marco Mussi</span><br><span class="paper-authors">Poster: 2913A</span></li><li><strong>Epistemic Gatekeeper: Training-Free One-Shot Gating for Open-World Industrial Anomaly Detection</strong><br><span class="paper-authors">Geonwoo Kim, Hyeonjun Kim, Chaein Oh, Suk-Ju Kang</span><br><span class="paper-authors">Poster: 2913B</span></li><li><strong>Rethinking Uncertainty Evaluation in Large Language Models</strong><br><span class="paper-authors">Krish Matta, Atharv Naphade, Andy Zou</span><br><span class="paper-authors">Poster: 2914A</span></li></ul>
+      </div>
+    </details>
+
+    <details class="topic-item">
+      <summary>Poster</summary>
+      <div class="topic-content">
+        <ul><li><strong>Ontological Closure and Structural Limits on Systemic AI</strong><br><span class="paper-authors">Maneth Perera, Poojak Patel</span><br><span class="paper-authors">Poster: 2914B</span></li><li><strong>When Uncertainty Isn't Enough: An Empirical Study of Self-Correction in Code Generation</strong><br><span class="paper-authors">Pranav Rakasi, Tinuade Adeleke, Arya Senthilkumar Palanivel, Maanas Lalwani, Arnav Srivastava, Sean Wu, Ruizhe Li</span><br><span class="paper-authors">Poster: 2915A</span></li><li><strong>Mechanistic origins of catastrophic forgetting: why RL preserves circuits better than SFT?</strong><br><span class="paper-authors">Jean Rojas, Viraj Vilas Sawant, Nathan Allen, Nomgondalai Amgalanbaatar, Yannis Zongo, Kevin Zhu, Maheep Chaudhary</span><br><span class="paper-authors">Poster: 2915B</span></li><li><strong>Open-World Sequential Belief Revision with Dynamic Functional Experts</strong><br><span class="paper-authors">David Scott Lewis</span><br><span class="paper-authors">Poster: 2916A</span></li><li><strong>What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics</strong><br><span class="paper-authors">Sofiia Nikolenko, Michele Papucci, Mina Rezaei, Shireen Kudukkil Manchingal</span><br><span class="paper-authors">Poster: 2916B</span></li><li><strong>Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory for Continuous Latent Reasoning</strong><br><span class="paper-authors">Mujtaba Farhan, Kevin Zhu, Maheep Chaudhary</span><br><span class="paper-authors">Poster: 2917A</span></li><li><strong>MAND: Modality-Aware Novelty Detection for Open-World Egocentric Activity Recognition</strong><br><span class="paper-authors">Hyejeong Im, Wonseon Lim, Dae-Won Kim</span><br><span class="paper-authors">Poster: 2917B</span></li><li><strong>Space-sampled Value Decay: Forgetting Mechanisms for Non-stationary Deep Reinforcement Learning</strong><br><span class="paper-authors">Felix Störck, Fabian Hinder, Barbara Hammer</span><br><span class="paper-authors">Poster: 3000A</span></li><li><strong>Stable Miscalibration in Large Language Models: A Practical View of High-Confidence Errors</strong><br><span class="paper-authors">Akira Okutomi</span><br><span class="paper-authors">Poster: 3000B</span></li><li><strong>When Prediction Is Not Enough: Identifying Hidden Structure under Partial Observation</strong><br><span class="paper-authors">Jeongjun Lee, Laura Mascarell, Lancelot Da Costa, Ukyo T. Tazawa, Sundong Kim</span><br><span class="paper-authors">Poster: 3001A</span></li><li><strong>Pipeline-Aware Split Conformal Prediction: A Single-Quantile Reduction for Joint Coverage Under Compositional Uncertainty</strong><br><span class="paper-authors">Varun Kotte</span><br><span class="paper-authors">Poster: 3001B</span></li><li><strong>Authority, Truth, and Citation Bias: A Large-Scale Multi-Domain Benchmark for Studying Epistemic Susceptibility in Large Language Models</strong><br><span class="paper-authors">Aryan Khurana, Aravind Ramana RN, Dhruv Kumar</span><br><span class="paper-authors">Poster: 3002A</span></li><li><strong>Conformal Steering of LLMs via Posterior Sampling</strong><br><span class="paper-authors">Nicolas Emmenegger, Theo X. Olausson, Armando Solar-Lezama, Chara Podimata</span><br><span class="paper-authors">Poster: 3002B</span></li><li><strong>Confidence Without Warrant: A Formal Theory of Epistemic Blind Spots in Learning Systems</strong><br><span class="paper-authors">Siddharth Karuturi, Kaustubh S. Bukkapatnam, Soham Batra, Mithil Shah, Tanush Ajay Shastry, Akshath Sharma, Laksh Patel, Aarav Lala, Neel N Shanbhag, Andrew Bae</span><br><span class="paper-authors">Poster: 3003A</span></li><li><strong>From Critic to Confidence: PPO for Language-Based Quantitative Prediction with Confidence Estimation</strong><br><span class="paper-authors">Mehak Preet Dhaliwal, Rasta Tadayon, Andong Hua, Haewon Jeong, Yao Qin</span><br><span class="paper-authors">Poster: 3003B</span></li><li><strong>How do Consonance Constructions Shape Conformal Credal Sets?</strong><br><span class="paper-authors">Chun Ho Chong, Kaizheng Wang, Michele Caprio, Siu Lun Chau</span><br><span class="paper-authors">Poster: 3004A</span></li><li><strong>The Mechanistic Invariance Test: Genomic Language Models Fail to Learn Positional Regulatory Logic</strong><br><span class="paper-authors">Bryan Cheng, Jasper Zhang</span><br><span class="paper-authors">Poster: 3004B</span></li><li><strong>When Symbolic Rules Cannot Find Their Own Triggers: An Epistemic Diagnosis of Predicate Grounding Collapse in Neuro-Symbolic Fraud Detection</strong><br><span class="paper-authors">Farjana Yesmin, Nusrat Shirmin</span><br><span class="paper-authors">Poster: 3005A</span></li><li><strong>Activation Probing for Uncertainty-Aware Tool Routing in Agentic LLMs</strong><br><span class="paper-authors">Bastien Zimmermann, Louis Hernandez, Clément Pierquin, Matthieu Boussard</span><br><span class="paper-authors">Poster: 3005B</span></li><li><strong>What Uncertainties Do We Need for Dynamical Systems?</strong><br><span class="paper-authors">Yusuf Sale, Christopher Bülte, Felix Czaja, Joshua Stiller, Eyke Hüllermeier</span><br><span class="paper-authors">Poster: 3006A</span></li><li><strong>Characterizing the Consistency of the Emergent Misalignment Persona</strong><br><span class="paper-authors">Anietta Weckauff, Yuchen Zhang, Maksym Andriushchenko</span><br><span class="paper-authors">Poster: 3006B</span></li><li><strong>Sharp Thresholds and Non-Gaussian Limits of Compositional Deep GPs</strong><br><span class="paper-authors">Mark Kozdoba, Shie Mannor</span><br><span class="paper-authors">Poster: 3007A</span></li><li><strong>Quantifying Subliminal Behavioral Transfer Ratios in Language Model Distillation</strong><br><span class="paper-authors">Uwe König, Hamza Kazmi, Ruizhe Li, Maheep Chaudhary</span><br><span class="paper-authors">Poster: 3007B</span></li><li><strong>Validation Windows: Epistemic Uncertainty Produced by the Solver in a Literature-Derived Bayesian Network</strong><br><span class="paper-authors">Deborah Vakas Duong, Igor Yi</span><br><span class="paper-authors">Poster: 3008A</span></li><li><strong>In-Context Learning for Latent Space Bayesian Optimization</strong><br><span class="paper-authors">Tuan A. Vu, Harri Lähdesmäki, Julien Martinelli</span><br><span class="paper-authors">Poster: 3008B</span></li><li><strong>Hybrid Adaptive Prediction Sets for Conformal Prediction</strong><br><span class="paper-authors">Soundouss Messoudi, Abdelhak Imoussaten</span><br><span class="paper-authors">Poster: 3009A</span></li><li><strong>When To Trust a Temporal Prior: Order-Aware Test-Time Adaptation with Likelihood-Ratio Abstention</strong><br><span class="paper-authors">Young Kyung Kim, Oded Schlesinger, Qiangqiang Wu, J. Matias Di Martino, Guillermo Sapiro</span><br><span class="paper-authors">Poster: 3009B</span></li><li><strong>LLM Doesn't Know What It Doesn't Know: Detecting Epistemic Blind Spots via Cross-Model Attribution Divergence on Clinical Tabular Data</strong><br><span class="paper-authors">Akshat Dasula, Prasanna Desikan, Jaideep Srivastava</span><br><span class="paper-authors">Poster: 3010A</span></li><li><strong>Stacking-Based Weighting for Large Language Bayes in M-Open Settings</strong><br><span class="paper-authors">Anant Bhide, Akarsh Gupta, Edmond Cunningham, Justin Domke</span><br><span class="paper-authors">Poster: 3010B</span></li><li><strong>Indirect Query Bayesian Optimization with Integrated Feedback</strong><br><span class="paper-authors">Mengyan Zhang, Shahine Bouabid, Cheng Soon Ong, Seth Flaxman, Dino Sejdinovic</span><br><span class="paper-authors">Poster: 3011A</span></li><li><strong>Mechanistic Signatures of Recursive Reasoning in a Minimal Shared-Update Transformer Stack</strong><br><span class="paper-authors">Yi Liu, Ran Zhu, Jialiang An, Yunhan Jiang, Meng Lu</span><br><span class="paper-authors">Poster: 3011B</span></li><li><strong>Refusal Behavior Beyond English: A Multilingual Study of Representation Directions</strong><br><span class="paper-authors">Adith N Reganti, Malhar Udmale, Hardik Sharma, Soham Wasmatkar, Vaibhav Shukla, Bagesh Kumar</span><br><span class="paper-authors">Poster: 3012A</span></li><li><strong>Calibrated Surrogate Losses for Adversarial Classification With a Reject Option</strong><br><span class="paper-authors">Boris Ndjia Njike, Andriy Balinskyy, Waleed Mustafa, Puyu Wang, Antoine Ledent, Sophie Fellenz, Marius Kloft</span><br><span class="paper-authors">Poster: 3012B</span></li><li><strong>Green-Edge-Cloud: Routing without Routers via Confidence Calibration</strong><br><span class="paper-authors">Gao Yunzhe, Zijian Feng, Kezhi Mao</span><br><span class="paper-authors">Poster: 3013A</span></li><li><strong>Calibration of Structured Ignorance Certificates for Epistemic Diagnosis of Unknown Unknowns in Reasoning Models</strong><br><span class="paper-authors">Subramanyam Sahoo</span><br><span class="paper-authors">Poster: 3013B</span></li><li><strong>Learnability-Aware Replay for Mathematical Reasoning: Epistemic Uncertainty as a Guide for Experience Selection</strong><br><span class="paper-authors">Om Shastri</span><br><span class="paper-authors">Poster: 3014A</span></li><li><strong>Beyond a Single Signal: SPECTRE-G2 – A Unified Multi-Expert Anomaly Detector for Unknown Unknowns</strong><br><span class="paper-authors">Rahul D Ray</span><br><span class="paper-authors">Poster: 3014B</span></li><li><strong>Decoupled Conformal Optimisation: Efficient Prediction Sets via Independent Tuning and Calibration</strong><br><span class="paper-authors">Fanyi Wu, Lihua Niu, Michele Caprio</span><br><span class="paper-authors">Poster: 3015A</span></li><li><strong>Probabilistic Chain-of-Thought: Sequential Bayesian Inference over Latent Reasoning Correctness</strong><br><span class="paper-authors">Suriya Dev Saravanakumar, Ezra Matiwos Wesenie, Kishore Nuthalapati, Laksh Patel</span><br><span class="paper-authors">Poster: 3015B</span></li><li><strong>Modeling Incomparability: A New Rationality Paradigm for Preference-Based Reinforcement Learning</strong><br><span class="paper-authors">Simone Drago, Marco Mussi, Leonardo Bianconi, Alberto Maria Metelli</span><br><span class="paper-authors">Poster: 3016A</span></li><li><strong>I-CALM: Incentivizing Confidence-Aware Abstention for LLM Hallucination Mitigation</strong><br><span class="paper-authors">Haotian Zong, Binze Li, Yufei Long, Sinyin Chang, Jialong Wu, Gillian K Hadfield</span><br><span class="paper-authors">Poster: 3016B</span></li><li><strong>Split Conformal Prediction with Label-Shift-Adjusted Bayesian Scores</strong><br><span class="paper-authors">Hyeonsu Lee, Erkhembayar Jadamba, Juyeon Kim, Seungjin Choi, Hyunjin Shin</span><br><span class="paper-authors">Poster: 3017A</span></li><li><strong>ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply Chain Resilience</strong><br><span class="paper-authors">Jia Luo</span><br><span class="paper-authors">Poster: 3017B</span></li><li><strong>ReasonBENCH: Benchmarking the (In)Stability of LLM Reasoning</strong><br><span class="paper-authors">Nearchos Potamitis, Lars Henning Klein, Akhil Arora</span><br><span class="paper-authors">Poster: 3100A</span></li><li><strong>Distributional Energy-Based Models for Uncertainty-Aware Structured LLM Reasoning</strong><br><span class="paper-authors">Shireen Kudukkil Manchingal, Abhey Kalia, Fernanda Gonçalves Abrantes, Shebin Rawther</span><br><span class="paper-authors">Poster: 3102B</span></li><li><strong>Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable Intrinsic Reward for World Model Training</strong><br><span class="paper-authors">Vin Bhaskara, Haicheng Wang</span><br><span class="paper-authors">Poster: 3101A</span></li><li><strong>MissFlow: Flow Matching for Uncertainty-Quantified Imputation of Missing Tabular Data</strong><br><span class="paper-authors">Yonghyun Kwon, Sunil Hwang, Joonyoung Jeong</span><br><span class="paper-authors">Poster: 3102A</span></li><li><strong>Stochastic Sampling is Epistemically Shallow: The Dimensionality Gap Between Temperature Variation and Model Diversity in LLMs</strong><br><span class="paper-authors">Izhar Ali</span><br><span class="paper-authors">Poster: 3103A</span></li><li><strong>Exposure Bias as Epistemic Underidentification in Recursive Forecasting</strong><br><span class="paper-authors">Riku Green, Zahraa S. Abdallah, Telmo M Silva Filho</span><br><span class="paper-authors">Poster: 3103B</span></li><li><strong>ConfidenceBench: Evaluating Confidence Calibration in Large Language Models</strong><br><span class="paper-authors">Matthew Ffrench-Constant, Daniel Yang, Sanyam Kapoor, Xinmeng Huang</span><br><span class="paper-authors">Poster: 3104A</span></li><li><strong>Conformal Bayes under Label Shift: Post-Hoc Calibration vs. In-Training Adaptation</strong><br><span class="paper-authors">Seungjin Choi</span><br><span class="paper-authors">Poster: 3104B</span></li><li><strong>HalluHard: A Hard Multi-Turn Hallucination Benchmark</strong><br><span class="paper-authors">Dongyang Fan, Sébastien Delsad, Nicolas Flammarion, Maksym Andriushchenko</span><br><span class="paper-authors">Poster: 3105A</span></li><li><strong>How Effective are Vision Language Models at Adapting to Novel Artifacts?</strong><br><span class="paper-authors">Lance Ying, Séb Arnold, Fei Sha, Sjoerd van Steenkiste</span><br><span class="paper-authors">Poster: 3105B</span></li><li><strong>Mitigating Reward Hacking in RLHF via Advantage Sign Robustness</strong><br><span class="paper-authors">Shinnosuke Ono, Johannes Ackermann, Soichiro Nishimori, Takashi Ishida, Masashi Sugiyama</span><br><span class="paper-authors">Poster: 3106A</span></li><li><strong>Language-Anchored Prototype Learning for Unseen Compositions</strong><br><span class="paper-authors">Anna-Alina Bondarets, Taras Rumezhak, Volodymyr Karpiv</span><br><span class="paper-authors">Poster: 3106B</span></li><li><strong>Don't Guess What You Don't Know: Spectral Effective Rank as a Diagnostic for Conformal Safety Under Subsampling</strong><br><span class="paper-authors">Rahul D Ray</span><br><span class="paper-authors">Poster: 3107A</span></li><li><strong>Constrained Bayesian Experimental Design via Online Planning</strong><br><span class="paper-authors">Yujia Guo, Daolang Huang, Xinyu Zhang, Sammie Katt, Samuel Kaski, Ayush Bharti</span><br><span class="paper-authors">Poster: 3107B</span></li><li><strong>Mind the Gap: Recovering Quality in Interrupted LLM Generation Through Continuation Strategy Selection</strong><br><span class="paper-authors">Tarun Narayanan, Ajay Krishnan</span><br><span class="paper-authors">Poster: 3108A</span></li><li><strong>Safety Targeted Embedding Exploit via Refinement: LLM Safety as an Epistemic Coverage Problem</strong><br><span class="paper-authors">Joshua Adrian Cahyono</span><br><span class="paper-authors">Poster: 3108B</span></li><li><strong>Set-based v.s. Distribution-based Representations of Epistemic Uncertainty: A Comparative Study</strong><br><span class="paper-authors">Kaizheng Wang, Yunjia Wang, Fabio Cuzzolin, David Moens, Hans Hallez, Siu Lun Chau</span><br><span class="paper-authors">Poster: 3100B</span></li><li><strong>Do Humans and Language Models Converge? A Dynamical Systems View of Human-AI Feedback and Co-evolution</strong><br><span class="paper-authors">Xuening Wu, Yanlan Kang, Qianya Xu, Kexuan Xie, Jiaqi Mi, Honggang Wang, Yubin Liu, Zeping Chen</span><br><span class="paper-authors">Poster: 3109A</span></li><li><strong>The Shape of Reasoning: Topological Analysis of Reasoning Traces in Large Language Models</strong><br><span class="paper-authors">Xue Wen Tan, Galen Lee, Nathaniel Tan, Stanley Kok</span><br><span class="paper-authors">Poster: 3109B</span></li></ul>
+      </div>
+    </details>
+
+  </div>
+
+
+
+  <h2 id="dates">Important dates</h2>
+  <div class="table-scroll" role="region" aria-label="Historical deadlines" tabindex="0">
+    <table class="data">
+      <thead><tr><th scope="col">Date</th><th scope="col">Milestone</th></tr></thead>
+      <tbody><tr><td class="when">20 March 2026</td><td>Submissions opened</td></tr><tr><td class="when">24 April 2026</td><td>Paper submission deadline (extended from 20 April)</td></tr><tr><td class="when">27 April–14 May 2026</td><td>Review period</td></tr><tr><td class="when">17 May 2026</td><td>Author notification (updated from 15 May)</td></tr><tr><td class="when">1 June 2026</td><td>Camera-ready submission deadline</td></tr><tr><td class="when">10 July 2026</td><td>Workshop</td></tr></tbody>
+    </table>
+  </div>
+
+
+
+  <h2>Call for papers</h2>
+  <p class="archive-provenance">Submission information from the original call, retained for reference.</p>
+<p>The workshop welcomed original research and work in progress on reasoning and decision-making under incomplete knowledge, including theoretical work, applications, benchmarks, and foundational perspectives.</p><p>Papers were submitted through OpenReview using the EIML 2026 LaTeX style. The call specified 4–6 pages, excluding references and supplementary material, with anonymised submissions for double-blind review.</p><p>The workshop was non-archival. Work previously shared in non-archival venues, or under review elsewhere, was eligible; authors were asked to check the policies of any other venue.</p><p>The call permitted language models as general-purpose writing assistants. It encouraged at least one author of each submission to volunteer as a reviewer.</p><p>The event was primarily in person, with authors asked to present posters where possible. The accepted-paper page subsequently specified eight-minute oral presentations and five-minute spotlights, each accompanied by a poster.</p>
+
+
+
+  <section id="people" aria-label="Committees">
+
+    <h2>Organising committee</h2>
+    <div class="archive-people">
+<div class="person archive-person">
+
+    <img class="person-photo" src="/assets/img/archive/eiml2/sahar-abdelnabi.png" alt="Sahar Abdelnabi" width="110" height="110" loading="lazy">
+
+  <div class="person-name">
+Sahar Abdelnabi
+  </div>
+
+<div class="person-affil">ELLIS Institute Tübingen & MPI-IS, Germany</div>
+
+
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">MC</div>
+
+  <div class="person-name">
+Michele Caprio
+  </div>
+
+<div class="person-affil">University of Manchester, United Kingdom</div>
+
+
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">SC</div>
+
+  <div class="person-name">
+Siu Lun Chau
+  </div>
+
+<div class="person-affil">Nanyang Technological University, Singapore</div>
+
+
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">AD</div>
+
+  <div class="person-name">
+Arnaud Doucet
+  </div>
+
+<div class="person-affil">Google DeepMind</div>
+
+
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">SM</div>
+
+  <div class="person-name">
+Shireen Kudukkil Manchingal
+  </div>
+
+<div class="person-affil">Oxford Dynamics, United Kingdom</div>
+
+
+</div>
+<div class="person archive-person">
+
+
+    <div class="person-photo person-initials" aria-hidden="true">KM</div>
+
+  <div class="person-name">
+Krikamol Muandet
+  </div>
+
+<div class="person-affil">CISPA Helmholtz Center for Information Security, Germany</div>
+
+
+</div>
+
+    </div>
+
+
+    <h2>Programme committee</h2>
+<ul class="person-list">
+
+  <li>
+    <span class="pl-name">
+      Sanoufar Abdul Azeez
+    </span>
+    <span class="pl-affil">IIITM Kerala</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Amitesh Badkul
+    </span>
+    <span class="pl-affil">CUNY</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      James Bailie
+    </span>
+    <span class="pl-affil">Chalmers</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Yasir Zubayr Barlas
+    </span>
+    <span class="pl-affil">Manchester</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      C. Battiloro
+    </span>
+    <span class="pl-affil">Harvard</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Rabanus Derr
+    </span>
+    <span class="pl-affil">Tübingen</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Johanna Einsiedler
+    </span>
+    <span class="pl-affil">Copenhagen</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Feyza Eksen
+    </span>
+    <span class="pl-affil">Rostock</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Adam Faza
+    </span>
+    <span class="pl-affil">KU Leuven</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Javier Fumanal-Idocin
+    </span>
+    <span class="pl-affil">Essex</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Xabier Gonzalez-Garcia
+    </span>
+    <span class="pl-affil">Navarra</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Nicholas Hadjisavvas
+    </span>
+    <span class="pl-affil">UCL</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Paul Hofman
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Benedikt Höltgen
+    </span>
+    <span class="pl-affil">HPI</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Jeremie Houssineau
+    </span>
+    <span class="pl-affil">NTU Singapore</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Ismail Huseynov
+    </span>
+    <span class="pl-affil">PTB Germany</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Alireza Javanmardi
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Mira Juergens
+    </span>
+    <span class="pl-affil">Ghent</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Carlo Kneissl
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Kody J. H. Law
+    </span>
+    <span class="pl-affil">Manchester</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Matthijs van der Lende
+    </span>
+    <span class="pl-affil">Groningen</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Valentin Margraf
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Giorgio Morales
+    </span>
+    <span class="pl-affil">Caen Normandie</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Tanmoy Mukherjee
+    </span>
+    <span class="pl-affil">VUB Brussels</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Ayush Pandey
+    </span>
+    <span class="pl-affil">TCS India</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Ramon Daniel Regueiro-Espino
+    </span>
+    <span class="pl-affil">Sorbonne</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Julien Rodemann
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Sören Schleibaum
+    </span>
+    <span class="pl-affil">TU Clausthal</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Annika Schneider
+    </span>
+    <span class="pl-affil">Helmholtz Munich</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      N. J. Schutte
+    </span>
+    <span class="pl-affil">TU Delft</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Vaisakh Shaj
+    </span>
+    <span class="pl-affil">Edinburgh</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Anurag Singh
+    </span>
+    <span class="pl-affil">CISPA</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Sabina Sloman
+    </span>
+    <span class="pl-affil">Manchester</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Gokul Srinath Seetha Ram
+    </span>
+    <span class="pl-affil">PareIT</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Matteo Tolloso
+    </span>
+    <span class="pl-affil">Pisa</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      R. Verma
+    </span>
+    <span class="pl-affil">Amsterdam</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Susanna Di Vita
+    </span>
+    <span class="pl-affil">ETH Zurich</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Fanyi Wu
+    </span>
+    <span class="pl-affil">Manchester</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Buelte
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Yusuf Sale
+    </span>
+    <span class="pl-affil">LMU</span>
+  </li>
+
+  <li>
+    <span class="pl-name">
+      Maryam Sultana
+    </span>
+    <span class="pl-affil">Oxford Brookes</span>
+  </li>
+
+</ul>
+
+
+  </section>
+
+
+
+
+
+  <h2>Workshop resources</h2>
+  <ul><li><a href="https://sites.google.com/view/eimlicml2026/home">Original workshop website</a></li><li><a href="https://openreview.net/group?id=ICML.cc/2026/Workshop/EIML">OpenReview workshop group</a></li><li><a href="https://drive.google.com/file/d/1sYuDfMRWMmTgfgRpUbrD1K9NA8UhC37e/view?usp=sharing">EIML 2026 LaTeX style files</a></li><li><a href="https://sites.google.com/view/eimlicml2026/accepted-papers_1">Original accepted-paper list</a></li></ul>
+
+
+  <h2 id="sources">Archive sources</h2>
+  <p class="archive-provenance">Recorded from the original workshop website on 13 October 2026. The overview is summarised; programme titles and historical details follow the published source.</p>
+
+  <details class="topic-item">
+    <summary>Notes on the historical record</summary>
+    <div class="topic-content"><p>This record preserves the published website as retrieved on 13 October 2026; affiliations reflect that source.</p><p>The Important Dates page updates author notification to 17 May 2026, while the homepage still says 15 May. The archive follows the explicit update on the Important Dates page and records the discrepancy here.</p><p>The original call mentioned ten-minute spotlights, while the accepted-paper list specifies eight-minute oral presentations and five-minute spotlights. The published programme is retained as its own record.</p><p>Fazl Barez’s talk title was published, but its abstract was still marked TBD when retrieved.</p><p>The programme committee entry “Buelte” is reproduced as listed; the source does not provide a given name.</p><p>Some original portraits and the sponsor image could not be retrieved. Names and affiliations are preserved, but no sponsor identity has been inferred from an inaccessible image.</p></div>
+  </details>
+
+  <ul><li><a href="https://sites.google.com/view/eimlicml2026/home">Workshop homepage, speakers, organisers, and programme committee</a></li><li><a href="https://sites.google.com/view/eimlicml2026/invited-talks">Invited talks</a></li><li><a href="https://sites.google.com/view/eimlicml2026/accepted-papers_1">Accepted papers</a></li><li><a href="https://sites.google.com/view/eimlicml2026/schedule">Published programme</a></li><li><a href="https://sites.google.com/view/eimlicml2026/calls-for-papers">Call for papers and submission guidelines</a></li><li><a href="https://sites.google.com/view/eimlicml2026/important-dates">Important dates</a></li></ul>
+<p><a href="/assets/img/archive/eiml2/schedule.png">View the original programme image</a></p>
+<p>Original contact: <a href="mailto:pc.eiml.workshop@gmail.com">pc.eiml.workshop@gmail.com</a></p>
+</article>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container">
+
+    <p>Epistemic Intelligence in Machine Learning · Workshop series</p>
+    <p><a href="/archive/">Past events</a> · <a href="/">Current edition</a></p>
+
+  </div>
+</footer>
+
+</body>
+</html>

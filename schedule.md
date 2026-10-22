@@ -1,23 +1,21 @@
 ---
 layout: page
-title: Schedule
+title: Programme
 permalink: /schedule/
 ---
 
-Workshop day: **{{ site.workshop.date }}**, {{ site.workshop.location }}.
+The workshop takes place over two days, **{{ site.workshop.date }}**, at
+**{{ site.workshop.venue }}** in **{{ site.workshop.location }}**.
 
-_The schedule below is provisional and subject to change._
+The programme will bring together invited talks, discussions, and a poster
+session, with time to exchange ideas across the foundations and applications of
+uncertainty in AI.
 
-<table class="data">
-  <thead>
-    <tr><th>Time</th><th>Session</th></tr>
-  </thead>
-  <tbody>
-  {% for s in site.data.schedule %}
-    <tr>
-      <td class="when">{{ s.time }}</td>
-      <td>{{ s.item }}</td>
-    </tr>
-  {% endfor %}
-  </tbody>
-</table>
+{% for session in site.data.schedule %}
+<div class="topic">
+  <h2>{{ session.title }}</h2>
+  <p>{{ session.description }}</p>
+</div>
+{% endfor %}
+
+A detailed schedule will be announced closer to the workshop.

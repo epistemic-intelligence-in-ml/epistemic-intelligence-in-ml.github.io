@@ -1,0 +1,150 @@
+---
+layout: default
+---
+{% assign edition = site.data.editions[page.edition] %}
+<article class="page archive-page">
+  <p class="archive-back"><a href="{{ '/archive/' | relative_url }}">← Past events</a></p>
+  <div class="hero archive-hero">
+    <p class="eyebrow">{{ edition.edition }} edition · Historical archive</p>
+    <h1>{{ edition.short_name }}</h1>
+    <p class="subtitle">Epistemic Intelligence in Machine Learning</p>
+    <p>{{ edition.date }} · {{ edition.location }}</p>
+  </div>
+
+  <aside class="archive-notice" aria-label="About this archive">
+    <p>This page preserves the published record of {{ edition.short_name }}. Dates, affiliations, and submission information refer to that edition.</p>
+    <p><a href="{{ edition.source_url | escape }}">Original workshop website</a> · <a href="{{ '/' | relative_url }}">Current edition</a></p>
+  </aside>
+
+  <nav class="archive-sections" aria-label="On this page">
+    <a href="#overview">Overview</a>
+{% if edition.topics.size > 0 %}<a href="#topics">Topics</a>{% endif %}
+{% if edition.speakers.size > 0 %}<a href="#speakers">Speakers</a>{% endif %}
+{% if edition.schedule.size > 0 %}<a href="#programme">Programme</a>{% endif %}
+{% if edition.poster_sessions.size > 0 or edition.accepted_papers.size > 0 %}<a href="#papers">Papers</a>{% endif %}
+{% if edition.dates.size > 0 %}<a href="#dates">Dates</a>{% endif %}
+{% if edition.organisers.size > 0 or edition.committee.size > 0 %}<a href="#people">Committees</a>{% endif %}
+    <a href="#sources">Sources</a>
+  </nav>
+
+  <h2 id="overview">About this edition</h2>
+{% for paragraph in edition.overview %}<p>{{ paragraph }}</p>{% endfor %}
+
+{% if edition.topics.size > 0 %}
+  <h2 id="topics">Topics</h2>
+  <div class="topic-accordion">
+{% for topic in edition.topics %}
+    <details class="topic-item">
+      <summary>{{ topic.title }}</summary>
+      <div class="topic-content">
+{% if topic.description %}<p>{{ topic.description }}</p>{% endif %}
+        <ul>{% for point in topic.points %}<li>{{ point }}</li>{% endfor %}</ul>
+      </div>
+    </details>
+{% endfor %}
+  </div>
+{% endif %}
+
+{% if edition.speakers.size > 0 %}
+  <h2 id="speakers">Speakers and panelists</h2>
+  <div class="archive-people">
+{% for person in edition.speakers %}{% include archive-person.html person=person %}{% endfor %}
+  </div>
+{% endif %}
+
+{% if edition.panel %}
+  <h2>Panel discussion</h2>
+  <h3>{{ edition.panel.title }}</h3>
+{% if edition.panel.description %}<p>{{ edition.panel.description }}</p>{% endif %}
+{% endif %}
+
+{% if edition.schedule.size > 0 %}
+  <h2 id="programme">Programme</h2>
+{% if edition.schedule_note %}<p class="archive-notice">{{ edition.schedule_note }}</p>{% endif %}
+  <div class="table-scroll" role="region" aria-label="Workshop programme" tabindex="0">
+    <table class="data archive-schedule">
+      <thead><tr><th scope="col">Time</th><th scope="col">Session</th></tr></thead>
+      <tbody>{% for row in edition.schedule %}
+        <tr>
+          <td class="when">{{ row.time }}</td>
+          <td><strong>{{ row.item }}</strong>{% if row.details %}<p class="session-details">{{ row.details }}</p>{% endif %}{% if row.chair %}<p class="session-chair">Chair: {{ row.chair }}</p>{% endif %}</td>
+        </tr>
+{% endfor %}</tbody>
+    </table>
+  </div>
+{% endif %}
+
+{% if edition.poster_sessions.size > 0 or edition.accepted_papers.size > 0 %}
+  <h2 id="papers">Accepted papers</h2>
+  <div class="topic-accordion archive-papers">
+{% for session in edition.poster_sessions %}
+    <details class="topic-item">
+      <summary>{{ session.title }}{% if session.time %} · {{ session.time }}{% endif %}</summary>
+      <div class="topic-content"><ul>{% for paper in session.papers %}<li>{{ paper }}</li>{% endfor %}</ul></div>
+    </details>
+{% endfor %}
+{% assign paper_groups = edition.accepted_papers | group_by: 'presentation' %}
+{% for group in paper_groups %}
+    <details class="topic-item">
+      <summary>{{ group.name }}</summary>
+      <div class="topic-content">
+        <ul>{% for paper in group.items %}<li><strong>{{ paper.title }}</strong>{% if paper.authors %}<br><span class="paper-authors">{{ paper.authors | join: ', ' }}</span>{% endif %}{% if paper.poster %}<br><span class="paper-authors">Poster: {{ paper.poster }}</span>{% endif %}</li>{% endfor %}</ul>
+      </div>
+    </details>
+{% endfor %}
+  </div>
+{% endif %}
+
+{% if edition.dates.size > 0 %}
+  <h2 id="dates">Important dates</h2>
+  <div class="table-scroll" role="region" aria-label="Historical deadlines" tabindex="0">
+    <table class="data">
+      <thead><tr><th scope="col">Date</th><th scope="col">Milestone</th></tr></thead>
+      <tbody>{% for row in edition.dates %}<tr><td class="when">{{ row.date }}</td><td>{{ row.milestone }}</td></tr>{% endfor %}</tbody>
+    </table>
+  </div>
+{% endif %}
+
+{% if edition.submission.size > 0 %}
+  <h2>Call for papers</h2>
+  <p class="archive-provenance">Submission information from the original call, retained for reference.</p>
+{% for paragraph in edition.submission %}<p>{{ paragraph }}</p>{% endfor %}
+{% endif %}
+
+{% if edition.organisers.size > 0 or edition.committee.size > 0 %}
+  <section id="people" aria-label="Committees">
+{% if edition.organisers.size > 0 %}
+    <h2>Organising committee</h2>
+    <div class="archive-people">
+{% for person in edition.organisers %}{% include archive-person.html person=person %}{% endfor %}
+    </div>
+{% endif %}
+{% if edition.committee.size > 0 %}
+    <h2>Programme committee</h2>
+{% include person-list.html people=edition.committee %}
+{% endif %}
+  </section>
+{% endif %}
+
+{% if edition.sponsors.size > 0 %}
+  <h2>Sponsors</h2>
+  <ul>{% for sponsor in edition.sponsors %}<li>{% if sponsor.url %}<a href="{{ sponsor.url | escape }}">{{ sponsor.name }}</a>{% else %}{{ sponsor.name }}{% endif %}</li>{% endfor %}</ul>
+{% endif %}
+
+{% if edition.resources.size > 0 %}
+  <h2>Workshop resources</h2>
+  <ul>{% for resource in edition.resources %}<li><a href="{{ resource.url | escape }}">{{ resource.title }}</a></li>{% endfor %}</ul>
+{% endif %}
+
+  <h2 id="sources">Archive sources</h2>
+  <p class="archive-provenance">Recorded from the original workshop website on {{ edition.retrieved_on | date: "%d %B %Y" }}. The overview is summarised; programme titles and historical details follow the published source.</p>
+{% if edition.archive_notes.size > 0 %}
+  <details class="topic-item">
+    <summary>Notes on the historical record</summary>
+    <div class="topic-content">{% for note in edition.archive_notes %}<p>{{ note }}</p>{% endfor %}</div>
+  </details>
+{% endif %}
+  <ul>{% for source in edition.sources %}<li><a href="{{ source.url | escape }}">{{ source.title }}</a></li>{% endfor %}</ul>
+{% if edition.programme_image %}<p><a href="{{ edition.programme_image | relative_url }}">View the original programme image</a></p>{% endif %}
+{% if edition.contact_email %}<p>Original contact: <a href="mailto:{{ edition.contact_email | escape }}">{{ edition.contact_email }}</a></p>{% endif %}
+</article>

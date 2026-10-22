@@ -20,5 +20,6 @@ All deadlines are end of day **Anywhere on Earth (AoE)** unless otherwise noted.
   </tbody>
 </table>
 
-The workshop takes place on **{{ site.workshop.date }}** in
-**{{ site.workshop.location }}**, co-located with {{ site.workshop.conference }}.
+The workshop takes place on **{{ site.workshop.date }}** at
+**{{ site.workshop.venue }}** in **{{ site.workshop.location }}**, as a
+pre-{{ site.workshop.conference }} meeting.

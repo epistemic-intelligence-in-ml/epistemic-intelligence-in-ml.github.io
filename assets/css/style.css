@@ -19,6 +19,9 @@
 
 html { -webkit-text-size-adjust: 100%; }
 
+.skip-link { position: absolute; top: -5rem; left: 1rem; z-index: 100; padding: .7rem 1rem; background: #fff; color: #0a3580; }
+.skip-link:focus { top: 1rem; }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -114,7 +117,7 @@ main.container { padding-top: 2.5rem; padding-bottom: 3rem; }
   letter-spacing: .2px;
   margin: .35rem 0 0;
 }
-.hero-logo { max-height: 150px; width: auto; margin: 0 auto 1rem; display: block; }
+.hero-logo { max-height: 150px; max-width: 100%; width: auto; height: auto; margin: 0 auto 1rem; display: block; }
 .hero-conf-logo { max-height: 56px; width: auto; margin: 1.25rem auto 0; display: block; opacity: .9; }
 
 /* ---- Partner / sponsor logos in footer ---- */
@@ -294,8 +297,47 @@ table.data td.when { white-space: nowrap; font-weight: 600; width: 36%; }
 }
 .site-footer p { margin: .25rem 0; }
 
+/* ---- Workshop series archive ---- */
+.archive-current, .edition-card, .archive-notice {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+.archive-current { margin: 1.75rem 0 2.25rem; border-left: 4px solid var(--accent); }
+.archive-current h2 { margin: .35rem 0; }
+.archive-current p { margin: .25rem 0; }
+.edition-label { color: var(--muted); font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+.edition-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
+.edition-card { display: flex; flex-direction: column; background: #fff; border-top: 4px solid var(--accent-red); }
+.edition-card h3 { font-size: 1.25rem; margin: .6rem 0; }
+.edition-card p, .archive-current p, .archive-notice p { text-align: left; }
+.edition-meta { color: var(--muted); }
+.archive-link { margin-top: auto; padding-top: .5rem; font-weight: 600; }
+.archive-provenance { color: var(--muted); }
+.archive-back { margin-top: 0; }
+.archive-hero { border-top: 4px solid var(--accent); }
+.archive-notice { border-left: 4px solid var(--accent); margin-bottom: 1.5rem; }
+.archive-notice p { margin: .4rem 0; }
+.archive-sections { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; padding: 1rem 0; border-bottom: 1px solid var(--border); }
+.archive-page [id] { scroll-margin-top: 1rem; }
+.archive-page p { text-align: left; -webkit-hyphens: none; hyphens: none; }
+.archive-page .hero p { text-align: center; }
+.archive-people { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.25rem; margin: 1.5rem 0 2rem; }
+.archive-person { width: auto; padding: 1.25rem; border: 1px solid var(--border); border-radius: 10px; }
+.person-initials { display: flex; align-items: center; justify-content: center; background: var(--bg-alt); color: var(--accent); font-size: 1.8rem; font-weight: 600; }
+.table-scroll { max-width: 100%; overflow-x: auto; }
+.archive-schedule td.when { width: 22%; }
+.archive-page .session-details { margin: .35rem 0 0; text-align: left; }
+.archive-page .session-chair { margin: .35rem 0 0; font-size: .85rem; color: var(--muted); text-align: left; }
+.archive-papers li { margin: .8rem 0; }
+.paper-authors { color: var(--muted); font-size: .9rem; }
+.archive-page .person-list { grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); }
+.archive-page a { overflow-wrap: anywhere; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--accent-red); outline-offset: 4px; }
+
 /* ---- Responsive ---- */
-@media (max-width: 640px) {
+@media (max-width: 800px) {
   .nav-toggle { display: block; }
   .site-nav {
     display: none;
@@ -306,4 +348,12 @@ table.data td.when { white-space: nowrap; font-weight: 600; width: 36%; }
   }
   .site-nav.open { display: flex; }
   .site-nav a.active { border-bottom: none; text-decoration: underline; }
+}
+@media (max-width: 640px) {
+  .edition-grid { grid-template-columns: 1fr; }
+  .archive-page .hero, .edition-card, .archive-current, .archive-notice { padding: 1rem; }
+  .archive-page table.data td.when { white-space: normal; }
+  .archive-page table.data th, .archive-page table.data td { padding: .6rem .4rem; }
+  .archive-page .archive-schedule td.when { width: 28%; }
+  .brand { font-size: 1rem; gap: .4rem; }
 }

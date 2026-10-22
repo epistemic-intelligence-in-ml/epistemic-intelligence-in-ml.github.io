@@ -1,0 +1,328 @@
+slug: eiml1
+number: 1
+edition: 1st
+year: 2025
+short_name: EIML 1 · EurIPS 2025
+full_name: 1st Workshop on Epistemic Intelligence in Machine Learning
+conference: EurIPS 2025
+date: 6 December 2025
+location: Bella Center, Copenhagen, Denmark
+contact_email: pc.eiml2025@gmail.com
+source_url: https://sites.google.com/view/eiml-eurips2025/home
+retrieved_on: '2026-10-13'
+summary: The inaugural EIML workshop brought together research on how machine learning can recognise, communicate, and act on what it does not know.
+overview:
+  - Reliable decisions require AI systems to acknowledge gaps in their knowledge, especially when data or assumptions change. The first EIML workshop focused on this epistemic uncertainty—the uncertainty arising from a learner's limited knowledge—and its implications for prediction, learning, and decision-making.
+  - The programme connected machine learning, statistics, decision theory, and philosophy. It examined how uncertainty should be represented and evaluated, how learning can remain reliable under incomplete information, and how principled uncertainty models can scale to modern AI systems.
+topics:
+  - title: Representing and measuring uncertainty
+    points:
+      - Foundations for describing limited knowledge, including Bayesian methods, imprecise probabilities, fuzzy logic, belief functions, and possibility theory.
+      - Properties and comparisons of uncertainty representations, evaluation criteria, and benchmarks.
+      - Distinguishing uncertainty due to limited knowledge from randomness inherent in the data.
+  - title: Prediction with incomplete knowledge
+    points:
+      - Predictive models that express uncertainty, including Bayesian, evidential, and credal approaches.
+      - Reliable generalisation when training and test distributions differ, with domain adaptation and robustness analysis.
+      - Detecting unfamiliar inputs, handling incorrect model assumptions, and learning from partial or vague supervision.
+  - title: Decisions and learning under uncertainty
+    points:
+      - Decisions that account for risk and ambiguity, and uncertainty in generative models.
+      - Choosing informative data or experiments through active learning, Bayesian experimental design, and uncertainty-aware optimisation.
+      - Reinforcement, continual, and online learning; scalable uncertainty methods for transformers, diffusion models, and other large architectures.
+dates:
+  - date: 10 October 2025
+    milestone: Submissions opened
+  - date: 20 October 2025
+    milestone: Paper submission deadline (extended from 17 October)
+  - date: 27 October–7 November 2025
+    milestone: Review period
+  - date: 14 November 2025
+    milestone: Author notification
+  - date: 21 November 2025
+    milestone: Camera-ready submission deadline
+  - date: 6 December 2025
+    milestone: Workshop
+speakers:
+  - name: Fabio Cuzzolin
+    role: Invited speaker and panellist
+    affiliation: Oxford Brookes University, United Kingdom
+    url: https://www.brookes.ac.uk/profiles/staff/fabio-cuzzolin
+    expertise: Deep models that represent uncertainty about their own probability estimates
+    talk_title: Towards an epistemic generative AI
+    photo: /assets/img/archive/eiml1/fabio-cuzzolin.png
+  - name: Eyke Hüllermeier
+    role: Invited speaker and panellist
+    affiliation: LMU Munich, Germany
+    url: https://scholar.google.com/citations?user=usVJeNN3xFAC&hl=en
+    expertise: Theory of uncertainty quantification
+    talk_title: 'The Aleatoric-Epistemic Dichotomy of Uncertainty Quantification in Machine Learning: Challenges, Doubts, and Opportunities'
+    photo: /assets/img/archive/eiml1/eyke-hullermeier.png
+  - name: Ryan Martin
+    role: Invited speaker and panellist
+    affiliation: NC State University, United States
+    url: https://statistics.sciences.ncsu.edu/people/rgmarti3/
+    expertise: Foundations of statistics and probability
+    talk_title: Imprecision is Imperative for Valid Uncertainty Quantification in Machine Learning
+    photo: /assets/img/archive/eiml1/ryan-martin.jpg
+  - name: Fanny Yang
+    role: Invited speaker and panellist
+    affiliation: ETH Zurich, Switzerland
+    url: https://sml.inf.ethz.ch/group/fannyy/
+    expertise: Robust learning and generalisation
+    talk_title: Robust distributional generalization with imperfect knowledge of the robust risk
+    photo: /assets/img/archive/eiml1/fanny-yang.jpg
+  - name: Jason Konek
+    role: Panellist
+    affiliation: University of Bristol, United Kingdom
+    url: https://philpeople.org/profiles/jason-konek
+    expertise: Philosophy of uncertainty
+    photo: /assets/img/archive/eiml1/jason-konek.jpg
+  - name: Gert de Cooman
+    role: Panellist
+    affiliation: Ghent University, Belgium
+    url: https://users.ugent.be/~gdcooma/
+    expertise: Mathematics of uncertainty
+    photo: /assets/img/archive/eiml1/gert-de-cooman.jpg
+panel:
+  title: Is Probability Sufficient for Next Generation Epistemic AI?
+  description: The panel considered which representations of uncertainty intelligent systems need, bringing together theoretical, practical, and philosophical perspectives on probability and alternative frameworks.
+organisers:
+  - name: Michele Caprio
+    affiliation: University of Manchester, United Kingdom
+    photo: /assets/img/archive/eiml1/michele-caprio.jpg
+  - name: Siu Lun Chau
+    affiliation: Nanyang Technological University, Singapore
+    photo: /assets/img/archive/eiml1/siu-lun-chau.jpg
+  - name: Ruobin Gong
+    affiliation: Rutgers University, United States
+    photo: /assets/img/archive/eiml1/ruobin-gong.jpg
+  - name: Shireen Kudukkil Manchingal
+    affiliation: Oxford Brookes University, United Kingdom
+    photo: /assets/img/archive/eiml1/shireen-kudukkil-manchingal.jpg
+  - name: Krikamol Muandet
+    affiliation: CISPA Helmholtz Center for Information Security, Germany
+    photo: /assets/img/archive/eiml1/krikamol-muandet.jpg
+  - name: Bob Williamson
+    affiliation: University of Tübingen, Germany
+committee:
+  - name: Rejev Verma
+    affiliation: University of Amsterdam
+  - name: Alessandro Zito
+    affiliation: Harvard University
+  - name: Claudio Battiloro
+    affiliation: Harvard University
+  - name: Christopher Bülte
+    affiliation: LMU Munich, Germany
+  - name: Rabanus Derr
+    affiliation: University of Tübingen
+  - name: Soroush H. Zargarbashi
+    affiliation: CISPA, Germany
+  - name: Sabina Sloman
+    affiliation: University of Manchester
+  - name: Paul Hofman
+    affiliation: LMU Munich, Germany
+  - name: Jérémie Houssineau
+    affiliation: Nanyang Technological University
+  - name: Nong Minh Hieu
+    affiliation: SMU Singapore
+  - name: Maryam Sultana
+    affiliation: Oxford Brookes University
+  - name: Mira Jürgens
+    affiliation: University of Ghent
+  - name: Jack Liell-Cock
+    affiliation: Oxford University
+  - name: Kaizheng Wang
+    affiliation: KU Leuven
+  - name: Julian Rodeman
+    affiliation: LMU Munich, Germany
+  - name: Yusuf Sale
+    affiliation: LMU Munich, Germany
+  - name: Fanyi Wu
+    affiliation: University of Manchester
+  - name: Anurag Singh
+    affiliation: CISPA Helmholtz Center for Information Security
+schedule:
+  - time: '08:45–09:00'
+    item: Opening remarks
+    details: Organising Committee
+    chair: Siu Lun Chau and Shireen Kudukkil Manchingal
+  - time: '09:00–09:30'
+    item: 'Invited talk: Eyke Hüllermeier'
+    details: 'The Aleatoric-Epistemic Dichotomy of Uncertainty Quantification in Machine Learning: Challenges, Doubts, and Opportunities'
+    chair: Siu Lun Chau and Shireen Kudukkil Manchingal
+  - time: '09:30–10:00'
+    item: 'Invited talk: Fanny Yang'
+    details: Robust distributional generalization with imperfect knowledge of the robust risk
+    chair: Siu Lun Chau and Shireen Kudukkil Manchingal
+  - time: '10:00–10:30'
+    item: Oral presentations 1
+    details: >-
+      Maxitive Donsker–Varadhan Formulation for Possibilistic Variational Inference — Jasraj Singh, Shelvia Wongso, Jeremie Houssineau, Badr-Eddine Chérief-Abdellatif.
+      Uncertainty-aware diffusion models for probabilistic regression — Carlo Kneissl, Christopher Bülte, Philipp Scholl, Gitta Kutyniok.
+      Each presentation: 12 minutes plus 3 minutes for questions.
+    chair: Siu Lun Chau and Shireen Kudukkil Manchingal
+  - time: '10:30–11:00'
+    item: Coffee break
+  - time: '11:00–11:30'
+    item: 'Invited talk: Fabio Cuzzolin'
+    details: Towards an epistemic generative AI
+    chair: Shireen Kudukkil Manchingal
+  - time: '11:30–12:30'
+    item: Poster session 1
+    chair: Shireen Kudukkil Manchingal
+  - time: '12:30–13:30'
+    item: Lunch break
+  - time: '13:30–14:00'
+    item: Oral presentations 2
+    details: >-
+      A Formal Assessment of Uncertainty Measures in Regression — Christopher Bülte, Yusuf Sale, Timo Löhr, Paul Hofman, Gitta Kutyniok, Eyke Hüllermeier.
+      Entropy Is Not Enough: Uncertainty Quantification for LLMs fails under Aleatoric Uncertainty — Tim Tomov, Dominik Fuchsgruber, Tom Wollschläger, Stephan Günnemann.
+      Each presentation: 12 minutes plus 3 minutes for questions.
+    chair: Krikamol Muandet
+  - time: '14:00–15:00'
+    item: Poster session 2
+    chair: Krikamol Muandet
+  - time: '15:00–15:30'
+    item: Coffee break
+  - time: '15:30–16:00'
+    item: 'Invited talk: Ryan Martin'
+    details: Imprecision is Imperative for Valid Uncertainty Quantification in Machine Learning
+    chair: Michele Caprio
+  - time: '16:00–17:00'
+    item: 'Panel: Is probability sufficient for the next generation epistemic AI?'
+    details: Fabio Cuzzolin, Eyke Hüllermeier, Ryan Martin, Fanny Yang, Jason Konek, and Gert de Cooman.
+    chair: Michele Caprio
+  - time: '17:00–17:15'
+    item: Closing remarks
+    details: Organising Committee
+    chair: Michele Caprio
+submission:
+  - The workshop used OpenReview with anonymised submissions and double-blind review. The call specified 4–6 pages, excluding references and supplementary material, using the EurIPS 2025 style files linked below.
+  - Original, unpublished research and work under review elsewhere were eligible; prior non-archival dissemination was also allowed. EIML was a non-archival workshop, with authors responsible for checking other venues' policies.
+  - Attendance was primarily in person, with poster presentations encouraged. The call advertised selected 10-minute spotlights; the final programme allocated each oral presentation 12 minutes plus 3 minutes for questions.
+  - All authors needed OpenReview profiles. The stated language-model policy permitted their use only for general writing assistance.
+sponsors:
+  - name: CISPA Helmholtz Center for Information Security
+    photo: /assets/img/archive/eiml1/sponsor-1.png
+  - name: ELLIS Unit Tübingen
+    photo: /assets/img/archive/eiml1/sponsor-2.png
+resources:
+  - title: Accepted papers and poster assignments
+    url: https://sites.google.com/view/eiml-eurips2025/accepted-papers_1
+  - title: OpenReview workshop collection
+    url: https://openreview.net/group?id=EurIPS.cc/2025/Workshop/EIML
+  - title: Invited talk abstracts
+    url: https://sites.google.com/view/eiml-eurips2025/invited-talks
+  - title: Historical LaTeX style file
+    url: https://drive.google.com/file/d/1jXmzXgqCGstzO65VgBgxUU2Yu0mb5mQ-/view
+sources:
+  - title: Original EIML 1 homepage
+    url: https://sites.google.com/view/eiml-eurips2025/home
+  - title: Original call for papers
+    url: https://sites.google.com/view/eiml-eurips2025/calls-for-papers
+  - title: Original dates and submission timeline
+    url: https://sites.google.com/view/eiml-eurips2025/important-dates
+  - title: Original programme and schedule
+    url: https://sites.google.com/view/eiml-eurips2025/schedule
+  - title: Original invited talks
+    url: https://sites.google.com/view/eiml-eurips2025/invited-talks
+  - title: Original accepted-paper list
+    url: https://sites.google.com/view/eiml-eurips2025/accepted-papers_1
+archive_notes:
+  - The accepted-paper page lists titles and poster assignments but does not name authors. Author lists are preserved where available in the oral-presentation schedule.
+poster_sessions:
+  - title: Poster session 1
+    time: "11:30–12:30"
+    papers:
+      - "Towards Uncertainty Quantification in Generative Model Learning"
+      - "The flawed assumption of a data-generating distribution"
+      - "AP-OOD: Attention Pooling for Out-of-Distribution Detection"
+      - "Gradient-based Learning for Explainable Fuzzy Rule-based Classification"
+      - "Community-Aligned Behavior Under Uncertainty: Evidence of Epistemic Stance Transfer in LLMs"
+      - "Rule-Based Dynamic Feature Selection for Explainable Classification with Uncertainty Quantification"
+      - "Optimal Conformal Prediction under Epistemic Uncertainty"
+      - "On the Interplay of Priors and Overparametrization in Bayesian Neural Network Posteriors"
+      - "Exploring the role of action and state uncertainty in imitation learning"
+      - "Credal Concept Bottleneck Models: Decomposing Uncertainty for Interpretable Text Classification"
+      - "Better Uncertainties Don’t Guarantee Better Decisions"
+      - "Efficient Credal Prediction through Decalibration"
+      - "Active Inference is a Subtype of Variational Inference"
+      - "Sample Smart, Not Hard: Correctness-First Decoding for Better Reasoning in LLMs"
+      - "Entropy Is Not Enough: Uncertainty Quantification for LLMs fails under Aleatoric Uncertainty"
+      - "Uncertainty-aware diffusion models for probabilistic regression"
+      - "Sorting the Past, Not Predicting the Future: Probability, Uncertainty, and Algorithmic Risk in Criminal Justice"
+      - "Epistemically Aware Predictive Visuomotor Control"
+      - "Bayesian Conformal Prediction as a Decision Risk Problem Using Bayesian Quadrature"
+      - "The noise of incomparability: learning incomparability from forced comparisons"
+      - "Imprecise Acquisitions in Bayesian Optimization"
+      - "Adaptive Individual Uncertainty under Out-Of-Distribution Shift with Expert-Routed Conformal Prediction"
+      - "RewardUQ: A Unified Framework for Uncertainty-Aware Reward Models"
+      - "Uncertainty Quantification for Regression Using Proper Scoring Rules"
+      - "Effects of priors on epistemic uncertainty in autoregressive active inference"
+      - "How Reliable Are Networks? A Bayesian Modeling Approach"
+      - "Credal Graph Neural Networks"
+      - "Epistemic Error Decomposition for Multi-step Time Series Forecasting: Rethinking Bias–Variance in Recursive and Direct Strategies"
+      - "From Bayesian to Generalised Bayesian Experimental Design"
+  - title: Poster session 2
+    time: "14:00–15:00"
+    papers:
+      - "Uncertainty-Aware Multi-Agent Interaction for Reliable VQA"
+      - "Scalable Bayesian Monte Carlo: fast uncertainty estimation beyond deep ensembles"
+      - "A Three-Way Testing Framework for Quantifying Epistemic Calibration Uncertainty in SBI"
+      - "Amortized Implicit Copula Generative Models"
+      - "Counterfactual spaces"
+      - "Possibilistic Instrumental Variable Regression"
+      - "Enhancing Network Robustness using Epistemic Intelligence"
+      - "Assessing Expectation Propagation for Mutual Information in Bayesian Optimization"
+      - "A Formal Assessment of Uncertainty Measures in Regression"
+      - "Evaluating Prediction Uncertainty Estimates from BatchEnsemble"
+      - "Spectral Uncertainty Decomposition for Sparse Bayesian Learning"
+      - "Maxitive Donsker–Varadhan Formulation for Possibilistic Variational Inference"
+      - "Epistemic Error Bounds for Probabilistic Machine Learners"
+      - "Evaluating the Impact of Post-Training Quantization on Reliable VQA with Multimodal LLMs"
+      - "Not All Credal Sets Are Created Equal: Specialized Approaches for Specialized Uncertainties"
+      - "Mixture of Gaussian Processes for Bayesian Active Learning"
+      - "Scaling Laws for Uncertainty in Deep Learning"
+      - "Robustness and uncertainty: two complementary aspects of the reliability of the predictions of a classifier"
+      - "Uncertainty Quantification for Capacities based on Integral Imprecise Probability Metrics"
+      - "Latent Energy-Score Training with Geometry-Preserving Decoders for Epistemic UQ in PDE Surrogates"
+      - "Is BatchEnsemble a Single Model? On Calibration and Diversity of Efficient Ensembles"
+      - "On the Notion that Language Models Reason"
+      - "Uncertainty Quantification for Generative Models: Density Estimation Perspective"
+      - "So What are Good Imprecise Forecasts?"
+      - "Quantifying the Value of Missing Information for Individual Predictions"
+      - "Property Elicitation on Imprecise Probabilities"
+      - "Epistemic Uncertainty Quantification To Improve Decisions From Black-Box Models"
+      - "Amortized Structured Stochastic Variational Inference for Gaussian Process Latent Variable Models"
+      - "Self-Reflective Code Agents under Epistemic Uncertainty"
+      - "Sampling and response noise epistemic uncertainties: from linear regressors to linearized deep networks"
+      - "Cumulative Mass Calibration via Conformal Prediction"
+      - "Beyond Mamba SSMs: Parallel Kalman Filters as Scalable Primitives for Language Modelling"
+photo_sources:
+  - file: /assets/img/archive/eiml1/eyke-hullermeier.png
+    url: https://sites.google.com/sitesv-images-rt/AMxu72uT2YqO4Rb4gVzEDrcJ-ER6hkrfhm2Dq7LFfS8yrPehZemA5Aw5WjZ9O9T4mXg7aw1GFx5nsnw9chGDLxARZSKozsAboAB-ywm2e5QhBaZdS_LgqcsrtvELL_hfzgwnZfb4ezjiGGhxzZHh_BxNtLd8F074BP5vc7GFDCLUmmx46HnLmTIfp2GjYvNn09vS0fvrCXjoQT3SABQjvRmGKdHOSzKEHnUhf_7-4YVh_ko=w1280
+  - file: /assets/img/archive/eiml1/fabio-cuzzolin.png
+    url: https://sites.google.com/sitesv-images-rt/AMxu72u3rNuD0bB_NrYOZ5wPlRK-ALBQPD1TTnVgHGLb4vRaiE1hSLhA0VnIVj5LB5fAN3JY61Sjrp7Sh1zErF-vhMAilsEq7YQ_EcXtQT9kjPL4bqG4YcP9p8WZSlTCqkrfHArrfc8RV18-DSodxt9AXxvvqKfmr8uu6beHGwaMTLscuS-FtUJydwn4pxCe0tOwXiJFbq3K6N8t-jSTmrFg9JLLnGYD4YsKxw4zImDl=w1280
+  - file: /assets/img/archive/eiml1/fanny-yang.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72sHYNf3eB5nYdOtS4WFh99bd-t8Bic49vzlc_Gh8QVy2ga8Xy7CtR5l544Kxqd9X77m3399X5RtfUEIifVncFyrcHdbHqU7B4NBW6xTgdSak3PIC6vQqKg1YmIWU_WGfld18ZgdPya5RXxi2AtGHri3Ao_OqWGubHFhobQKgdFfQYOoNu2CC9h3P7nSrAnKmZBeq-14VUTlEMs4fj5P8H784OfCj2eAzPz30c-8rUg=w1280
+  - file: /assets/img/archive/eiml1/gert-de-cooman.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72tqK7HWfmvJrkp0wF9BCinu15haojkGGBjy7yyGz1HBgGBVV6CdovjXmu8UcqfqfQxGjXAKayJxPXkoLj9iiYm1U1oy8rVXAvcXc8WOFdLxHK2tfuvn-CzgJkIFkJpbFRjyYEQdlZGbWvEfyMSF60-2Q78TVGbmQIpSoulHeOcASjcC76XMO_v5Oap5o0ovwPrZKyuAXKkHvFtYD2RCcmCng2dW0kd8YiZwQOyh=w1280
+  - file: /assets/img/archive/eiml1/jason-konek.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72vvmkivZV0EfmICEVem19ycl7RhxuEE5WdKkGPT6Yg6juFgCO9UCLi37ZMysqBtzcW1t3Lo3wZPPxwD3s7Gt6B5WR78H-2u8Rqfd47TsQQ9u3M-78b0bd1rR8-KHWyqut8r2OWAjwuGJNzknf3WXB3fiZYZlD_NbL8qmSaDShFIZnTwsNXDdPA2yKZdCws5GYbfqKBD65xZ53hEJUYGpjh5IA9LzFLkhDxYkjVL=w1280
+  - file: /assets/img/archive/eiml1/krikamol-muandet.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72sE4W0XpGG1LYgb91U9G2m8tKQr4Ap7t-HQ1vK30h0DWmCY3nNyD0LIbCPD6186mvIZEoYELuwnJdpVWX1dk5x11xwX6EZ8UOKzP-kUrE1eTsYvLllecLaXo3boZha4eEJkLXP4EqUWxyP8ZfYHSW1aK3mwri4n91Dysumam2d2lC1w366v9yarUyUhfCn7_W_RZEHqw2wcFHj5OAO3WuDtZwdxQjVNSWTzQ5xDqoU=w1280
+  - file: /assets/img/archive/eiml1/michele-caprio.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72vD7uFCuq_RqLq8VvJHTawKtyFzxqnbwl70ze3XNbl_7iz9MnTfunljkQtUR59-Ktd6meRIG4qjniQUVFllsbKWO5nvZ-K68j-kanTGo-_RjoITAsczifIBGInUo67r71UI3Be074QBjWa-rO5aweq2m82gIXmlzVRbfAHBarang1CnXeXuyDFaKutvBdhTZf4G63SijTxlmgEq85h-fHR4Dbb2KvVCO-m2T1nj=w1280
+  - file: /assets/img/archive/eiml1/ruobin-gong.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72vXgGknXi2e_DBPQ2iGZYl-XknUMMRFWfy95j8nd5_whRvRhdwgL_RIVWwftLFoTBLbgi82uXjSrIYMrggCMu3K8peRCalM6IBs2bc6YQgO9ARlzDgDaewE2kfU5xrH_sOsIjAiPytS4MNMspq5HcC7t31Xx0A8_QZT32AkMWpd3Pg7yJLxuPX6wrn4Xxc_Er4hkAid-HwZQyi-qqGTaKmCWI9_hQUQLCmLrM8SuLc=w1280
+  - file: /assets/img/archive/eiml1/ryan-martin.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72tNiX4JWbu-8uTEeRSFHIk-S59rzviEEItD6GByDByr0EF8j-TrU9XR9NgaJbh5_VvuqrfM7q-6ExnS18SIcVXbn6Fi4RnjSVg0aGOyIDaviyp0nBEEgQesDhqCVonuCoGavKihIBPnbCal0xphs99CYiqPkostpnOJx4aTqMqHww6IQHC0BYP-kz50G3k392Ga3lcoagND7-9DmOGcLFQMDwAgEmPghC8TbMo1zEY=w1280
+  - file: /assets/img/archive/eiml1/shireen-kudukkil-manchingal.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72uOjmDeDmPmlo-t5WC1FlmP-IynrNcaHHQA8zkKdsYfWV29xucveZ08h_719crgkh9sYZdg-C2lnZVQT91Cw8tWOc1BBsyHTpeerct0YGxZmzYPYgyz91ol6c5qLgbMQ7PvOVY63gFjlfZc9-aQlQ_yeUQa6ULAeYGO-YDNR8liNwPomyDvLIMMnY621UTC4fyjcojYCz-0Q1fa8nQ1mCFyWasGKRUz4gH2njAo7TM=w1280
+  - file: /assets/img/archive/eiml1/siu-lun-chau.jpg
+    url: https://sites.google.com/sitesv-images-rt/AMxu72uldCulE8Q7xrxImgAPlR_s40XnAWfCRtnLIkYzyqYNz21RciNYPhgaZPs0WiZXWsLqXYc2tVY02gRngmjgOasBu3fIuk1PwJhmXbaQ7YH4TeN4HFktwcW2_DgdfNmezZO6kkfT57fUV_Otne5iRGYzAf_t0Pbbwxq3pThJ7KagoTBxc5OFWeMugpWCMXtq-onfmXulZDxJ0svBspdSc9_GWGCmLHFolaaqXWgqdf8=w1280
+  - file: /assets/img/archive/eiml1/sponsor-1.png
+    url: https://sites.google.com/sitesv-images-rt/AMxu72s16fbxqNITdurH4r1r9OiEg2EhJ3xp6tk1f-bUydruCBTIT2Rt403ELKmYGvqK0V1bTJNuw0yfh1CeJ67d6YkURioEfqCgoE8KK1IpXJ4kOesBO3G4KuEE6YqB6aYgbMZrvfpYiJKnUhaHI5Q5JDZviKryEP5lm9uW3eQb5LDTjOlr0O8JbW25fp_CKC9l6cJ25rd5K6p_cTJZr88TILTgAK896feWCgGSDrBHYS0=w1280
+  - file: /assets/img/archive/eiml1/sponsor-2.png
+    url: https://sites.google.com/sitesv-images-rt/AMxu72urKR-VHsFWUKpR0dWdDsc832xe8dWAKTWy5ZkSZrsveCn21VTiruuMjM-V4vnrFsG8yaZCJw5tJ1-Erx_TFNB3upk_ErHsGCVZb5WspDPTYhbTXPJmhLvUUwRVWbkbIrr96k627Ee8ECJAPumDGYmoFxjYkEMQU3A4kor7oVjnOAiCA-PC8rPhOHIk-9Ibt-iZz4JJnpqGNQnTpjohYO_FY3fp3jTo3Seap0wjjmA=w1280

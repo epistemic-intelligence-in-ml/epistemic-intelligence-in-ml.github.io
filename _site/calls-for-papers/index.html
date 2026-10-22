@@ -3,34 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Calls for Papers · EIML3@NeurIPS 2026</title>
-  <meta name="description" content="The 3rd Workshop on Epistemic Intelligence in Machine Learning, held at NeurIPS 2026 in Paris, France.">
+  <title>Calls for Papers · EIML3@Saarbrücken</title>
+  <meta name="description" content="How can AI understand and reason about the limits of its own knowledge? Join EIML3 at CISPA in Saarbrücken on 2–3 December 2026 for a pre-NeurIPS meeting on uncertainty, robustness, generalisation, continual learning, and reliable decision-making.">
   <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/landing.css">
 </head>
-<body>
+<body class="current-edition">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
-      
-        <img class="brand-logo" src="/assets/img/logo/EIML3.png" alt="EIML3@NeurIPS 2026 logo">
-      
-      <span class="brand-text">EIML3@NeurIPS 2026</span>
+
+      <span class="brand-text">EIML3@Saarbrücken</span>
+
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
-    <nav class="site-nav">
-      <a href="/">Home</a>
-      <a href="/calls-for-papers/" class="active">Calls for Papers</a>
-      <a href="/schedule/">Schedule</a>
-      
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.getElementById('site-navigation').classList.toggle('open'))">☰</button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation" onclick="if(event.target.closest('a')){this.classList.remove('open');document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');}">
+
+<a href="/#about">About</a>
+<a href="/#topics">Topics</a>
+<a href="/#programme">Programme</a>
+<a href="/#organisers">Organisers</a>
+<a href="/#venue">Venue</a>
+<a href="/archive/">Past events</a>
+
+
     </nav>
   </div>
 </header>
 
-  <main class="container">
-    <article class="page">
-  
+  <main class="container" id="main-content">
+<article class="page">
+
     <h1 class="page-title">Calls for Papers</h1>
-  
+
   <p>Epistemic Intelligence in Machine Learning (EIML) studies how learning systems
 recognise, represent, reason about, and act under the limits of their knowledge.
 Modern ML systems — including foundation models, generative models, autonomous
@@ -41,7 +47,7 @@ forgetting, overconfident decisions, and poor communication of uncertainty all
 arise when a system cannot distinguish what is known from what is unknown.</p>
 
 <p>Building on the first EIML workshop at EurIPS 2025 and the second at ICML 2026,
-this third edition at NeurIPS 2026 turns to the field’s
+this third edition in Saarbrücken, a pre-NeurIPS 2026 meeting, turns to the field’s
 <em>foundations</em>. The aim is not to repeat a broad uncertainty workshop, but to
 clarify the conceptual, mathematical, statistical, computational, engineering,
 and philosophical bases on which the field should develop. The relevant
@@ -61,88 +67,48 @@ into the philosophical and foundational dimensions of uncertainty in AI.</p>
 <p>To this end, topics to be covered include, but are not limited to:</p>
 
 <div class="topic">
-  <h3>Conceptual foundations</h3>
+  <h3>Philosophical foundations of imprecision and uncertainty</h3>
+  
+  <p>Reliable AI needs a clear account of what it means to know, to doubt, and to act with incomplete information. We explore how these ideas should shape the way AI systems represent and communicate the limits of their knowledge.</p>
   
   
   <ul>
     
-    <li>What is epistemic intelligence, and how does it differ from uncertainty quantification, calibration, robustness, Bayesian inference, conformal prediction, and decision theory?</li>
+    <li>What does it mean for an AI system to know something or recognise its own ignorance?</li>
     
-    <li>What does it mean for a learning system to know, not know, or act responsibly under ignorance?</li>
+    <li>When should uncertainty change a system's beliefs, explanations, or decisions?</li>
     
   </ul>
   
 </div>
 
 <div class="topic">
-  <h3>Representations of ignorance</h3>
+  <h3>Mathematical and statistical aspects of imprecision and uncertainty</h3>
+  
+  <p>When evidence is limited, a single precise probability may not fully express what is known. We study mathematical representations of incomplete knowledge and statistical methods for learning, prediction, and decisions under uncertainty.</p>
   
   
   <ul>
     
-    <li>Which mathematical objects should represent epistemic uncertainty — sets of probability distributions, lower/upper probabilities, second-order distributions, belief functions, possibility measures, logical or modal structures, category-theoretic objects, or hybrids?</li>
+    <li>How can we represent and measure uncertainty without claiming more precision than the evidence supports?</li>
     
-    <li>What are their semantics and failure modes?</li>
+    <li>Which guarantees remain useful when data are scarce, assumptions fail, or conditions change?</li>
     
   </ul>
   
 </div>
 
 <div class="topic">
-  <h3>Statistical foundations</h3>
+  <h3>Applications to modern AI</h3>
+  
+  <p>AI systems need to recognise unfamiliar situations and respond appropriately as their environment changes. We connect uncertainty research to robustness, generalisation, continual learning, and reliable decision-making in modern AI.</p>
   
   
   <ul>
     
-    <li>How should epistemic and aleatoric uncertainty be separated, measured, and validated?</li>
+    <li>How can language models, generative systems, and AI agents recognise and communicate gaps in their knowledge?</li>
     
-    <li>What guarantees remain meaningful under misspecification, partial identification, weak prior information, or distribution shift?</li>
-    
-  </ul>
-  
-</div>
-
-<div class="topic">
-  <h3>Learning theory and computation</h3>
-  
-  
-  <ul>
-    
-    <li>What are the computational limits of epistemic reasoning in modern ML?</li>
-    
-    <li>Which representations are tractable at deep learning scale?</li>
-    
-    <li>Can epistemic uncertainty guide abstention, querying, exploration, safe adaptation, model revision, or fallback behaviour?</li>
-    
-  </ul>
-  
-</div>
-
-<div class="topic">
-  <h3>Engineering and communication</h3>
-  
-  
-  <ul>
-    
-    <li>How should epistemic signals be embedded in AI-enabled systems, communication networks, robotics, cyber-physical systems, and human-facing interfaces?</li>
-    
-    <li>How do engineering constraints reshape the theory?</li>
-    
-  </ul>
-  
-</div>
-
-<div class="topic">
-  <h3>Evaluation and negative results</h3>
-  
-  
-  <ul>
-    
-    <li>What would constitute evidence that an EIML method succeeds?</li>
-    
-    <li>Can we benchmark ignorance, blind spots, and unknown unknowns?</li>
-    
-    <li>Which existing approaches fail under carefully designed stress tests?</li>
+    <li>When should a system seek information, revise what it has learned, defer to a person, or decline to act?</li>
     
   </ul>
   
@@ -160,7 +126,7 @@ review process, while also fostering a more engaged and collaborative research
 community. Reviews will, of course, be assigned based on your expertise.</p>
 
 <p>We sincerely appreciate your support in helping make
-EIML3@NeurIPS 2026 a success.</p>
+EIML3@Saarbrücken a success.</p>
 
 <h2 id="key-dates">Key Dates</h2>
 
@@ -193,7 +159,7 @@ EIML3@NeurIPS 2026 a success.</p>
     </tr>
   
     <tr>
-      <td class="when">12 / 13 December 2026</td>
+      <td class="when">2–3 December 2026</td>
       <td>Main workshop</td>
     </tr>
   
@@ -208,10 +174,14 @@ EIML3@NeurIPS 2026 a success.</p>
   </main>
   <footer class="site-footer">
   <div class="container">
-    
+
+
     <p>The 3rd Workshop on Epistemic Intelligence in Machine Learning</p>
-    <p>12 December 2026 · Paris, France</p>
+    <p>2–3 December 2026 · Saarbrücken, Germany</p>
+    <p>CISPA Helmholtz Center for Information Security · A pre-NeurIPS meeting</p>
+    <p><a href="/calls-for-papers/">Call for papers</a> · <a href="/schedule/">Programme</a> · <a href="/important-dates/">Important dates</a></p>
     <p>Questions? <a href="mailto:pc.eiml.workshop@gmail.com">pc.eiml.workshop@gmail.com</a></p>
+
   </div>
 </footer>
 

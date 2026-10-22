@@ -1,0 +1,722 @@
+# Historical snapshot from the original EIML 2 website. See sources and archive_notes.
+---
+slug: eiml2
+number: 2
+edition: 2nd
+year: 2026
+short_name: EIML 2 · ICML 2026
+full_name: The 2nd Workshop on Epistemic Intelligence in Machine Learning
+conference: ICML 2026
+date: 10 July 2026
+location: Seoul, South Korea
+contact_email: pc.eiml.workshop@gmail.com
+source_url: https://sites.google.com/view/eimlicml2026/home
+retrieved_on: '2026-10-13'
+summary: The second EIML workshop brought the series to ICML in Seoul, connecting
+  uncertainty research with generative AI, safety, alignment, and continual learning.
+overview:
+- Reliable learning systems need to recognise when their knowledge is insufficient.
+  The second workshop explored this ability, called epistemic intelligence, across
+  problems such as distribution shift, hallucination, safety, and alignment.
+- Building on the first EIML workshop at EurIPS 2025, the programme connected foundational
+  work on uncertainty with practical questions about how models can identify gaps
+  in their knowledge, seek information, revise beliefs, and decide when to abstain.
+topics:
+- title: Foundations of uncertainty
+  points:
+  - Representing incomplete knowledge through extensions of probability, including
+    sets of distributions and higher-order models.
+  - Distinguishing randomness, ambiguity, and ignorance, and studying rational learning
+    and decisions under incomplete information.
+  - Understanding the consequences for generalisation, model comparison, and robustness.
+- title: Uncertainty-aware generative AI and foundation models
+  points:
+  - Recognising uncertainty and mitigating hallucination in generative models.
+  - Using uncertainty in decoding, prompting, inference, and reward modelling.
+- title: AI safety as an epistemic problem
+  points:
+  - Reasoning about failures that were not anticipated during development.
+  - Identifying gaps in knowledge and supporting abstention, refusal, or safe fallback
+    behaviour.
+- title: AI alignment under objective uncertainty
+  points:
+  - Learning when human objectives and preferences are incomplete, changing, or manipulated.
+  - Representing uncertainty about values and examining the limits of preference learning.
+- title: Lifelong and continual learning in open worlds
+  points:
+  - Revising beliefs as conditions change and new concepts emerge.
+  - Accumulating knowledge while retaining appropriate uncertainty and reducing catastrophic
+    forgetting.
+dates:
+- date: 20 March 2026
+  milestone: Submissions opened
+- date: 24 April 2026
+  milestone: Paper submission deadline (extended from 20 April)
+- date: 27 April–14 May 2026
+  milestone: Review period
+- date: 17 May 2026
+  milestone: Author notification (updated from 15 May)
+- date: 1 June 2026
+  milestone: Camera-ready submission deadline
+- date: 10 July 2026
+  milestone: Workshop
+speakers:
+- name: Jeremie Houssineau
+  role: Assistant Professor
+  affiliation: Nanyang Technological University, Singapore
+  url: ''
+  expertise: Foundations of uncertainty modelling
+  talk_title: 'Computing with Ignorance: a possibilistic view of uncertainty in machine
+    learning'
+  photo: "/assets/img/archive/eiml2/jeremie-houssineau.png"
+- name: Belinda Zou Li
+  role: Researcher; incoming Assistant Professor
+  affiliation: Anthropic; University of Chicago
+  url: ''
+  expertise: Trustworthy language models
+  talk_title: Solving the Specification Problem through Interaction
+  photo: "/assets/img/archive/eiml2/belinda-zou-li.jpg"
+- name: Dylan Hadfield-Menell
+  role: Associate Professor
+  affiliation: Massachusetts Institute of Technology, US
+  url: ''
+  expertise: AI alignment
+  talk_title: Open-Universe Goal Tracking
+- name: Fazl Barez
+  role: Senior Researcher
+  affiliation: University of Oxford
+  url: ''
+  expertise: AI safety and mechanistic interpretability
+  talk_title: Understanding model behaviour in the age of AGI
+organisers:
+- name: Sahar Abdelnabi
+  affiliation: ELLIS Institute Tübingen & MPI-IS, Germany
+  url: ''
+  photo: "/assets/img/archive/eiml2/sahar-abdelnabi.png"
+- name: Michele Caprio
+  affiliation: University of Manchester, United Kingdom
+  url: ''
+- name: Siu Lun Chau
+  affiliation: Nanyang Technological University, Singapore
+  url: ''
+- name: Arnaud Doucet
+  affiliation: Google DeepMind
+  url: ''
+- name: Shireen Kudukkil Manchingal
+  affiliation: Oxford Dynamics, United Kingdom
+  url: ''
+- name: Krikamol Muandet
+  affiliation: CISPA Helmholtz Center for Information Security, Germany
+  url: ''
+committee:
+- name: Sanoufar Abdul Azeez
+  affiliation: IIITM Kerala
+- name: Amitesh Badkul
+  affiliation: CUNY
+- name: James Bailie
+  affiliation: Chalmers
+- name: Yasir Zubayr Barlas
+  affiliation: Manchester
+- name: C. Battiloro
+  affiliation: Harvard
+- name: Rabanus Derr
+  affiliation: Tübingen
+- name: Johanna Einsiedler
+  affiliation: Copenhagen
+- name: Feyza Eksen
+  affiliation: Rostock
+- name: Adam Faza
+  affiliation: KU Leuven
+- name: Javier Fumanal-Idocin
+  affiliation: Essex
+- name: Xabier Gonzalez-Garcia
+  affiliation: Navarra
+- name: Nicholas Hadjisavvas
+  affiliation: UCL
+- name: Paul Hofman
+  affiliation: LMU
+- name: Benedikt Höltgen
+  affiliation: HPI
+- name: Jeremie Houssineau
+  affiliation: NTU Singapore
+- name: Ismail Huseynov
+  affiliation: PTB Germany
+- name: Alireza Javanmardi
+  affiliation: LMU
+- name: Mira Juergens
+  affiliation: Ghent
+- name: Carlo Kneissl
+  affiliation: LMU
+- name: Kody J. H. Law
+  affiliation: Manchester
+- name: Matthijs van der Lende
+  affiliation: Groningen
+- name: Valentin Margraf
+  affiliation: LMU
+- name: Giorgio Morales
+  affiliation: Caen Normandie
+- name: Tanmoy Mukherjee
+  affiliation: VUB Brussels
+- name: Ayush Pandey
+  affiliation: TCS India
+- name: Ramon Daniel Regueiro-Espino
+  affiliation: Sorbonne
+- name: Julien Rodemann
+  affiliation: LMU
+- name: Sören Schleibaum
+  affiliation: TU Clausthal
+- name: Annika Schneider
+  affiliation: Helmholtz Munich
+- name: N. J. Schutte
+  affiliation: TU Delft
+- name: Vaisakh Shaj
+  affiliation: Edinburgh
+- name: Anurag Singh
+  affiliation: CISPA
+- name: Sabina Sloman
+  affiliation: Manchester
+- name: Gokul Srinath Seetha Ram
+  affiliation: PareIT
+- name: Matteo Tolloso
+  affiliation: Pisa
+- name: R. Verma
+  affiliation: Amsterdam
+- name: Susanna Di Vita
+  affiliation: ETH Zurich
+- name: Fanyi Wu
+  affiliation: Manchester
+- name: Buelte
+  affiliation: LMU
+- name: Yusuf Sale
+  affiliation: LMU
+- name: Maryam Sultana
+  affiliation: Oxford Brookes
+schedule_note: Transcribed from the programme image published on the original Schedule
+  page. The programme lists three oral presentations and ten spotlights; the accepted-paper
+  list retains four oral and thirteen spotlight selections. These source records are
+  preserved separately.
+programme_image: "/assets/img/archive/eiml2/schedule.png"
+schedule:
+- time: '09:00–09:15'
+  item: Opening remarks
+- time: '09:15–09:20'
+  item: 'Spotlight: What Does Disagreement Mean? A Semantic Identifiability Frontier
+    for Pairwise Preference Learning'
+  details: Manoj Saravanan, Rohit Kumar Salla, Shrikar Reddy Kota
+- time: '09:20–09:28'
+  item: 'Oral: On the Epistemic Uncertainty of Overparametrized Neural Networks'
+  details: David Rügamer
+- time: '09:28–10:00'
+  item: Coffee break and poster hanging
+- time: 10:00–10:30
+  item: 'Invited talk: Jeremie Houssineau'
+  details: 'Computing with Ignorance: a possibilistic view of uncertainty in machine
+    learning'
+- time: 10:30–10:35
+  item: 'Spotlight: Decomposing Epistemic Uncertainty for Causal Decision Making'
+  details: Md Musfiqur Rahman, Ziwei Jiang, Hilaf Hasson, Murat Kocaoglu
+- time: 10:35–10:40
+  item: 'Spotlight: Robust Learning to Rank from Incomplete Rankings under Positional
+    Censoring'
+  details: Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli, Marco Mussi
+- time: 10:40–10:45
+  item: 'Spotlight: Task-Aware Calibration: Provably Optimal Decoding in LLMs'
+  details: Tim Tomov, Dominik Fuchsgruber, Rajeev Verma, Stephan Günnemann
+- time: 10:45–10:50
+  item: Buffer
+- time: 10:50–11:20
+  item: 'Invited talk: Fazl Barez'
+  details: Understanding model behaviour in the age of AGI
+- time: 11:20–11:28
+  item: 'Oral: MMD-Balls as Credal Sets: A PAC-Bayesian Framework for Epistemic Uncertainty
+    in Test-Time Adaptation'
+  details: Ahanaf Hasan Ariq
+- time: 11:28–11:36
+  item: 'Oral: Diffusion as Prior Construction: A Bayesian View of Communication in
+    Multi-Agent POMDPs'
+  details: Muhyun Byun, Eunae Lee, Jahun Oh, Seok Joo Doo
+- time: 11:36–11:45
+  item: Group photo
+- time: 11:45–13:00
+  item: Lunch break
+- time: 13:00–13:30
+  item: 'Invited talk: Dylan Hadfield-Menell'
+  details: Open-Universe Goal Tracking
+- time: 13:30–13:35
+  item: 'Spotlight: Leveraging Class Similarity for Enhanced Conformal Prediction'
+  details: Ariel Fargion, Lahav Dabah, Tom Tirer
+- time: 13:35–13:40
+  item: 'Spotlight: What Shapes Emergent Misalignment?'
+  details: Yuchen Zhang, Anietta Weckauff, Diego Garcia-Olano, Maksym Andriushchenko
+- time: 13:40–13:45
+  item: 'Spotlight: The Posterior-Prior Epistemic Gap: When World Model Imagination
+    Fails to Carry Task-Relevant Signals'
+  details: Jaerock Kwon, Elahe Delavari, Donghyun Kim, Haewoon Nam
+- time: 13:45–14:05
+  item: Buffer
+  details: The published programme notes ten minutes reallocated from two removed
+    spotlights, alongside the existing ten-minute buffer.
+- time: 14:05–14:35
+  item: 'Invited talk: Belinda Zou Li'
+  details: Solving the Specification Problem through Interaction
+- time: 14:35–14:40
+  item: 'Spotlight: A Tale of Two Uncertainties: Global–Local Attribution for Conformal
+    Prediction'
+  details: Sangyeon Cho, Minyoung Cho, Jungsoo Kim, Sujeong Oh, Sanghack Lee
+- time: 14:40–14:45
+  item: 'Spotlight: Epistemic Gatekeeper: Training-Free One-Shot Gating for Open-World
+    Industrial Anomaly Detection'
+  details: Geonwoo Kim, Hyeonjun Kim, Chaein Oh, Suk-Ju Kang
+- time: 14:45–14:50
+  item: 'Spotlight: Rethinking Uncertainty Evaluation in Large Language Models'
+  details: Krish Matta, Atharv Naphade, Andy Zou
+- time: 14:50–15:00
+  item: Buffer
+  details: The published programme notes eight minutes reallocated from a removed
+    oral presentation, plus a two-minute transition.
+- time: 15:00–15:30
+  item: Coffee break
+- time: 15:30–16:30
+  item: Panel discussion
+- time: 16:30–16:45
+  item: Closing remarks
+- time: 16:45–17:30
+  item: Poster session
+submission:
+- The workshop welcomed original research and work in progress on reasoning and decision-making
+  under incomplete knowledge, including theoretical work, applications, benchmarks,
+  and foundational perspectives.
+- Papers were submitted through OpenReview using the EIML 2026 LaTeX style. The call
+  specified 4–6 pages, excluding references and supplementary material, with anonymised
+  submissions for double-blind review.
+- The workshop was non-archival. Work previously shared in non-archival venues, or
+  under review elsewhere, was eligible; authors were asked to check the policies of
+  any other venue.
+- The call permitted language models as general-purpose writing assistants. It encouraged
+  at least one author of each submission to volunteer as a reviewer.
+- The event was primarily in person, with authors asked to present posters where possible.
+  The accepted-paper page subsequently specified eight-minute oral presentations and
+  five-minute spotlights, each accompanied by a poster.
+resources:
+- title: Original workshop website
+  url: https://sites.google.com/view/eimlicml2026/home
+- title: OpenReview workshop group
+  url: https://openreview.net/group?id=ICML.cc/2026/Workshop/EIML
+- title: EIML 2026 LaTeX style files
+  url: https://drive.google.com/file/d/1sYuDfMRWMmTgfgRpUbrD1K9NA8UhC37e/view?usp=sharing
+- title: Original accepted-paper list
+  url: https://sites.google.com/view/eimlicml2026/accepted-papers_1
+sources:
+- title: Workshop homepage, speakers, organisers, and programme committee
+  url: https://sites.google.com/view/eimlicml2026/home
+- title: Invited talks
+  url: https://sites.google.com/view/eimlicml2026/invited-talks
+- title: Accepted papers
+  url: https://sites.google.com/view/eimlicml2026/accepted-papers_1
+- title: Published programme
+  url: https://sites.google.com/view/eimlicml2026/schedule
+- title: Call for papers and submission guidelines
+  url: https://sites.google.com/view/eimlicml2026/calls-for-papers
+- title: Important dates
+  url: https://sites.google.com/view/eimlicml2026/important-dates
+archive_notes:
+- This record preserves the published website as retrieved on 13 October 2026; affiliations
+  reflect that source.
+- The Important Dates page updates author notification to 17 May 2026, while the homepage
+  still says 15 May. The archive follows the explicit update on the Important Dates
+  page and records the discrepancy here.
+- The original call mentioned ten-minute spotlights, while the accepted-paper list
+  specifies eight-minute oral presentations and five-minute spotlights. The published
+  programme is retained as its own record.
+- Fazl Barez’s talk title was published, but its abstract was still marked TBD when
+  retrieved.
+- The programme committee entry “Buelte” is reproduced as listed; the source does
+  not provide a given name.
+- Some original portraits and the sponsor image could not be retrieved. Names and
+  affiliations are preserved, but no sponsor identity has been inferred from an inaccessible
+  image.
+photo_sources:
+- file: "/assets/img/archive/eiml2/jeremie-houssineau.png"
+  url: https://sites.google.com/sitesv-images-rt/AMxu72ujBFh4jW7mHuALjDBu4_RO3Ffl3_NWOYWmwFL_ccYj6Zgwo80wyqknOSukpk0rxNpBNejQcPUFA38Af5qsT64xzlL6KBfesMCB-21eNOdalgtt6IJjr9fhakQjQ_hMMpfW6syTKt7owMR5bas6zSLthDT1JE1udDOw7_ppequwLs-reHfRBUuk5vJYuYewh3aPVmxfGp3tsgv1fNOO3b2EVTY2hsj7A9aKAcRTBDU=w1280
+- file: "/assets/img/archive/eiml2/belinda-zou-li.jpg"
+  url: https://sites.google.com/sitesv-images-rt/AMxu72s44BMn-Qe3sbrYk2eruQl2LrW8bsnffW8tjrQxNYbB_h-8pKhphJQymnThPRtDLmZdtnRYHhq3dTTBsegK6mCqTrVhMb0KnJIvUJMREFayiRWAr5cNsnIMQLlKLHcwQ4m80kNC4_BkrF-vEOF8biIVV9R-owvMosHjOscfZFUI8YrfZW2dF3wcwhtgI_KMQmgIOULHFSUOfpQPUbDW63swWRcX-rZyjOA1xtyT=w1280
+- file: "/assets/img/archive/eiml2/sahar-abdelnabi.png"
+  url: https://sites.google.com/sitesv-images-rt/AMxu72vLTXoF9axPsMLIDkDRc6deQlwJgS0brQv84giXDBNv0lLCCSvLwBZWP4cgj036icCN6QEextgkQ38AJuWnj_P9o--UjECUo-_URHGwHI-vsq-9OsOusTqGKHSQMIr2f3GRJ04biNUAnWPX-Ua-HokhurmGv_aL9QFn72fNcEyXXrg5uRPSgR14ykuIfo2uL53LSGUItKijBA7dRZXe55E1MB5H0HOVM8KjGp2N=w1280
+- file: "/assets/img/archive/eiml2/schedule.png"
+  url: https://sites.google.com/sitesv-images-rt/AMxu72uHztlDS-juA4xP4zY7S96wIlcHUX9rm64aXODjOxgInZ8AW37zzIsse_tqhGrRe8qqFC7fc0mliNKj3BT6oMUbt-BV5ouUTXS0CI70fYzrbiKE8ewTI7IdZJNCGD6rUzRTUofOU1Y2NFUnHoBx-4PoZuffG0G76Fguq6q2H_THAHPUiYEvNFLGO2kCLzmkdPSvOPszZYSHk8UU84LSnXxh7qhfXs8g_UZSN0Ge=w1280
+accepted_papers:
+- title: 'Diffusion as Prior Construction: A Bayesian View of Communication in Multi-Agent
+    POMDPs'
+  authors: Muhyun Byun, Eunae Lee, Jahun Oh, Seok Joo Doo
+  presentation: Oral
+  poster: 2906A
+- title: 'When Thinking Hurts: Epistemic Signals in the Reasoning Chains of Visual
+    Language Models'
+  authors: Mayank Singal
+  presentation: Oral
+  poster: 2906B
+- title: On the Epistemic Uncertainty of Overparametrized Neural Networks
+  authors: David Rügamer
+  presentation: Oral
+  poster: 2907A
+- title: 'MMD-Balls as Credal Sets: A PAC-Bayesian Framework for Epistemic Uncertainty
+    in Test-Time Adaptation'
+  authors: Ahanaf Hasan Ariq
+  presentation: Oral
+  poster: 2907B
+- title: What Does Disagreement Mean? A Semantic Identifiability Frontier for Pairwise
+    Preference Learning
+  authors: Manoj Saravanan, Rohit Kumar Salla, Shrikar Reddy Kota
+  presentation: Spotlight
+  poster: 2908A
+- title: Geometry-Aware Uncertainty Quantification via Conformal Prediction on Manifolds
+  authors: Marzieh Amiri Shahbazi, Ali Baheri
+  presentation: Spotlight
+  poster: 2908B
+- title: What Shapes Emergent Misalignment?
+  authors: Yuchen Zhang, Anietta Weckauff, Diego Garcia-Olano, Maksym Andriushchenko
+  presentation: Spotlight
+  poster: 2909A
+- title: Decomposing Epistemic Uncertainty for Causal Decision Making
+  authors: Md Musfiqur Rahman, Ziwei Jiang, Hilaf Hasson, Murat Kocaoglu
+  presentation: Spotlight
+  poster: 2909B
+- title: 'Task-Aware Calibration: Provably Optimal Decoding in LLMs'
+  authors: Tim Tomov, Dominik Fuchsgruber, Rajeev Verma, Stephan Günnemann
+  presentation: Spotlight
+  poster: 2910A
+- title: 'Playing Devil''s Advocate: Off-the-Shelf Persona Vectors Rival Targeted
+    Steering for Sycophancy'
+  authors: Ishaan Kelkar, Nebras Alam, Vikram Kakaria, Kevin Zhu, Maheep Chaudhary
+  presentation: Spotlight
+  poster: 2910B
+- title: Leveraging Class Similarity for Enhanced Conformal Prediction
+  authors: Ariel Fargion, Lahav Dabah, Tom Tirer
+  presentation: Spotlight
+  poster: 2911A
+- title: 'A Tale of Two Uncertainties: Global–Local Attribution for Conformal Prediction'
+  authors: Sangyeon Cho, Minyoung Cho, Jungsoo Kim, Sujeong Oh, Sanghack Lee
+  presentation: Spotlight
+  poster: 2911B
+- title: 'Same Target, Different Basins: Hard vs. Soft Labels for Annotator Distributions'
+  authors: Mirerfan Gheibi, Gashin Ghazizadeh
+  presentation: Spotlight
+  poster: 2912A
+- title: 'The Posterior-Prior Epistemic Gap: When World Model Imagination Fails to
+    Carry Task-Relevant Signals'
+  authors: Jaerock Kwon, Elahe Delavari, Donghyun Kim, Haewoon Nam
+  presentation: Spotlight
+  poster: 2912B
+- title: Robust Learning to Rank from Incomplete Rankings under Positional Censoring
+  authors: Cristiano Migali, Gianmarco Genalti, Alberto Maria Metelli, Marco Mussi
+  presentation: Spotlight
+  poster: 2913A
+- title: 'Epistemic Gatekeeper: Training-Free One-Shot Gating for Open-World Industrial
+    Anomaly Detection'
+  authors: Geonwoo Kim, Hyeonjun Kim, Chaein Oh, Suk-Ju Kang
+  presentation: Spotlight
+  poster: 2913B
+- title: Rethinking Uncertainty Evaluation in Large Language Models
+  authors: Krish Matta, Atharv Naphade, Andy Zou
+  presentation: Spotlight
+  poster: 2914A
+- title: Ontological Closure and Structural Limits on Systemic AI
+  authors: Maneth Perera, Poojak Patel
+  presentation: Poster
+  poster: 2914B
+- title: 'When Uncertainty Isn''t Enough: An Empirical Study of Self-Correction in
+    Code Generation'
+  authors: Pranav Rakasi, Tinuade Adeleke, Arya Senthilkumar Palanivel, Maanas Lalwani,
+    Arnav Srivastava, Sean Wu, Ruizhe Li
+  presentation: Poster
+  poster: 2915A
+- title: 'Mechanistic origins of catastrophic forgetting: why RL preserves circuits
+    better than SFT?'
+  authors: Jean Rojas, Viraj Vilas Sawant, Nathan Allen, Nomgondalai Amgalanbaatar,
+    Yannis Zongo, Kevin Zhu, Maheep Chaudhary
+  presentation: Poster
+  poster: 2915B
+- title: Open-World Sequential Belief Revision with Dynamic Functional Experts
+  authors: David Scott Lewis
+  presentation: Poster
+  poster: 2916A
+- title: 'What Intermediate Layers Know: Detecting Jailbreaks from Entropy Dynamics'
+  authors: Sofiia Nikolenko, Michele Papucci, Mina Rezaei, Shireen Kudukkil Manchingal
+  presentation: Poster
+  poster: 2916B
+- title: Why Limit the Residual Stream to Layers and Not Tokens? Persistent Memory
+    for Continuous Latent Reasoning
+  authors: Mujtaba Farhan, Kevin Zhu, Maheep Chaudhary
+  presentation: Poster
+  poster: 2917A
+- title: 'MAND: Modality-Aware Novelty Detection for Open-World Egocentric Activity
+    Recognition'
+  authors: Hyejeong Im, Wonseon Lim, Dae-Won Kim
+  presentation: Poster
+  poster: 2917B
+- title: 'Space-sampled Value Decay: Forgetting Mechanisms for Non-stationary Deep
+    Reinforcement Learning'
+  authors: Felix Störck, Fabian Hinder, Barbara Hammer
+  presentation: Poster
+  poster: 3000A
+- title: 'Stable Miscalibration in Large Language Models: A Practical View of High-Confidence
+    Errors'
+  authors: Akira Okutomi
+  presentation: Poster
+  poster: 3000B
+- title: 'When Prediction Is Not Enough: Identifying Hidden Structure under Partial
+    Observation'
+  authors: Jeongjun Lee, Laura Mascarell, Lancelot Da Costa, Ukyo T. Tazawa, Sundong
+    Kim
+  presentation: Poster
+  poster: 3001A
+- title: 'Pipeline-Aware Split Conformal Prediction: A Single-Quantile Reduction for
+    Joint Coverage Under Compositional Uncertainty'
+  authors: Varun Kotte
+  presentation: Poster
+  poster: 3001B
+- title: 'Authority, Truth, and Citation Bias: A Large-Scale Multi-Domain Benchmark
+    for Studying Epistemic Susceptibility in Large Language Models'
+  authors: Aryan Khurana, Aravind Ramana RN, Dhruv Kumar
+  presentation: Poster
+  poster: 3002A
+- title: Conformal Steering of LLMs via Posterior Sampling
+  authors: Nicolas Emmenegger, Theo X. Olausson, Armando Solar-Lezama, Chara Podimata
+  presentation: Poster
+  poster: 3002B
+- title: 'Confidence Without Warrant: A Formal Theory of Epistemic Blind Spots in
+    Learning Systems'
+  authors: Siddharth Karuturi, Kaustubh S. Bukkapatnam, Soham Batra, Mithil Shah,
+    Tanush Ajay Shastry, Akshath Sharma, Laksh Patel, Aarav Lala, Neel N Shanbhag,
+    Andrew Bae
+  presentation: Poster
+  poster: 3003A
+- title: 'From Critic to Confidence: PPO for Language-Based Quantitative Prediction
+    with Confidence Estimation'
+  authors: Mehak Preet Dhaliwal, Rasta Tadayon, Andong Hua, Haewon Jeong, Yao Qin
+  presentation: Poster
+  poster: 3003B
+- title: How do Consonance Constructions Shape Conformal Credal Sets?
+  authors: Chun Ho Chong, Kaizheng Wang, Michele Caprio, Siu Lun Chau
+  presentation: Poster
+  poster: 3004A
+- title: 'The Mechanistic Invariance Test: Genomic Language Models Fail to Learn Positional
+    Regulatory Logic'
+  authors: Bryan Cheng, Jasper Zhang
+  presentation: Poster
+  poster: 3004B
+- title: 'When Symbolic Rules Cannot Find Their Own Triggers: An Epistemic Diagnosis
+    of Predicate Grounding Collapse in Neuro-Symbolic Fraud Detection'
+  authors: Farjana Yesmin, Nusrat Shirmin
+  presentation: Poster
+  poster: 3005A
+- title: Activation Probing for Uncertainty-Aware Tool Routing in Agentic LLMs
+  authors: Bastien Zimmermann, Louis Hernandez, Clément Pierquin, Matthieu Boussard
+  presentation: Poster
+  poster: 3005B
+- title: What Uncertainties Do We Need for Dynamical Systems?
+  authors: Yusuf Sale, Christopher Bülte, Felix Czaja, Joshua Stiller, Eyke Hüllermeier
+  presentation: Poster
+  poster: 3006A
+- title: Characterizing the Consistency of the Emergent Misalignment Persona
+  authors: Anietta Weckauff, Yuchen Zhang, Maksym Andriushchenko
+  presentation: Poster
+  poster: 3006B
+- title: Sharp Thresholds and Non-Gaussian Limits of Compositional Deep GPs
+  authors: Mark Kozdoba, Shie Mannor
+  presentation: Poster
+  poster: 3007A
+- title: Quantifying Subliminal Behavioral Transfer Ratios in Language Model Distillation
+  authors: Uwe König, Hamza Kazmi, Ruizhe Li, Maheep Chaudhary
+  presentation: Poster
+  poster: 3007B
+- title: 'Validation Windows: Epistemic Uncertainty Produced by the Solver in a Literature-Derived
+    Bayesian Network'
+  authors: Deborah Vakas Duong, Igor Yi
+  presentation: Poster
+  poster: 3008A
+- title: In-Context Learning for Latent Space Bayesian Optimization
+  authors: Tuan A. Vu, Harri Lähdesmäki, Julien Martinelli
+  presentation: Poster
+  poster: 3008B
+- title: Hybrid Adaptive Prediction Sets for Conformal Prediction
+  authors: Soundouss Messoudi, Abdelhak Imoussaten
+  presentation: Poster
+  poster: 3009A
+- title: 'When To Trust a Temporal Prior: Order-Aware Test-Time Adaptation with Likelihood-Ratio
+    Abstention'
+  authors: Young Kyung Kim, Oded Schlesinger, Qiangqiang Wu, J. Matias Di Martino,
+    Guillermo Sapiro
+  presentation: Poster
+  poster: 3009B
+- title: 'LLM Doesn''t Know What It Doesn''t Know: Detecting Epistemic Blind Spots
+    via Cross-Model Attribution Divergence on Clinical Tabular Data'
+  authors: Akshat Dasula, Prasanna Desikan, Jaideep Srivastava
+  presentation: Poster
+  poster: 3010A
+- title: Stacking-Based Weighting for Large Language Bayes in M-Open Settings
+  authors: Anant Bhide, Akarsh Gupta, Edmond Cunningham, Justin Domke
+  presentation: Poster
+  poster: 3010B
+- title: Indirect Query Bayesian Optimization with Integrated Feedback
+  authors: Mengyan Zhang, Shahine Bouabid, Cheng Soon Ong, Seth Flaxman, Dino Sejdinovic
+  presentation: Poster
+  poster: 3011A
+- title: Mechanistic Signatures of Recursive Reasoning in a Minimal Shared-Update
+    Transformer Stack
+  authors: Yi Liu, Ran Zhu, Jialiang An, Yunhan Jiang, Meng Lu
+  presentation: Poster
+  poster: 3011B
+- title: 'Refusal Behavior Beyond English: A Multilingual Study of Representation
+    Directions'
+  authors: Adith N Reganti, Malhar Udmale, Hardik Sharma, Soham Wasmatkar, Vaibhav
+    Shukla, Bagesh Kumar
+  presentation: Poster
+  poster: 3012A
+- title: Calibrated Surrogate Losses for Adversarial Classification With a Reject
+    Option
+  authors: Boris Ndjia Njike, Andriy Balinskyy, Waleed Mustafa, Puyu Wang, Antoine
+    Ledent, Sophie Fellenz, Marius Kloft
+  presentation: Poster
+  poster: 3012B
+- title: 'Green-Edge-Cloud: Routing without Routers via Confidence Calibration'
+  authors: Gao Yunzhe, Zijian Feng, Kezhi Mao
+  presentation: Poster
+  poster: 3013A
+- title: Calibration of Structured Ignorance Certificates for Epistemic Diagnosis
+    of Unknown Unknowns in Reasoning Models
+  authors: Subramanyam Sahoo
+  presentation: Poster
+  poster: 3013B
+- title: 'Learnability-Aware Replay for Mathematical Reasoning: Epistemic Uncertainty
+    as a Guide for Experience Selection'
+  authors: Om Shastri
+  presentation: Poster
+  poster: 3014A
+- title: 'Beyond a Single Signal: SPECTRE-G2 – A Unified Multi-Expert Anomaly Detector
+    for Unknown Unknowns'
+  authors: Rahul D Ray
+  presentation: Poster
+  poster: 3014B
+- title: 'Decoupled Conformal Optimisation: Efficient Prediction Sets via Independent
+    Tuning and Calibration'
+  authors: Fanyi Wu, Lihua Niu, Michele Caprio
+  presentation: Poster
+  poster: 3015A
+- title: 'Probabilistic Chain-of-Thought: Sequential Bayesian Inference over Latent
+    Reasoning Correctness'
+  authors: Suriya Dev Saravanakumar, Ezra Matiwos Wesenie, Kishore Nuthalapati, Laksh
+    Patel
+  presentation: Poster
+  poster: 3015B
+- title: 'Modeling Incomparability: A New Rationality Paradigm for Preference-Based
+    Reinforcement Learning'
+  authors: Simone Drago, Marco Mussi, Leonardo Bianconi, Alberto Maria Metelli
+  presentation: Poster
+  poster: 3016A
+- title: 'I-CALM: Incentivizing Confidence-Aware Abstention for LLM Hallucination
+    Mitigation'
+  authors: Haotian Zong, Binze Li, Yufei Long, Sinyin Chang, Jialong Wu, Gillian K
+    Hadfield
+  presentation: Poster
+  poster: 3016B
+- title: Split Conformal Prediction with Label-Shift-Adjusted Bayesian Scores
+  authors: Hyeonsu Lee, Erkhembayar Jadamba, Juyeon Kim, Seungjin Choi, Hyunjin Shin
+  presentation: Poster
+  poster: 3017A
+- title: 'ReflectiChain: Epistemic Grounding in LLM-Driven World Models for Supply
+    Chain Resilience'
+  authors: Jia Luo
+  presentation: Poster
+  poster: 3017B
+- title: 'ReasonBENCH: Benchmarking the (In)Stability of LLM Reasoning'
+  authors: Nearchos Potamitis, Lars Henning Klein, Akhil Arora
+  presentation: Poster
+  poster: 3100A
+- title: Distributional Energy-Based Models for Uncertainty-Aware Structured LLM Reasoning
+  authors: Shireen Kudukkil Manchingal, Abhey Kalia, Fernanda Gonçalves Abrantes,
+    Shebin Rawther
+  presentation: Poster
+  poster: 3102B
+- title: 'Curiosity-Critic: Cumulative Prediction Error Improvement as a Tractable
+    Intrinsic Reward for World Model Training'
+  authors: Vin Bhaskara, Haicheng Wang
+  presentation: Poster
+  poster: 3101A
+- title: 'MissFlow: Flow Matching for Uncertainty-Quantified Imputation of Missing
+    Tabular Data'
+  authors: Yonghyun Kwon, Sunil Hwang, Joonyoung Jeong
+  presentation: Poster
+  poster: 3102A
+- title: 'Stochastic Sampling is Epistemically Shallow: The Dimensionality Gap Between
+    Temperature Variation and Model Diversity in LLMs'
+  authors: Izhar Ali
+  presentation: Poster
+  poster: 3103A
+- title: Exposure Bias as Epistemic Underidentification in Recursive Forecasting
+  authors: Riku Green, Zahraa S. Abdallah, Telmo M Silva Filho
+  presentation: Poster
+  poster: 3103B
+- title: 'ConfidenceBench: Evaluating Confidence Calibration in Large Language Models'
+  authors: Matthew Ffrench-Constant, Daniel Yang, Sanyam Kapoor, Xinmeng Huang
+  presentation: Poster
+  poster: 3104A
+- title: 'Conformal Bayes under Label Shift: Post-Hoc Calibration vs. In-Training
+    Adaptation'
+  authors: Seungjin Choi
+  presentation: Poster
+  poster: 3104B
+- title: 'HalluHard: A Hard Multi-Turn Hallucination Benchmark'
+  authors: Dongyang Fan, Sébastien Delsad, Nicolas Flammarion, Maksym Andriushchenko
+  presentation: Poster
+  poster: 3105A
+- title: How Effective are Vision Language Models at Adapting to Novel Artifacts?
+  authors: Lance Ying, Séb Arnold, Fei Sha, Sjoerd van Steenkiste
+  presentation: Poster
+  poster: 3105B
+- title: Mitigating Reward Hacking in RLHF via Advantage Sign Robustness
+  authors: Shinnosuke Ono, Johannes Ackermann, Soichiro Nishimori, Takashi Ishida,
+    Masashi Sugiyama
+  presentation: Poster
+  poster: 3106A
+- title: Language-Anchored Prototype Learning for Unseen Compositions
+  authors: Anna-Alina Bondarets, Taras Rumezhak, Volodymyr Karpiv
+  presentation: Poster
+  poster: 3106B
+- title: 'Don''t Guess What You Don''t Know: Spectral Effective Rank as a Diagnostic
+    for Conformal Safety Under Subsampling'
+  authors: Rahul D Ray
+  presentation: Poster
+  poster: 3107A
+- title: Constrained Bayesian Experimental Design via Online Planning
+  authors: Yujia Guo, Daolang Huang, Xinyu Zhang, Sammie Katt, Samuel Kaski, Ayush
+    Bharti
+  presentation: Poster
+  poster: 3107B
+- title: 'Mind the Gap: Recovering Quality in Interrupted LLM Generation Through Continuation
+    Strategy Selection'
+  authors: Tarun Narayanan, Ajay Krishnan
+  presentation: Poster
+  poster: 3108A
+- title: 'Safety Targeted Embedding Exploit via Refinement: LLM Safety as an Epistemic
+    Coverage Problem'
+  authors: Joshua Adrian Cahyono
+  presentation: Poster
+  poster: 3108B
+- title: 'Set-based v.s. Distribution-based Representations of Epistemic Uncertainty:
+    A Comparative Study'
+  authors: Kaizheng Wang, Yunjia Wang, Fabio Cuzzolin, David Moens, Hans Hallez, Siu
+    Lun Chau
+  presentation: Poster
+  poster: 3100B
+- title: Do Humans and Language Models Converge? A Dynamical Systems View of Human-AI
+    Feedback and Co-evolution
+  authors: Xuening Wu, Yanlan Kang, Qianya Xu, Kexuan Xie, Jiaqi Mi, Honggang Wang,
+    Yubin Liu, Zeping Chen
+  presentation: Poster
+  poster: 3109A
+- title: 'The Shape of Reasoning: Topological Analysis of Reasoning Traces in Large
+    Language Models'
+  authors: Xue Wen Tan, Galen Lee, Nathaniel Tan, Stanley Kok
+  presentation: Poster
+  poster: 3109B

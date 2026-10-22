@@ -14,7 +14,7 @@ forgetting, overconfident decisions, and poor communication of uncertainty all
 arise when a system cannot distinguish what is known from what is unknown.
 
 Building on the first EIML workshop at EurIPS 2025 and the second at ICML 2026,
-this third edition at {{ site.workshop.conference }} turns to the field's
+this third edition in Saarbrücken, a pre-{{ site.workshop.conference }} meeting, turns to the field's
 *foundations*. The aim is not to repeat a broad uncertainty workshop, but to
 clarify the conceptual, mathematical, statistical, computational, engineering,
 and philosophical bases on which the field should develop. The relevant

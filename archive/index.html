@@ -1,0 +1,33 @@
+---
+layout: page
+title: Past events
+permalink: /archive/
+archive: true
+description: The history of the Epistemic Intelligence in Machine Learning workshop series, with speakers, themes, committees, and programmes from earlier editions.
+---
+
+<p>The EIML workshop series brings together researchers studying how learning systems recognise, represent, and act under the limits of their knowledge. Explore the themes, people, and programmes that have shaped the series.</p>
+
+<aside class="archive-current">
+  <span class="edition-label">Current edition</span>
+  <h2><a href="{{ '/' | relative_url }}">{{ site.workshop.short_name }}</a></h2>
+  <p>{{ site.workshop.subtitle }} · {{ site.workshop.date }} · {{ site.workshop.location }}</p>
+</aside>
+
+<h2>Past editions</h2>
+<div class="edition-grid">
+{% assign editions = '' | split: '' %}
+{% for entry in site.data.editions %}{% assign editions = editions | push: entry[1] %}{% endfor %}
+{% assign editions = editions | sort: 'number' | reverse %}
+{% for edition in editions %}
+    <article class="edition-card">
+      <span class="edition-label">{{ edition.edition }} edition · {{ edition.year }}</span>
+      <h3><a href="{{ '/archive/' | append: edition.slug | append: '/' | relative_url }}">{{ edition.short_name }}</a></h3>
+      <p class="edition-meta">{{ edition.date }}<br>{{ edition.location }}</p>
+      <p>{{ edition.summary }}</p>
+      <a class="archive-link" href="{{ '/archive/' | append: edition.slug | append: '/' | relative_url }}">Explore EIML {{ edition.number }} <span aria-hidden="true">→</span></a>
+    </article>
+{% endfor %}
+</div>
+
+<p class="archive-provenance">Each archive preserves the information published on that edition's original website. Source links and any provisional details are recorded on the edition page.</p>

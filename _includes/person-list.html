@@ -3,12 +3,12 @@
   Param: people - a _data list, each entry with name + optional affiliation, url
 {%- endcomment -%}
 <ul class="person-list">
-  {% for p in include.people %}
+{% for p in include.people %}
   <li>
     <span class="pl-name">
       {% if p.url and p.url != "" %}<a href="{{ p.url }}">{{ p.name }}</a>{% else %}{{ p.name }}{% endif %}
     </span>
     {% if p.affiliation and p.affiliation != "" %}<span class="pl-affil">{{ p.affiliation }}</span>{% endif %}
   </li>
-  {% endfor %}
+{% endfor %}
 </ul>

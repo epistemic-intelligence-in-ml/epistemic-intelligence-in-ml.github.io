@@ -12,18 +12,20 @@
 workshop:
   edition: "3rd"                      # "1st", "2nd", "3rd", ...
   year: 2026
-  short_name: "EIML3@NeurIPS 2026"        # used in the nav bar / browser title
+  short_name: "EIML3@Saarbrücken"          # used in the nav bar / browser title
   full_name: "The 3rd Workshop on Epistemic Intelligence in Machine Learning"
-  subtitle: "The Roots of Intelligence"   # tagline shown under the title
+  subtitle: "AI that understands the limits of its knowledge"
   conference: "NeurIPS 2026"
-  date: "12 December 2026"                # workshop day, human-readable
-  location: "Paris, France"
+  date: "2–3 December 2026"               # workshop dates, human-readable
+  location: "Saarbrücken, Germany"
+  venue: "CISPA Helmholtz Center for Information Security"
+  venue_url: "https://cispa.de/en"
   contact_email: "pc.eiml.workshop@gmail.com"
 
   # Logos — put image files in assets/img/logo/ and reference the filename here.
   # Leave a value blank ("") to hide that logo slot.
   logo: "EIML3.png"                            # main workshop logo (header + hero)
-  conference_logo: "neurips.png"                 # e.g. the ICML logo, shown in the hero
+  conference_logo: ""                     # independent pre-NeurIPS meeting
   # Partner / sponsor logos (optional) — add as many as you like.
   partner_logos: []
     # - file: "ellis.png"
@@ -31,34 +33,37 @@ workshop:
     #   url: "https://ellis.eu"
 
 # Site-wide (rarely changes)
-title: "EIML3@NeurIPS 2026"
+title: "EIML3@Saarbrücken"
 description: >-
-  The 3rd Workshop on Epistemic Intelligence in Machine Learning,
-  held at NeurIPS 2026 in Paris, France.
+  How can AI understand and reason about the limits of its own knowledge?
+  Join EIML3 at CISPA in Saarbrücken on 2–3 December 2026 for a pre-NeurIPS
+  meeting on uncertainty, robustness, generalisation, continual learning,
+  and reliable decision-making.
 
 # ---------------------------------------------------------------------------
 #  DEPLOYMENT
 # ---------------------------------------------------------------------------
-#  This repo is a user/organisation Pages site
-#  (epistemic-intelligence-in-ml.github.io), so it is served from the domain
-#  root. Leave baseurl empty and url as below.
-url: "https://epistemic-intelligence-in-ml.github.io"
+#  This organisation Pages repository uses the custom domain in CNAME.
+#  It is served from the domain root, so leave baseurl empty.
+url: "https://eiml.cc"
 baseurl: ""
 
 # ---------------------------------------------------------------------------
 #  NAVIGATION  (order = order shown in the menu)
 # ---------------------------------------------------------------------------
 nav:
-  - title: "Home"
-    url: "/"
-#  - title: "Invited Talks"
-#    url: "/invited-talks/"
-  - title: "Calls for Papers"
-    url: "/calls-for-papers/"
-#  - title: "Important Dates"
-#    url: "/important-dates/"
-  - title: "Schedule"
-    url: "/schedule/"
+  - title: "About"
+    url: "/#about"
+  - title: "Topics"
+    url: "/#topics"
+  - title: "Programme"
+    url: "/#programme"
+  - title: "Organisers"
+    url: "/#organisers"
+  - title: "Venue"
+    url: "/#venue"
+  - title: "Past events"
+    url: "/archive/"
 
 # ---------------------------------------------------------------------------
 #  BUILD SETTINGS  (do not normally need to touch)

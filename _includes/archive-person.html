@@ -1,0 +1,15 @@
+<div class="person archive-person">
+{% if include.person.photo and include.person.photo != "" %}
+    <img class="person-photo" src="{{ include.person.photo | relative_url }}" alt="{{ include.person.name | escape }}" width="110" height="110" loading="lazy">
+{% else %}
+{% assign name_parts = include.person.name | split: ' ' %}
+    <div class="person-photo person-initials" aria-hidden="true">{{ name_parts.first | slice: 0 }}{{ name_parts.last | slice: 0 }}</div>
+{% endif %}
+  <div class="person-name">
+{% if include.person.url and include.person.url != "" %}<a href="{{ include.person.url | escape }}">{{ include.person.name }}</a>{% else %}{{ include.person.name }}{% endif %}
+  </div>
+{% if include.person.role %}<div class="person-role">{{ include.person.role }}</div>{% endif %}
+{% if include.person.affiliation %}<div class="person-affil">{{ include.person.affiliation }}</div>{% endif %}
+{% if include.person.expertise %}<div class="person-expertise">{{ include.person.expertise }}</div>{% endif %}
+{% if include.person.talk_title and include.person.talk_title != "" %}<div class="speaker-talk">{{ include.person.talk_title }}</div>{% endif %}
+</div>

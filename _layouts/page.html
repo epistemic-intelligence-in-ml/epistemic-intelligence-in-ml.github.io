@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article class="page">
-  {% unless page.title == "Home" %}
+<article class="page{% if page.archive %} archive-page{% endif %}{% if page.landing %} landing-page{% endif %}">
+{% unless page.title == "Home" %}
     <h1 class="page-title">{{ page.title }}</h1>
-  {% endunless %}
+{% endunless %}
   {{ content }}
 </article>

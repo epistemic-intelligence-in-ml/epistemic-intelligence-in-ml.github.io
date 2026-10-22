@@ -3,34 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Invited Talks · EIML3@NeurIPS 2026</title>
-  <meta name="description" content="The 3rd Workshop on Epistemic Intelligence in Machine Learning, held at NeurIPS 2026 in Paris, France.">
+  <title>Invited Talks · EIML3@Saarbrücken</title>
+  <meta name="description" content="How can AI understand and reason about the limits of its own knowledge? Join EIML3 at CISPA in Saarbrücken on 2–3 December 2026 for a pre-NeurIPS meeting on uncertainty, robustness, generalisation, continual learning, and reliable decision-making.">
   <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/landing.css">
 </head>
-<body>
+<body class="current-edition">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="/">
-      
-        <img class="brand-logo" src="/assets/img/logo/EIML3.png" alt="EIML3@NeurIPS 2026 logo">
-      
-      <span class="brand-text">EIML3@NeurIPS 2026</span>
+
+      <span class="brand-text">EIML3@Saarbrücken</span>
+
     </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.site-nav').classList.toggle('open')">☰</button>
-    <nav class="site-nav">
-      <a href="/">Home</a>
-      <a href="/calls-for-papers/">Calls for Papers</a>
-      <a href="/schedule/">Schedule</a>
-      
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.getElementById('site-navigation').classList.toggle('open'))">☰</button>
+    <nav class="site-nav" id="site-navigation" aria-label="Main navigation" onclick="if(event.target.closest('a')){this.classList.remove('open');document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');}">
+
+<a href="/#about">About</a>
+<a href="/#topics">Topics</a>
+<a href="/#programme">Programme</a>
+<a href="/#organisers">Organisers</a>
+<a href="/#venue">Venue</a>
+<a href="/archive/">Past events</a>
+
+
     </nav>
   </div>
 </header>
 
-  <main class="container">
-    <article class="page">
-  
+  <main class="container" id="main-content">
+<article class="page">
+
     <h1 class="page-title">Invited Talks</h1>
-  
+
   <p>We are honoured to host the following invited speakers and panelists.</p>
 
 <div class="speakers">
@@ -91,7 +97,7 @@
         <a href="https://coe.northeastern.edu/people/restuccia-francesco/">Francesco Restuccia</a>
       
     </div>
-    <div class="speaker-role">Assistant Professor</div>
+    <div class="speaker-role">Associate Professor</div>
     <div class="speaker-affil">Northeastern University, United States</div>
     
     
@@ -136,10 +142,14 @@
   </main>
   <footer class="site-footer">
   <div class="container">
-    
+
+
     <p>The 3rd Workshop on Epistemic Intelligence in Machine Learning</p>
-    <p>12 December 2026 · Paris, France</p>
+    <p>2–3 December 2026 · Saarbrücken, Germany</p>
+    <p>CISPA Helmholtz Center for Information Security · A pre-NeurIPS meeting</p>
+    <p><a href="/calls-for-papers/">Call for papers</a> · <a href="/schedule/">Programme</a> · <a href="/important-dates/">Important dates</a></p>
     <p>Questions? <a href="mailto:pc.eiml.workshop@gmail.com">pc.eiml.workshop@gmail.com</a></p>
+
   </div>
 </footer>
 
