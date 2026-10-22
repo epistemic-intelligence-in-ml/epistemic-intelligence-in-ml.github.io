@@ -56,6 +56,8 @@
 .landing-section { padding: 4rem 0; border-top: 1px solid var(--border); }
 .landing-page h2 { font-size: clamp(1.9rem, 3vw, 2.55rem); font-weight: 500; line-height: 1.18; letter-spacing: -.045em; color: var(--accent-dark); margin: 0; }
 .landing-page h3 { font-size: 1.3rem; font-weight: 600; letter-spacing: -.015em; line-height: 1.4; margin: 0 0 .65rem; }
+.invited-speakers-section { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 1rem 3rem; }
+.landing-page .speakers-status { margin: 0; color: var(--muted); font-size: 1.3rem; }
 .about-section, .history-section { display: grid; grid-template-columns: 1fr 1.35fr; gap: 2.5rem 4rem; }
 .section-prose > p:first-child { margin-top: 0; }
 .section-prose > p:last-child { margin-bottom: 0; }

@@ -33,6 +33,11 @@ landing: true
   </aside>
 </section>
 
+<section class="landing-section invited-speakers-section" id="invited-speakers" aria-labelledby="invited-speakers-heading">
+  <div class="section-heading"><h2 id="invited-speakers-heading">Invited speakers</h2></div>
+  <p class="speakers-status">To be announced.</p>
+</section>
+
 <section class="landing-section about-section" id="about" aria-labelledby="about-heading">
   <div class="section-heading">
     <p class="section-kicker">The idea</p>
@@ -82,7 +87,7 @@ landing: true
     <div class="programme-format"><span class="format-number" aria-hidden="true">0{{ forloop.index }}</span><h3>{{ session.title }}</h3><p>{{ session.description }}</p></div>
 {% endfor %}
   </div>
-  <div class="programme-note"><p>The detailed two-day schedule will be announced here.</p><a class="text-link" href="{{ '/invited-talks/' | relative_url }}">Meet the invited speakers <span aria-hidden="true">↗</span></a></div>
+  <div class="programme-note"><p>The detailed two-day schedule will be announced here.</p><a class="text-link" href="{{ '/invited-talks/' | relative_url }}">Invited speakers <span aria-hidden="true">↗</span></a></div>
 </section>
 
 <section class="landing-section organisers-section" id="organisers" aria-labelledby="organisers-heading">
