@@ -1,0 +1,42 @@
+# Tentative timetable. Blank day_2 entries are intentionally left unspecified.
+days:
+  - "December 2"
+  - "December 3"
+
+rows:
+  - time: "09:00"
+    day_1: "Welcome"
+    day_2: ""
+  - time: "09:15–10:00"
+    day_1: "Invited talk I: TBC"
+    day_2: "Invited talk III: TBC"
+  - time: "10:00–10:30"
+    day_1: "Coffee Break"
+    day_2: ""
+    break: true
+  - time: "10:30–11:15"
+    day_1: "Contributed talks from participants"
+    day_2: "Invited talk IV: TBC"
+  - time: "11:15–12:00"
+    day_1: "Poster Session"
+    day_2: "Poster Session"
+  - time: "12:00–14:00"
+    day_1: "Research Lunch"
+    day_2: ""
+    break: true
+  - time: "14:00–14:45"
+    day_1: "Invited talk II: TBC"
+    day_2: "Invited talk V: TBC"
+  - time: "14:45–15:30"
+    day_1: "Open discussion"
+    day_2: "Open Problems and Challenges"
+  - time: "15:30–16:00"
+    day_1: "Coffee Break"
+    day_2: ""
+    break: true
+  - time: "16:00–18:00"
+    day_1: "City tour"
+    day_2: "Departure"
+  - time: "19:00"
+    day_1: "Group dinner"
+    day_2: ""

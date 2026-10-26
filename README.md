@@ -31,6 +31,7 @@ templates. Each year:
    - `organisers.yml` — organising committee
    - `committee.yml` — programme committee
    - `schedule.yml` — programme formats (`title` and `description`), shown on Home and Programme
+   - `timetable.yml` — tentative two-day timetable, shared by Home and Programme through `_includes/timetable.html`; keep unspecified sessions blank
    - `topics.yml` — topics of interest (if the scope shifts)
 3. **Photos** — drop headshots into `assets/img/{speakers,organisers,committee}/`
    and set the matching `photo:` filename in the data file. Leave `photo:` blank

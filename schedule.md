@@ -18,4 +18,4 @@ uncertainty in AI.
 </div>
 {% endfor %}
 
-A detailed schedule will be announced closer to the workshop.
+{% include timetable.html %}

@@ -1,0 +1,27 @@
+<div class="workshop-timetable">
+  <h{{ include.heading_level | default: 2 }} id="timetable-heading">Tentative timetable</h{{ include.heading_level | default: 2 }}>
+  <p class="timetable-note" id="timetable-note">Subject to change. All times are local to Saarbrücken. TBC = to be confirmed.</p>
+  <p class="timetable-hint">Scroll horizontally to view both days.</p>
+  <div class="table-scroll timetable-scroll" role="region" aria-labelledby="timetable-heading" tabindex="0">
+    <table class="data timetable" aria-describedby="timetable-note">
+      <caption class="visually-hidden">Tentative workshop timetable for {{ site.workshop.date }}</caption>
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+{% for day in site.data.timetable.days %}
+          <th scope="col">{{ day | escape }}</th>
+{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+{% for row in site.data.timetable.rows %}
+        <tr{% if row.break %} class="timetable-break"{% endif %}>
+          <th scope="row">{{ row.time | escape }}</th>
+          <td>{% if row.break %}<strong>{{ row.day_1 | escape }}</strong>{% else %}{{ row.day_1 | escape }}{% endif %}</td>
+          <td>{{ row.day_2 | escape }}</td>
+        </tr>
+{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
