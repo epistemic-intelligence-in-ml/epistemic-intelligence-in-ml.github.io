@@ -37,14 +37,15 @@ templates. Each year:
 3. **Photos** — drop headshots into `assets/img/{speakers,organisers,committee}/`
    and set the matching `photo:` filename in the data file. Leave `photo:` blank
    for an initials placeholder.
-   Current speakers share `_includes/confirmed-speakers.html` on Programme and
-   Invited speakers. Portrait spaces are reserved while `photo` is blank; add
+   Full speaker profiles use `_includes/confirmed-speakers.html` on Invited
+   speakers; Programme shows a compact names list linked to that page.
+   Portrait spaces are reserved while `photo` is blank; add
    e.g. `isabel-valera.jpg`, `ilja-kuzborskij.jpg` and `willem-waegeman.jpg` to
    `assets/img/speakers/`, then set each filename in `_data/speakers.yml`.
    `research_interests` describes each speaker's area; assign talk titles and
    timetable slots only when confirmed separately.
 4. Keep `index.md` as a short overview. The primary navigation separates
-   Programme (`schedule.md`), Participants (`participants.md`), Travel
+   Programme (`schedule.md`), Speakers (`invited-talks.md`), Participants (`participants.md`), Travel
    (`travel.md`), About (`about.md`) and Past events. Topics, organisers and
    workshop history live on About; regional sightseeing and onward travel are
    in a disclosure on Travel. Update the date panel and current-edition history
@@ -99,5 +100,5 @@ _includes/               header, footer, reusable person card
 assets/css/style.css     theme (colours in :root at the top)
 assets/css/landing.css   current-edition theme and responsive landing page
 assets/img/              logos, headshots, and credited venue photography
-*.md                     current pages (Overview, Programme, Participants, Travel, About, plus supporting pages)
+*.md                     current pages (Overview, Programme, Speakers, Participants, Travel, About, plus supporting pages)
 ```

@@ -24,6 +24,7 @@
 .current-edition:not(.is-landing) main.container { padding-top: 3rem; padding-bottom: 4rem; }
 .current-edition .page-title { border: 0; padding: 0; margin: 0 0 1.5rem; font-size: clamp(2rem, 4vw, 2.65rem); font-weight: 500; line-height: 1.2; letter-spacing: -.035em; }
 .current-edition .page-lead { font-size: 1.125rem; color: var(--muted); max-width: 45rem; }
+.current-edition .page-meta { font-size: .95rem; color: var(--muted); }
 .current-edition a:focus-visible, .current-edition button:focus-visible, .current-edition summary:focus-visible { outline: 3px solid #0073c7; outline-offset: 5px; }
 .is-landing main.container { max-width: 1200px; padding-top: 0; padding-bottom: 0; }
 .landing-page { font-size: 1.125rem; }
@@ -156,11 +157,11 @@ table.timetable { table-layout: fixed; min-width: 36rem; margin: 0; font-size: 1
 .contact-strip { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 2rem; border-top: 1px solid var(--border); padding: 3rem 0 4rem; }
 .contact-strip .text-link { overflow-wrap: anywhere; }
 .contact-strip h2 { font-size: 2rem; }
-.overview-intro { display: grid; grid-template-columns: 1fr 1.35fr; gap: 3rem; padding: 2.5rem 0; }
+.overview-intro { display: grid; grid-template-columns: 1fr 1.35fr; gap: 3rem; padding: 2.5rem 0 3rem; }
 .landing-page .overview-intro h2 { font-size: 1.9rem; line-height: 1.25; max-width: 14rem; }
 .landing-page .overview-intro p { color: var(--muted); font-size: 1.05rem; margin: 0 0 1rem; }
 .overview-about-links { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; }
-.overview-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; padding: 0 0 3.5rem; }
+.overview-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; padding: 0 0 2.5rem; }
 .overview-link { border-top: 1px solid var(--border); padding-top: 1.25rem; }
 .landing-page .overview-link h2 { font-size: 1.35rem; line-height: 1.4; letter-spacing: -.02em; }
 .landing-page .overview-link p { color: var(--muted); font-size: 1rem; margin: .65rem 0 1rem; }
@@ -193,6 +194,9 @@ table.participants-table th, table.participants-table td { padding: 1rem .5rem; 
 .programme-speakers h2 { font-size: 1.25rem; margin: 0; }
 .programme-speakers p { color: var(--muted); margin: 0; }
 .speakers-heading { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .75rem 2rem; }
+.programme-speaker-names { display: flex; flex-wrap: wrap; gap: .5rem 2rem; list-style: none; padding: 0; margin: 1rem 0 .65rem; }
+.programme-speaker-names li { font-weight: 600; }
+.programme-speakers .speaker-schedule-note { font-size: .9rem; }
 .confirmed-speakers { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem; margin: 1.75rem 0; }
 .confirmed-speakers .speaker { align-items: stretch; width: auto; padding: 0; text-align: left; background: transparent; border: 0; border-radius: 0; transition: none; }
 .confirmed-speakers .speaker:hover { box-shadow: none; transform: none; }
@@ -222,6 +226,12 @@ table.participants-table th, table.participants-table td { padding: 1rem .5rem; 
   .landing-page .person { display: block; }
   .landing-page .person-photo { margin-bottom: 1rem; }
 }
+@media (min-width: 801px) and (max-width: 960px) {
+  .current-edition .nav-toggle { display: block; }
+  .current-edition .site-nav { display: none; flex-direction: column; width: 100%; gap: .3rem; padding: .2rem 0 .7rem; }
+  .current-edition .site-nav.open { display: flex; }
+  .current-edition .site-nav a { padding: .5rem 0; }
+}
 @media (max-width: 800px) {
   .current-edition .header-inner { min-height: 72px; }
   .current-edition .site-nav { gap: .3rem; padding: .2rem 0 .7rem; }
@@ -246,7 +256,10 @@ table.participants-table th, table.participants-table td { padding: 1rem .5rem; 
   .landing-hero { grid-template-columns: 1fr; gap: 2.5rem; }
   .landing-hero h1 { font-size: clamp(2.4rem, 9vw, 3.5rem); }
   .landing-page .section-kicker { font-size: .875rem; }
-  .landing-page .hero-when { display: block; color: var(--accent); font-size: 1rem; margin: 0; }
+  .landing-page .hero-when { display: block; color: var(--accent-dark); font-size: 1rem; font-weight: 600; margin: 0 0 1.25rem; }
+  .hero-when a { display: inline-block; font-weight: 400; margin-top: .25rem; }
+  .landing-hero .event-panel { display: none; }
+  .landing-hero { padding: 2rem 0; }
   .hero-actions { gap: 1rem; }
   .button { gap: 1.2rem; }
   .event-panel { max-width: 100%; }

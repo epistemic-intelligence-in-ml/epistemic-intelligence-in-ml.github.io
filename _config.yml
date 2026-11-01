@@ -61,6 +61,8 @@ nav:
     url: "/"
   - title: "Programme"
     url: "/schedule/"
+  - title: "Speakers"
+    url: "/invited-talks/"
   - title: "Participants"
     url: "/participants/"
   - title: "Travel"
