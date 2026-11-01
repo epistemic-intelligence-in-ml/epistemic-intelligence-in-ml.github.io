@@ -1,0 +1,5 @@
+<div class="speakers confirmed-speakers">
+{% for speaker in site.data.speakers %}
+{% include speaker-card.html speaker=speaker heading_level=include.heading_level %}
+{% endfor %}
+</div>

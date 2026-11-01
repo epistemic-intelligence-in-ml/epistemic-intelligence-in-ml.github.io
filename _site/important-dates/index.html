@@ -20,12 +20,11 @@
     <button class="nav-toggle" aria-label="Toggle navigation" aria-controls="site-navigation" aria-expanded="false" onclick="this.setAttribute('aria-expanded', document.getElementById('site-navigation').classList.toggle('open'))">☰</button>
     <nav class="site-nav" id="site-navigation" aria-label="Main navigation" onclick="if(event.target.closest('a')){this.classList.remove('open');document.querySelector('.nav-toggle').setAttribute('aria-expanded','false');}">
 
-<a href="/#about">About</a>
-<a href="/#topics">Topics</a>
-<a href="/#programme">Programme</a>
-<a href="/#organisers">Organisers</a>
-<a href="/#venue">Venue</a>
+<a href="/">Overview</a>
+<a href="/schedule/">Programme</a>
+<a href="/participants/">Participants</a>
 <a href="/travel/">Travel</a>
+<a href="/about/">About</a>
 <a href="/archive/">Past events</a>
 
 
@@ -92,11 +91,14 @@ pre-NeurIPS 2026 meeting.</p>
   <div class="container">
 
 
-    <p>The 3rd Workshop on Epistemic Intelligence in Machine Learning</p>
-    <p>2–3 December 2026 · St. Ingbert, near Saarbrücken, Germany</p>
-    <p>CISPA Helmholtz Center for Information Security · D1 (City Building) · A pre-NeurIPS meeting</p>
-    <p><a href="/calls-for-papers/">Call for papers</a> · <a href="/schedule/">Programme</a> · <a href="/important-dates/">Important dates</a> · <a href="/travel/">How to get to CISPA</a></p>
-    <p>Questions? <a href="mailto:pc.eiml.workshop@gmail.com">pc.eiml.workshop@gmail.com</a></p>
+    <div class="footer-current">
+      <div><p class="footer-title">EIML3@Saarbrücken</p><p>2–3 December 2026 · CISPA D1, St. Ingbert</p></div>
+      <nav class="footer-links" aria-label="More workshop information">
+        <a href="/calls-for-papers/">Call for papers</a>
+        <a href="/important-dates/">Important dates</a>
+        <a href="mailto:pc.eiml.workshop@gmail.com">Contact</a>
+      </nav>
+    </div>
 
   </div>
 </footer>

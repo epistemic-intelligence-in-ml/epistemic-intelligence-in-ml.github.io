@@ -30,15 +30,26 @@ templates. Each year:
    - `speakers.yml` — confirmed invited speakers
    - `organisers.yml` — organising committee
    - `committee.yml` — programme committee
-   - `schedule.yml` — programme formats (`title` and `description`), shown on Home and Programme
-   - `timetable.yml` — tentative two-day timetable, shared by Home and Programme through `_includes/timetable.html`; keep unspecified sessions blank
+   - `participants.yml` — confirmed participant names and affiliations only; remove test rows and duplicates before adding entries
+   - `schedule.yml` — programme formats (`title` and `description`), shown on Programme
+   - `timetable.yml` — tentative two-day timetable on Programme through `_includes/timetable.html`; keep unspecified sessions blank
    - `topics.yml` — topics of interest (if the scope shifts)
 3. **Photos** — drop headshots into `assets/img/{speakers,organisers,committee}/`
    and set the matching `photo:` filename in the data file. Leave `photo:` blank
    for an initials placeholder.
-4. Edit the prose on `index.md` / `calls-for-papers.md` if the framing changes.
-   The landing page also contains the date-panel typography, travel details,
-   and series timeline; update these when changing editions.
+   Current speakers share `_includes/confirmed-speakers.html` on Programme and
+   Invited speakers. Portrait spaces are reserved while `photo` is blank; add
+   e.g. `isabel-valera.jpg`, `ilja-kuzborskij.jpg` and `willem-waegeman.jpg` to
+   `assets/img/speakers/`, then set each filename in `_data/speakers.yml`.
+   `research_interests` describes each speaker's area; assign talk titles and
+   timetable slots only when confirmed separately.
+4. Keep `index.md` as a short overview. The primary navigation separates
+   Programme (`schedule.md`), Participants (`participants.md`), Travel
+   (`travel.md`), About (`about.md`) and Past events. Topics, organisers and
+   workshop history live on About; regional sightseeing and onward travel are
+   in a disclosure on Travel. Update the date panel and current-edition history
+   when changing editions. Legacy homepage anchors still point to short summaries.
+   Edit `calls-for-papers.md` if the framing changes.
    Keep `travel.md` aligned with the exact workshop building. Its D1 directions
    are based on CISPA's locations page and International Welcome Hub; CISPA's
    general directions to its main C0 building do not apply to D1.
@@ -88,5 +99,5 @@ _includes/               header, footer, reusable person card
 assets/css/style.css     theme (colours in :root at the top)
 assets/css/landing.css   current-edition theme and responsive landing page
 assets/img/              logos, headshots, and credited venue photography
-*.md                     current pages (Home, Invited Talks, CfP, Dates, Programme, Travel)
+*.md                     current pages (Overview, Programme, Participants, Travel, About, plus supporting pages)
 ```
