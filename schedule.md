@@ -5,7 +5,8 @@ permalink: /schedule/
 ---
 
 The workshop takes place over two days, **{{ site.workshop.date }}**, at
-**{{ site.workshop.venue }}** in **{{ site.workshop.location }}**.
+**{{ site.workshop.venue }}**, **{{ site.workshop.venue_building }}**, in **{{ site.workshop.location }}**.
+See [how to get to CISPA]({{ '/travel/' | relative_url }}) for the address and travel directions.
 
 The programme will bring together invited talks, discussions, and a poster
 session, with time to exchange ideas across the foundations and applications of

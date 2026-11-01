@@ -17,8 +17,13 @@ workshop:
   subtitle: "AI that understands the limits of its knowledge"
   conference: "NeurIPS 2026"
   date: "2–3 December 2026"               # workshop dates, human-readable
-  location: "Saarbrücken, Germany"
+  location: "St. Ingbert, near Saarbrücken, Germany"
   venue: "CISPA Helmholtz Center for Information Security"
+  venue_building: "D1 (City Building)"
+  venue_street: "Kaiserstraße 21"
+  venue_postcode: "66386"
+  venue_city: "St. Ingbert"
+  venue_map_url: "https://www.google.com/maps/search/?api=1&query=CISPA+D1+Kaiserstra%C3%9Fe+21+66386+St.+Ingbert+Germany"
   venue_url: "https://cispa.de/en"
   contact_email: "pc.eiml.workshop@gmail.com"
 
@@ -36,7 +41,7 @@ workshop:
 title: "EIML3@Saarbrücken"
 description: >-
   How can AI understand and reason about the limits of its own knowledge?
-  Join EIML3 at CISPA in Saarbrücken on 2–3 December 2026 for a pre-NeurIPS
+  Join EIML3 at CISPA D1 in St. Ingbert, near Saarbrücken, on 2–3 December 2026 for a pre-NeurIPS
   meeting on uncertainty, robustness, generalisation, continual learning,
   and reliable decision-making.
 
@@ -62,6 +67,8 @@ nav:
     url: "/#organisers"
   - title: "Venue"
     url: "/#venue"
+  - title: "Travel"
+    url: "/travel/"
   - title: "Past events"
     url: "/archive/"
 

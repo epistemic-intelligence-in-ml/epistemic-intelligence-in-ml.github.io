@@ -99,6 +99,20 @@ table.timetable { table-layout: fixed; min-width: 36rem; margin: 0; font-size: 1
 .city-photo figcaption { font-size: .875rem; color: var(--muted); margin-top: .6rem; line-height: 1.6; }
 .venue-copy > p { color: var(--muted); }
 .venue-copy .venue-name { font-size: 1.3rem; line-height: 1.5; color: var(--text); font-weight: 600; margin: 0; }
+.venue-copy .venue-address { color: var(--text); }
+.venue-directions-link { margin: .25rem 0; }
+.arrival-address { background: var(--bg-alt); border-left: 3px solid var(--accent); padding: 1.5rem 1.75rem; margin: 1.75rem 0 2rem; }
+.arrival-guide .section-kicker { color: var(--accent); font-size: .875rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 .5rem; }
+.arrival-address h2 { margin: 0 0 .75rem; }
+.arrival-address address { font-style: normal; font-size: 1.125rem; margin: 0 0 1rem; }
+.arrival-address .arrival-location-note { color: var(--muted); margin: 1rem 0 0; }
+.arrival-routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 2.5rem; }
+.arrival-route { border-top: 2px solid #86badf; padding-top: 1rem; }
+.arrival-route h2 { margin-top: 0; }
+.arrival-route p { color: var(--muted); }
+.arrival-route strong { color: var(--text); }
+.arrival-sources { border-top: 1px solid var(--border); padding-top: 1rem; margin-top: 2rem; }
+.arrival-sources p { color: var(--muted); font-size: .875rem; }
 .travel-panel { background: #eaf2f7; padding: 1.8rem 2rem; border-radius: 4px; }
 .travel-panel h3 { font-size: 1.55rem; font-weight: 500; line-height: 1.25; letter-spacing: -.03em; }
 .travel-panel > p { font-size: 1.125rem; }
@@ -165,6 +179,7 @@ table.timetable { table-layout: fixed; min-width: 36rem; margin: 0; font-size: 1
   .programme-formats { gap: 1.5rem; }
   .travel-panel { padding: 1.5rem; }
   .venue-introduction { grid-template-columns: 1fr; }
+  .arrival-routes { grid-template-columns: 1fr; }
   .research-neighbours { grid-template-columns: 1fr 1.3fr; }
 }
 @media (max-width: 600px) {
@@ -190,6 +205,7 @@ table.timetable { table-layout: fixed; min-width: 36rem; margin: 0; font-size: 1
   .format-number { margin-bottom: .6rem; }
   .programme-format p { margin-top: .5rem; }
   .programme-note { margin-top: 1.5rem; }
+  .arrival-address { padding: 1.25rem; }
   .workshop-timetable .timetable-hint { display: block; }
   .edition-trail { margin-top: .5rem; }
   .landing-page .people { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.2rem; }

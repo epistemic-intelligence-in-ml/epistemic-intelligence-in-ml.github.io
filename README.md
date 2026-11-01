@@ -24,7 +24,7 @@ The site is data-driven, so a new edition is mostly editing config + data — no
 templates. Each year:
 
 1. **`_config.yml`** — update the `workshop:` block (edition, year, dates,
-   location, contact). Update the `nav:` list only if pages change.
+   location, contact, venue building, street, postcode, city and map URL). Update the `nav:` list only if pages change.
 2. **`_data/`** — refresh the content:
    - `dates.yml` — submission/review/camera-ready/workshop dates
    - `speakers.yml` — confirmed invited speakers
@@ -39,6 +39,9 @@ templates. Each year:
 4. Edit the prose on `index.md` / `calls-for-papers.md` if the framing changes.
    The landing page also contains the date-panel typography, travel details,
    and series timeline; update these when changing editions.
+   Keep `travel.md` aligned with the exact workshop building. Its D1 directions
+   are based on CISPA's locations page and International Welcome Hub; CISPA's
+   general directions to its main C0 building do not apply to D1.
 
 Tip: consider tagging each year (`git tag 2026`) before rolling over, so past
 editions stay recoverable.
@@ -85,5 +88,5 @@ _includes/               header, footer, reusable person card
 assets/css/style.css     theme (colours in :root at the top)
 assets/css/landing.css   current-edition theme and responsive landing page
 assets/img/              logos, headshots, and credited venue photography
-*.md                     the five pages (Home, Invited Talks, CfP, Dates, Programme)
+*.md                     current pages (Home, Invited Talks, CfP, Dates, Programme, Travel)
 ```

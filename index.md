@@ -8,13 +8,13 @@ landing: true
 <section class="landing-hero" aria-labelledby="workshop-heading">
   <div class="hero-copy">
     <p class="section-kicker">The 3rd Workshop on Epistemic Intelligence in Machine Learning</p>
-    <p class="hero-when">{{ site.workshop.date }} · CISPA, Saarbrücken</p>
+    <p class="hero-when">{{ site.workshop.date }} · CISPA D1, {{ site.workshop.venue_city }}</p>
     <h1 id="workshop-heading">AI that understands<br>the limits of its<br><em>knowledge.</em></h1>
     <p class="hero-intro">How can AI systems recognise what they know, identify what they do not know, and act appropriately under uncertainty?</p>
     <p class="hero-description">EIML3 brings together research on uncertainty, robustness, generalisation, continual learning, and reliable decision-making to explore this question.</p>
     <div class="hero-actions">
       <a class="button button-primary" href="#about">Explore the workshop <span aria-hidden="true">↗</span></a>
-      <a class="text-link" href="#venue">Plan your visit <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="{{ '/travel/' | relative_url }}">Plan your visit <span aria-hidden="true">→</span></a>
     </div>
   </div>
   <aside class="event-panel" aria-label="Workshop at a glance">
@@ -24,8 +24,8 @@ landing: true
       <p class="event-days"><span>02</span><span class="date-dash">—</span><span>03</span></p>
       <p class="event-weekdays">Wednesday &amp; Thursday</p>
       <div class="event-location">
-        <p>Saarbrücken, Germany</p>
-        <a href="#venue">{{ site.workshop.venue }}</a>
+        <p>{{ site.workshop.location }}</p>
+        <a href="{{ '/travel/' | relative_url }}">CISPA {{ site.workshop.venue_building }}</a>
       </div>
       <p class="event-context">A pre-NeurIPS meeting</p>
       <a class="event-travel" href="#getting-here">Paris ↔ Saarbrücken <span>About 2 hours by direct train <span aria-hidden="true">↗</span></span></a>
@@ -51,7 +51,7 @@ landing: true
 
 <section class="landing-section history-section" aria-labelledby="history-heading">
   <div class="section-heading"><p class="section-kicker">The EIML story</p><h2 id="history-heading">A growing conversation.</h2></div>
-  <div class="section-prose"><p>EIML began at EurIPS 2025 in Copenhagen, bringing together researchers interested in how machine learning can recognise and respond to gaps in its knowledge. The second edition, at ICML 2026 in Seoul, expanded the conversation to generative AI, robustness, safety, and continual learning. EIML3 continues this journey in Saarbrücken, connecting the foundations of imprecision and uncertainty with the needs of modern AI.</p></div>
+  <div class="section-prose"><p>EIML began at EurIPS 2025 in Copenhagen, bringing together researchers interested in how machine learning can recognise and respond to gaps in its knowledge. The second edition, at ICML 2026 in Seoul, expanded the conversation to generative AI, robustness, safety, and continual learning. EIML3 continues this journey in the Saarbrücken region, connecting the foundations of imprecision and uncertainty with the needs of modern AI.</p></div>
   <ol class="edition-trail">
     <li><a href="{{ '/archive/eiml1/' | relative_url }}"><span class="edition-year">2025 · Copenhagen</span><strong>EIML1 @ EurIPS</strong><span>Where the conversation began <span aria-hidden="true">↗</span></span></a></li>
     <li><a href="{{ '/archive/eiml2/' | relative_url }}"><span class="edition-year">2026 · Seoul</span><strong>EIML2 @ ICML</strong><span>Broadening the perspective <span aria-hidden="true">↗</span></span></a></li>
@@ -103,7 +103,7 @@ landing: true
 <section class="landing-section venue-section" id="venue" aria-labelledby="venue-heading">
   <div class="section-heading">
     <p class="section-kicker">The setting</p>
-    <h2 id="venue-heading">Meet in Saarbrücken.<br>Stay curious.</h2>
+    <h2 id="venue-heading">Your visit to CISPA.<br>Stay curious.</h2>
   </div>
   <figure class="city-photo">
     <img src="{{ '/assets/img/venue/saarbruecken-ludwigsplatz.jpg' | relative_url }}" alt="Ludwigskirche and the surrounding baroque buildings on Ludwigsplatz in Saarbrücken" width="1800" height="814" loading="lazy">
@@ -112,8 +112,10 @@ landing: true
   <div class="venue-introduction">
     <div class="venue-copy">
       <p class="venue-name">{{ site.workshop.venue }}</p>
-      <p>Join us at <a href="{{ site.workshop.venue_url }}">CISPA</a> in beautiful Saarbrücken, a city on the River Saar where a lively research community meets old-town squares, riverside walks, and a distinctive Franco-German character.</p>
-      <p>Beyond the workshop, explore the cafés around St. Johanner Markt, the baroque Ludwigskirche, and the paths along the river.</p>
+      <p class="venue-address"><strong>{{ site.workshop.venue_building }}</strong><br>{{ site.workshop.venue_street }}, {{ site.workshop.venue_postcode }} {{ site.workshop.venue_city }}, Germany</p>
+      <p>Join us at <a href="{{ site.workshop.venue_url }}">CISPA</a> in St. Ingbert, near Saarbrücken. D1 is a short walk from St. Ingbert railway station and the town’s central bus station.</p>
+      <a class="text-link venue-directions-link" href="{{ '/travel/' | relative_url }}">How to get to CISPA <span aria-hidden="true">→</span></a>
+      <p>Beyond the workshop, visit nearby Saarbrücken to explore the cafés around St. Johanner Markt, the baroque Ludwigskirche, and the paths along the river.</p>
       <a class="text-link" href="https://tourismus.saarbruecken.de/en">Discover Saarbrücken <span aria-hidden="true">↗</span></a>
     </div>
     <div class="travel-panel" id="getting-here">

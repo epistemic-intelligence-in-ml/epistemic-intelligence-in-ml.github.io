@@ -21,5 +21,7 @@ All deadlines are end of day **Anywhere on Earth (AoE)** unless otherwise noted.
 </table>
 
 The workshop takes place on **{{ site.workshop.date }}** at
-**{{ site.workshop.venue }}** in **{{ site.workshop.location }}**, as a
+**{{ site.workshop.venue }}**, **{{ site.workshop.venue_building }}**, in **{{ site.workshop.location }}**, as a
 pre-{{ site.workshop.conference }} meeting.
+
+See [how to get to CISPA]({{ '/travel/' | relative_url }}) for the address and travel directions.
