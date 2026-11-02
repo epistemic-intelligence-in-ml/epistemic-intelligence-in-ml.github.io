@@ -13,7 +13,7 @@ landing: true
     <p class="hero-intro">How can AI systems recognise what they know, identify what they do not know, and act appropriately under uncertainty?</p>
     <div class="hero-actions">
       <a class="button button-primary" href="{{ '/schedule/' | relative_url }}">View programme <span aria-hidden="true">→</span></a>
-      <a class="text-link" href="{{ '/travel/' | relative_url }}">Plan your visit <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="#invited-speakers">Meet the speakers <span aria-hidden="true">↓</span></a>
     </div>
   </div>
   <aside class="event-panel" aria-label="Workshop at a glance">
@@ -31,17 +31,19 @@ landing: true
   </aside>
 </section>
 
+<section class="landing-section landing-people-section landing-speakers" id="invited-speakers" aria-labelledby="landing-speakers-heading">
+  <div class="people-section-heading">
+    <h2 id="landing-speakers-heading">Invited speakers</h2>
+    <a class="text-link" href="{{ '/invited-talks/' | relative_url }}">Speaker details <span aria-hidden="true">→</span></a>
+  </div>
+{% include confirmed-speakers.html heading_level=3 %}
+</section>
+
 <section class="overview-links" aria-label="Workshop information">
   <div class="overview-link" id="programme">
     <h2>Programme</h2>
     <p>Two days of invited talks, posters and open discussion.</p>
     <a class="text-link" id="timetable-heading" href="{{ '/schedule/' | relative_url }}">View tentative timetable <span aria-hidden="true">→</span></a>
-    <a class="text-link overview-speakers-link" id="invited-speakers" href="{{ '/invited-talks/' | relative_url }}">Meet the speakers <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="overview-link">
-    <h2>Participants</h2>
-    <p>Confirmed participants from across the research community.</p>
-    <a class="text-link" href="{{ '/participants/' | relative_url }}">See who’s joining <span aria-hidden="true">→</span></a>
   </div>
   <div class="overview-link" id="venue">
     <h2>Venue &amp; travel</h2>
@@ -50,13 +52,34 @@ landing: true
   </div>
 </section>
 
+<section class="landing-section landing-people-section landing-organisers" id="organisers" aria-labelledby="landing-organisers-heading">
+  <div class="people-section-heading">
+    <h2 id="landing-organisers-heading">Organising team</h2>
+    <a class="text-link" href="{{ '/about/#organisers' | relative_url }}">About the organisers <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="people organising-people">
+{% for person in site.data.organisers %}
+{% include person-card.html person=person folder="organisers" %}
+{% endfor %}
+  </div>
+</section>
+
+<section class="landing-section landing-people-section landing-participants" id="participants" aria-labelledby="landing-participants-heading">
+  <div class="people-section-heading">
+    <h2 id="landing-participants-heading">Confirmed participants</h2>
+    <a class="text-link" href="{{ '/participants/' | relative_url }}">Participant directory <span aria-hidden="true">→</span></a>
+  </div>
+  <p class="people-section-intro">Confirmed participants from across the research community.</p>
+{% include participant-preview.html %}
+</section>
+
 <section class="landing-section overview-intro" id="about" aria-labelledby="overview-about-heading">
   <h2 id="overview-about-heading">A meeting of perspectives.</h2>
   <div>
     <p>EIML3 brings together research on uncertainty, robustness, generalisation, continual learning, and reliable decision-making. We connect the foundations of uncertainty with the practical challenges of modern AI.</p>
     <div class="overview-about-links">
       <a class="text-link" id="topics" href="{{ '/about/#topics' | relative_url }}">Topics <span aria-hidden="true">→</span></a>
-      <a class="text-link" id="organisers" href="{{ '/about/#organisers' | relative_url }}">Organising team <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="#organisers">Organising team <span aria-hidden="true">↑</span></a>
       <a class="text-link" href="{{ '/about/#history' | relative_url }}">Workshop story <span aria-hidden="true">→</span></a>
     </div>
   </div>

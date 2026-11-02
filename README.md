@@ -37,19 +37,22 @@ templates. Each year:
 3. **Photos** — drop headshots into `assets/img/{speakers,organisers,committee}/`
    and set the matching `photo:` filename in the data file. Leave `photo:` blank
    for an initials placeholder.
-   Full speaker profiles use `_includes/confirmed-speakers.html` on Invited
-   speakers; Programme shows a compact names list linked to that page.
+   Speaker profiles share `_includes/confirmed-speakers.html` on the landing
+   page and Invited speakers; Programme shows a compact names list.
    Portrait spaces are reserved while `photo` is blank; add
    e.g. `isabel-valera.jpg`, `ilja-kuzborskij.jpg` and `willem-waegeman.jpg` to
    `assets/img/speakers/`, then set each filename in `_data/speakers.yml`.
    `research_interests` describes each speaker's area; assign talk titles and
    timetable slots only when confirmed separately.
-4. Keep `index.md` as a short overview. The primary navigation separates
+4. Keep `index.md` focused on the people attending: featured speakers, compact
+   organiser profiles and all confirmed participants via
+   `_includes/participant-preview.html`. Show names and affiliations without a
+   numerical participant count. The primary navigation separates
    Programme (`schedule.md`), Speakers (`invited-talks.md`), Participants (`participants.md`), Travel
-   (`travel.md`), About (`about.md`) and Past events. Topics, organisers and
-   workshop history live on About; regional sightseeing and onward travel are
+   (`travel.md`), About (`about.md`) and Past events. About holds the full topic
+   descriptions, organiser profiles and workshop history; regional sightseeing and onward travel are
    in a disclosure on Travel. Update the date panel and current-edition history
-   when changing editions. Legacy homepage anchors still point to short summaries.
+   when changing editions. Legacy homepage anchors are preserved.
    Edit `calls-for-papers.md` if the framing changes.
    Keep `travel.md` aligned with the exact workshop building. Its D1 directions
    are based on CISPA's locations page and International Welcome Hub; CISPA's

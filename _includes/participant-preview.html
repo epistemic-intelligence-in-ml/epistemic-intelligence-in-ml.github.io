@@ -1,0 +1,8 @@
+<ul class="participant-preview-list">
+{% for participant in site.data.participants %}
+  <li>
+    <span class="participant-preview-name">{{ participant.name | escape }}</span>
+    <span class="participant-preview-affiliation">{{ participant.affiliation | escape }}</span>
+  </li>
+{% endfor %}
+</ul>
