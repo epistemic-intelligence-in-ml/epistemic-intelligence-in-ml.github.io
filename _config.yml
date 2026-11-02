@@ -26,6 +26,7 @@ workshop:
   venue_map_url: "https://www.google.com/maps/search/?api=1&query=CISPA+D1+Kaiserstra%C3%9Fe+21+66386+St.+Ingbert+Germany"
   venue_url: "https://cispa.de/en"
   contact_email: "pc.eiml.workshop@gmail.com"
+  invited_speaker_slots: 5               # includes speakers still to be announced
 
   # Logos — put image files in assets/img/logo/ and reference the filename here.
   # Leave a value blank ("") to hide that logo slot.

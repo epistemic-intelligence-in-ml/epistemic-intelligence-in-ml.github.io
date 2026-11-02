@@ -24,7 +24,9 @@ The site is data-driven, so a new edition is mostly editing config + data — no
 templates. Each year:
 
 1. **`_config.yml`** — update the `workshop:` block (edition, year, dates,
-   location, contact, venue building, street, postcode, city and map URL). Update the `nav:` list only if pages change.
+   location, contact, venue building, street, postcode, city and map URL). Set
+   `invited_speaker_slots` to the total planned invited speakers; unfilled slots
+   appear as compact “To be announced” placeholders. Update the `nav:` list only if pages change.
 2. **`_data/`** — refresh the content:
    - `dates.yml` — submission/review/camera-ready/workshop dates
    - `speakers.yml` — confirmed invited speakers
@@ -46,8 +48,9 @@ templates. Each year:
    timetable slots only when confirmed separately.
 4. Keep `index.md` focused on the people attending: featured speakers, compact
    organiser profiles and all confirmed participants via
-   `_includes/participant-preview.html`. Show names and affiliations without a
-   numerical participant count. The primary navigation separates
+   `_includes/participant-preview.html`, also used on the Participants page.
+   Show each entry as Name (Affiliation), without a numerical participant count.
+   The primary navigation separates
    Programme (`schedule.md`), Speakers (`invited-talks.md`), Participants (`participants.md`), Travel
    (`travel.md`), About (`about.md`) and Past events. About holds the full topic
    descriptions, organiser profiles and workshop history; regional sightseeing and onward travel are

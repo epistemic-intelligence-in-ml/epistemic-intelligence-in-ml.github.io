@@ -4,7 +4,7 @@ title: Invited speakers
 permalink: /invited-talks/
 ---
 
-<p class="page-lead">Meet the confirmed invited speakers for EIML3 on {{ site.workshop.date }}.</p>
+<p class="page-lead">Meet the confirmed invited speakers for EIML3 on {{ site.workshop.date }}. Further speakers will be announced.</p>
 
 {% include confirmed-speakers.html heading_level=2 %}
 

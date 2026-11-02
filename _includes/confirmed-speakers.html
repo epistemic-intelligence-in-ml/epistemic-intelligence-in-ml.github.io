@@ -3,3 +3,17 @@
 {% include speaker-card.html speaker=speaker heading_level=include.heading_level %}
 {% endfor %}
 </div>
+{% assign pending_speaker_slots = site.workshop.invited_speaker_slots | default: site.data.speakers.size | minus: site.data.speakers.size %}
+{% if pending_speaker_slots > 0 %}
+<div class="speaker-placeholders">
+{% for slot in (1..pending_speaker_slots) %}
+  <article class="speaker-placeholder">
+    <div class="speaker-placeholder-photo" aria-hidden="true">?</div>
+    <div>
+      <h{{ include.heading_level | default: 2 }} class="speaker-placeholder-name">To be announced</h{{ include.heading_level | default: 2 }}>
+      <p>Invited speaker</p>
+    </div>
+  </article>
+{% endfor %}
+</div>
+{% endif %}
