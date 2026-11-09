@@ -12,6 +12,9 @@
   <div class="speaker-body">
     <h{{ include.heading_level | default: 2 }} class="speaker-name">{% if include.speaker.url and include.speaker.url != "" %}<a href="{{ include.speaker.url }}">{{ include.speaker.name | escape }}</a>{% else %}{{ include.speaker.name | escape }}{% endif %}</h{{ include.heading_level | default: 2 }}>
     <p class="speaker-affil">{{ include.speaker.affiliation | escape }}</p>
-    <p class="speaker-interests"><span>Research interests</span>{{ include.speaker.research_interests | escape }}</p>
+{%- assign research_interests = include.speaker.research_interests | default: "" | strip %}
+{%- if research_interests != "" %}
+    <p class="speaker-interests"><span>Research interests</span>{{ research_interests | escape }}</p>
+{%- endif %}
   </div>
 </article>
