@@ -23,4 +23,12 @@
 
 - name: "Cassio de Campos"
   affiliation: "TU Eindhoven"
+  research_interests: "Probabilistic graphical models and imprecise probabilities"
   photo: "cassio-de-campos.png"
+  url: "https://uai.win.tue.nl/cassio-de-campos/"
+
+- name: "Marius Mosbach"
+  affiliation: "Saarland University & DFKI"
+  research_interests: "Large language models, model adaptation and interpretability"
+  photo: "marius-mosbach.png"
+  url: "https://mariusmosbach.com/"
