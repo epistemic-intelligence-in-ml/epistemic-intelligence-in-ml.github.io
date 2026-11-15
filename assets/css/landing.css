@@ -88,6 +88,8 @@
 .programme-note { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem 2rem; }
 .programme-note p { color: var(--muted); font-size: 1rem; }
 .workshop-timetable { margin-top: 2.5rem; }
+.landing-programme .workshop-timetable { margin-top: 0; }
+.landing-venue { padding-bottom: 2.5rem; }
 .workshop-timetable .timetable-note { color: var(--muted); font-size: 1rem; margin: .5rem 0 1rem; }
 .workshop-timetable .timetable-hint { display: none; color: var(--muted); font-size: .875rem; margin: 0 0 .75rem; }
 .timetable-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }

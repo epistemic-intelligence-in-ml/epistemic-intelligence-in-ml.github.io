@@ -12,7 +12,7 @@ landing: true
     <h1 id="workshop-heading">AI that understands<br>the limits of its<br><em>knowledge.</em></h1>
     <p class="hero-intro">How can AI systems recognise what they know, identify what they do not know, and act appropriately under uncertainty?</p>
     <div class="hero-actions">
-      <a class="button button-primary" href="{{ '/schedule/' | relative_url }}">View programme <span aria-hidden="true">→</span></a>
+      <a class="button button-primary" href="#programme">View programme <span aria-hidden="true">↓</span></a>
       <a class="text-link" href="#invited-speakers">Meet the speakers <span aria-hidden="true">↓</span></a>
     </div>
   </div>
@@ -39,17 +39,14 @@ landing: true
 {% include confirmed-speakers.html heading_level=3 %}
 </section>
 
-<section class="overview-links" aria-label="Workshop information">
-  <div class="overview-link" id="programme">
-    <h2>Programme</h2>
-    <p>Two days of invited talks, posters and open discussion.</p>
-    <a class="text-link" id="timetable-heading" href="{{ '/schedule/' | relative_url }}">View tentative timetable <span aria-hidden="true">→</span></a>
-  </div>
-  <div class="overview-link" id="venue">
-    <h2>Venue &amp; travel</h2>
+<section class="landing-section landing-programme" id="programme" aria-labelledby="timetable-heading">
+{% include timetable.html %}
+</section>
+
+<section class="overview-link landing-venue" id="venue" aria-labelledby="landing-venue-heading">
+    <h2 id="landing-venue-heading">Venue &amp; travel</h2>
     <p>CISPA {{ site.workshop.venue_building }}<br>{{ site.workshop.venue_street }}, {{ site.workshop.venue_city }}</p>
     <a class="text-link" id="getting-here" href="{{ '/travel/' | relative_url }}">How to get to CISPA <span aria-hidden="true">→</span></a>
-  </div>
 </section>
 
 <section class="landing-section landing-people-section landing-organisers" id="organisers" aria-labelledby="landing-organisers-heading">
