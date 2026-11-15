@@ -8,4 +8,4 @@ permalink: /invited-talks/
 
 {% include confirmed-speakers.html heading_level=2 %}
 
-<p>Talk titles and the assignment of speakers to timetable slots will be announced. <a href="{{ '/schedule/' | relative_url }}">View the tentative programme →</a></p>
+<p>See the speaker times and available talk titles in the <a href="{{ '/schedule/' | relative_url }}">tentative programme →</a></p>

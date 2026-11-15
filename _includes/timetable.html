@@ -17,8 +17,12 @@
 {% for row in site.data.timetable.rows %}
         <tr{% if row.break %} class="timetable-break"{% endif %}>
           <th scope="row">{{ row.time | escape }}</th>
-          <td>{% if row.break %}<strong>{{ row.day_1 | escape }}</strong>{% else %}{{ row.day_1 | escape }}{% endif %}</td>
-          <td>{{ row.day_2 | escape }}</td>
+{% if row.shared %}
+          <td colspan="2" class="timetable-shared"><strong>{{ row.day_1 | escape }}</strong></td>
+{% else %}
+          <td>{% if row.break %}<strong>{{ row.day_1 | escape }}</strong>{% else %}{{ row.day_1 | escape }}{% endif %}{% if row.day_1_title %}<span class="timetable-talk-title"><strong>Title:</strong> {{ row.day_1_title | escape }}</span>{% endif %}</td>
+          <td>{{ row.day_2 | escape }}{% if row.day_2_title %}<span class="timetable-talk-title"><strong>Title:</strong> {{ row.day_2_title | escape }}</span>{% endif %}</td>
+{% endif %}
         </tr>
 {% endfor %}
       </tbody>

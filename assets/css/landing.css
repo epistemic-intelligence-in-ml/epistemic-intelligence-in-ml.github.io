@@ -97,6 +97,8 @@ table.timetable { table-layout: fixed; min-width: 36rem; margin: 0; font-size: 1
 .timetable th:first-child { width: 24%; }
 .timetable tbody th { background: transparent; color: var(--text); font-size: 1rem; font-weight: 500; letter-spacing: 0; text-transform: none; white-space: nowrap; }
 .timetable .timetable-break { background: var(--bg-alt); }
+.timetable .timetable-shared { text-align: center; }
+.timetable-talk-title { display: block; margin-top: .4rem; color: var(--muted); line-height: 1.5; }
 .venue-introduction { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 2rem; }
 .city-photo { margin: 2rem 0; }
 .city-photo img { display: block; width: 100%; height: auto; border-radius: 4px; }

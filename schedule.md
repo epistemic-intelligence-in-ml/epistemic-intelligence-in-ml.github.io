@@ -16,7 +16,7 @@ permalink: /schedule/
     <li>{{ speaker.name | escape }}</li>
 {% endfor %}
   </ul>
-  <p class="speaker-schedule-note">Talk titles and timetable slots will be announced.</p>
+  <p class="speaker-schedule-note">Further talk titles will be announced.</p>
 </section>
 
 <details class="programme-details">

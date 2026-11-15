@@ -1,4 +1,4 @@
-# Tentative timetable. Blank day_2 entries are intentionally left unspecified.
+# Tentative timetable. Shared sessions span both days; other blank cells are unspecified.
 days:
   - "December 2"
   - "December 3"
@@ -8,15 +8,19 @@ rows:
     day_1: "Welcome"
     day_2: ""
   - time: "09:15–10:00"
-    day_1: "Invited talk I: TBC"
-    day_2: "Invited talk III: TBC"
+    day_1: "Invited talk I: Willem Waegeman"
+    day_1_title: "Epistemic uncertainty estimation methods are fundamentally incomplete"
+    day_2: "Invited talk III: Cassio de Campos"
+    day_2_title: "Privacy-Accuracy Trade-offs using Credal Networks"
   - time: "10:00–10:30"
     day_1: "Coffee Break"
     day_2: ""
     break: true
+    shared: true
   - time: "10:30–11:15"
     day_1: "Contributed talks from participants"
-    day_2: "Invited talk IV: TBC"
+    day_2: "Invited talk IV: Isabel Valera"
+    day_2_title: "TBC"
   - time: "11:15–12:00"
     day_1: "Poster Session"
     day_2: "Poster Session"
@@ -24,18 +28,22 @@ rows:
     day_1: "Research Lunch"
     day_2: ""
     break: true
+    shared: true
   - time: "14:00–14:45"
-    day_1: "Invited talk II: TBC"
-    day_2: "Invited talk V: TBC"
+    day_1: "Invited talk II: Marius Mosbach"
+    day_1_title: "TBC"
+    day_2: "Invited talk V: Ilja Kuzborskij"
+    day_2_title: "TBC"
   - time: "14:45–15:30"
-    day_1: "Open discussion"
+    day_1: "Open Discussion"
     day_2: "Open Problems and Challenges"
   - time: "15:30–16:00"
     day_1: "Coffee Break"
     day_2: ""
     break: true
+    shared: true
   - time: "16:00–18:00"
-    day_1: "City tour + Christmas Market"
+    day_1: "City tour and Christmas market"
     day_2: "Departure"
   - time: "19:00"
     day_1: "Group dinner"
